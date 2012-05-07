@@ -311,6 +311,18 @@
   <string name="GameSavesQuestion">Where Does The Game Keep Its Saves?</string>
   <string name="ScanButton">_Scan And Generate Report</string>
   <string name="InstallFolder">Install Folder</string>
+  <string name="SelectPlayStationSaveLocation">Select Playstation Save Location</string>
+  
+  <string name="NeedPrefixAndSuffix" type="title">I'm not psychic</string>
+  <string name="NeedPrefixAndSuffix" type="message">You need to specify but the prefix and suffix of the game's code</string>
+  <string name="NeedGameSaveFolder" type="title">I'm not omniscient</string>
+  <string name="NeedGameSaveFolder" type="message">You need to specify the folder that contains the game's saves</string>
+  <string name="NeedGameInstallFolder" type="title">I'm not clairvoyant</string>
+  <string name="NeedGameInstallFolder" type="message">You need to specify the install folder for the game</string>
+  <string name="NeedGameInstallFolderFirst" type="title">Come on</string>
+  <string name="NeedGameInstallFolderFirst" type="message">You need to specify the install folder for the game before you can click that</string>
+
+
   <!-- Folder browser titles -->
   <string name="GameInstallPrompt">Select Install Folder</string>
   <string name="GameSavesPrompt">Select Save Location</string>
