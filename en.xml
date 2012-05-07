@@ -303,7 +303,7 @@
   <string name="RestoreMultipleButton">Restore _These %0</string>
 
 <!-- Restore window -->
-  <string name="RestoreTitle">%MASGAU% Is Restoring %0</string>
+  <string name="RestoreTitle">%MASGAU% Is Restoring</string>
   <string name="RestoreNoCandidatesFound">No Restore Candidates Found</string>
   <string name="RestoreNoLocationFound">No locations found</string>
   <string name="RestoreRemovableDriveChoice">Choose the removable drive to restore to</string>
@@ -333,7 +333,7 @@
   <string name="NoRestorePathsDetected" type="title">Can't Restore If We Can't Find It</string>
   <string name="NoRestorePathsDetected" type="message">No restore paths detected for %0</string>
   <string name="NoUsersForEV" type="title">User Error</string>
-  <string name="NoUsersForEV" type="message">The environment variable %0 requires a user to restore to, but none was detected for it/nTry creating a save with a game that you know uses the folder</string>
+  <string name="NoUsersForEV" type="message">The environment variable %0 requires a user to restore to, but none was detected for it\nTry creating a save with a game that you know uses the folder</string>
   <!-- This is displayed in the Main program -->
   <string name="RestoreNoFiles" type="title">Restore Nothing? That's Stupid</string>
   <string name="RestoreNoFiles" type="message">You haven't selected any files to restore\nThink about it</string>
@@ -374,7 +374,7 @@
   <!-- Sync strings-->
   <string name="MonitorSynchronizingSaves">Synchronizing Saves...</string>
   <string name="CouldNotCreateSyncFolder" type="title">Sync Error</string>
-  <string name="CouldNotCreateSyncFolder" type="message">Could not create folder for snycing to %0\n\nThis game's sync will be disabled</string>
+  <string name="CouldNotCreateSyncFolder" type="message">Could not create folder for snycing to %0\nThis game's sync will be disabled</string>
   <string name="OnlySyncPathNotWritable" type="title">Not Gonna Do It</string>
   <string name="OnlySyncPathNotWritable" type="message">The only detected path for %0 isn't writable, which means sync won't work\nSync will be disabled for this game\n%1</string>
   <string name="SyncPathNotWritableAnymore" type="title">Right Before, Wrong Now</string>
@@ -532,18 +532,18 @@
   <string name="DeleteError" type="message">An error occured while trying to delete %0</string>
   <string name="FolderPrepError" type="title">Look Out!</string>
   <string name="FolderPrepError" type="message">An error occured while trying to prep %0</string>
-  <string name="UnableToCreateOutputFolder">Unable to create output folder:/n/n%0</string>
+  <string name="UnableToCreateOutputFolder">Unable to create output folder:\n%0</string>
   <string name="UnableToCreateOutputFolder" type="title">And that's how it is</string>
   <string name="UnableToCreateOutputFolder" type="message">%UnableToCreateOutputFolder%</string>
   <string name="UnableToCreateOutputFolderAdmin" type="title">Nutbunnies</string>
-  <string name="UnableToCreateOutputFolderAdmin" type="message">%UnableToCreateOutputFolder%/nMASGAU is already trying in admin mode, so that means that your user is specifically denied access to this folder. Sorry.</string>
+  <string name="UnableToCreateOutputFolderAdmin" type="message">%UnableToCreateOutputFolder%\nMASGAU is already trying in admin mode, so that means that your user is specifically denied access to this folder. Sorry.</string>
   <string name="UnableToCreateOutputFolderRequest" type="title">Cheese and Crackers</string>
-  <string name="UnableToCreateOutputFolderRequest" type="message">%UnableToCreateOutputFolder%/nWould you like to try again as admin?</string>
+  <string name="UnableToCreateOutputFolderRequest" type="message">%UnableToCreateOutputFolder%\nWould you like to try again as admin?</string>
   <!-- Read errors -->
   <string name="ReadError" type="title">%ReadWriteErrorTitle%</string>
   <string name="ReadError" type="message">Error while reading %0</string>
   <string name="FileDoesntExist" type="title">Not there</string>
-  <string name="FileDoesntExist" type="message">The specified file doesn't exist:/n/n%0</string>
+  <string name="FileDoesntExist" type="message">The specified file doesn't exist:\n%0</string>
   <string name="FileGatherError" type="title">Unanticipated error!</string>
   <string name="FileGatherError" type="message">An error occured while trying to gather save files using the path %0</string>
   <!-- Registry Errors -->
