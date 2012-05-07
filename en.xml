@@ -223,6 +223,7 @@
   <string name="DetectedGames">Detected Games</string>
 
 <!-- Backup tab -->
+  <string name="GamesAreDetecting">Please wait while MASGAU scans your computer for games...</string>
   <!-- Columns -->
   <string name="GameNameColumn">Secret Name (Don't Tell Anyone!)</string>
   <string name="GameTitleColumn">Game</string>
@@ -274,7 +275,6 @@
   <string name="NothingToBackup" type="message">Nothing at all to back up</string>
 
 <!-- Archive strings -->
-  <string name="NoArchivesFound">No Archives Found In Backup Folder</string>
   <!-- Manual Archive -->
   <string name="ManualArchiveTitle">Create Custom Archive</string>
   <string name="ManualArchiveSource">Where Do You Want To Get Saves From?</string>
@@ -287,6 +287,8 @@
   <string name="ArchiveMissingData" type="message">The file %0 doesn't contain any MASGAU data\nThis probably means it's a corrupted archive, or not an archive at all\nPlease move it out of the backup folder or delete it</string>
 
 <!-- Restore tab -->
+  <string name="ArchivesAreScanning">Please wait while MASGAU scans the archives in your backup folder...</string>
+  <string name="NoArchivesFound">No Archives Found In Backup Folder</string>
   <string name="ScanningBackups">Scanning Backups (%0/%1)</string>
   <!-- Columns -->
   <string name="ArchiveNameColumn">Game</string>
