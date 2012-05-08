@@ -229,6 +229,7 @@
   <string name="GameTitleColumn">Game</string>
   <string name="GamePlatformColumn">Platform</string>
   <string name="GameBackupColumn">Backup</string>
+  <string name="GameRegionColumn">Region</string>
   <!-- Buttons-->
   <string name="RedetectGamesButton">_Redetect Games</string>
   <string name="BackupNoGamesButton">Back Nothing Up</string>
