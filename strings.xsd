@@ -2,9 +2,18 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <xs:attribute name="name" type="xs:string"/>
+  <xs:attribute name="hotkey">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="1" />
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  
   <xs:attribute name="type">
     <xs:simpleType>
       <xs:restriction base="xs:string">
+        <xs:enumeration value="label"/>
         <xs:enumeration value="title"/>
         <xs:enumeration value="message"/>
       </xs:restriction>
@@ -18,6 +27,7 @@
         <xs:extension base="xs:string">
           <xs:attribute ref="name" />
           <xs:attribute ref="type" />
+          <xs:attribute ref="hotkey" />
         </xs:extension>
       </xs:simpleContent>
     </xs:complexType>

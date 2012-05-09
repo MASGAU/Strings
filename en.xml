@@ -20,14 +20,20 @@
   <string name="MASGAUPortable">%MASGAU% %Portable%</string>
   <string name="MASGAUPlural">%MASGAU%'s</string>
   <!-- You can translate this one, but be sure to keep the letters consistent with the acronym -->
-  <string name="MASGAUFull" type="title">MASGAU Automatic Save Game Archive Utility</string>
-
+  <string name="MASGAUFull" type="label">MASGAU Automatic Save Game Archive Utility</string>
+  
 <!-- These are strings that will get appended to the window titles -->
   <string name="Portable">Portable</string>
   <string name="AllUsersMode">All Users Mode</string>
   <string name="SingleUserMode">Single User Mode</string>
 
-<!-- File types -->
+<!-- Ribbon strings -->
+  <string name="Games" type="label" hotkey="G">Games</string>
+  <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
+  <string name="Schedule" type="label" hotkey="S">Schedule</string>
+
+
+  <!-- File types -->
   <string name="Gb7FileDescription">MASGAU Save Archive</string>
   <string name="Gb7FileDescriptionPlural">MASGAU Save Archives</string>
   <string name="TxtFileDescription">Text file</string>
@@ -76,27 +82,28 @@
   <string name="Update">Update</string>
 
 <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
-  <string name="SelectButton">_Select</string>
-  <string name="ApplyButton">_Apply</string>
-  <string name="SubmitButton">_Submit</string>
-  <string name="StopButton">_Stop</string>
-  <string name="SaveButton">_Save</string>
-  <string name="UploadButton">_Upload</string>
-  <string name="OKButton">_OK</string>
-  <string name="CancelButton">_Cancel</string>
-  <string name="YesButton">_Yes</string>
-  <string name="NoButton">_No</string>
-  <string name="MaybeButton">_Maybe</string>
-  <string name="CloseButton">_Close</string>
-  <string name="ChangeButton">_Change</string>
-  <string name="OpenButton">_Open</string>
-  <string name="ResetButton">_Reset</string>
-  <string name="SelectAllButton">Select _All</string>
-  <string name="SelectNoneButton">Select _None</string>
-  <string name="RestoreButton">_Restore</string>
-  <string name="SelectFilesButton">_Select Files</string>
-  <string name="OtherLocationButton">Other _Location...</string>
-  <string name="OtherUserButton">Other _User...</string>
+  <string name="Apply" type="label" hotkey="A">Apply</string>
+  <string name="Save" type="label" hotkey="S">Save</string>
+  <string name="Select" type="label" hotkey="S">Select</string>
+  <string name="Stop" type="label" hotkey="S">Stop</string>
+  <string name="Submit" type="label" hotkey="S">Submit</string>
+  <string name="Upload" type="label" hotkey="U">Upload</string>
+  <string name="OK" type="label" hotkey="O">OK</string>
+  <string name="Cancel" type="label" hotkey="C">Cancel</string>
+  <string name="Yes" type="label" hotkey="Y">Yes</string>
+  <string name="No" type="label" hotkey="N">No</string>
+  <string name="Maybe" type="label" hotkey="M">Maybe</string>
+  <string name="Close" type="label" hotkey="C">Close</string>
+  <string name="Change" type="label" hotkey="C">Change</string>
+  <string name="Open" type="label" hotkey="O">Open</string>
+  <string name="Reset" type="label" hotkey="R">Reset</string>
+  <string name="Refresh" type="label" hotkey="R">Refresh</string>
+  <string name="SelectAll" type="label" hotkey="A">Select All</string>
+  <string name="SelectNone" type="label" hotkey="N">Select None</string>
+  <string name="Restore" type="label" hotkey="R">Restore</string>
+  <string name="SelectFiles" type="label" hotkey="S">Select Files</string>
+  <string name="OtherLocation" type="label" hotkey="L">Other Location...</string>
+  <string name="OtherUser" type="label" hotkey="U">Other User...</string>
 
 <!-- Generic choice prompt strings -->
   <string name="ChoiceTitle">You Must Make A Choice</string>
@@ -114,17 +121,17 @@
   <string name="ScummVM">ScummVM</string>
 
 <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
-  <string name="MyComputer">My Computer</string>
-  <string name="ProgramFiles">Program Files</string>
-  <string name="ProgramFilesX86">Program Files (x86)</string>
-  <string name="MyDocuments">My Documents</string>
-  <string name="SavedGames">Saved Games</string>
-  <string name="VirtualStore">VirtualStore</string>
-  <string name="LocalAppData">Local AppData</string>
-  <string name="AppData">(Roaming) AppData</string>
-  <string name="Steamapps">Steamapps</string>
-  <string name="PublicUser">Public User</string>
-  <string name="AllUsers">All Users/ProgramData</string>
+  <string name="MyComputer" type="label">My Computer</string>
+  <string name="ProgramFiles" type="label">Program Files</string>
+  <string name="ProgramFilesX86" type="label">Program Files (x86)</string>
+  <string name="MyDocuments" type="label">My Documents</string>
+  <string name="SavedGames" type="label">Saved Games</string>
+  <string name="VirtualStore" type="label">VirtualStore</string>
+  <string name="LocalAppData" type="label">Local AppData</string>
+  <string name="AppData" type="label">(Roaming) AppData</string>
+  <string name="Steamapps" type="label">Steamapps</string>
+  <string name="PublicUser" type="label">Public User</string>
+  <string name="AllUsers" type="label">All Users/ProgramData</string>
   
 <!-- MessageBox strings-->
   <string name="Label">Label</string>
