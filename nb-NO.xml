@@ -70,9 +70,11 @@
   <string name="VirtualStore">VirtualStore</string>
 
   <string name="LocalAppData">Lokal AppData</string>
-  <string name="AppData">(Roaming) AppData</string>  <!-- Its called this in norwegian windows -->
+  <string name="AppData">(Roaming) AppData</string>
+  <!-- Its called this in norwegian windows -->
   <string name="Steamapps">Steamapps</string>
-  <string name="PublicUser">Offentlig Bruker</string> <!-- I have disabled creation of public user, but this is the direct translation -->
+  <string name="PublicUser">Offentlig Bruker</string>
+  <!-- I have disabled creation of public user, but this is the direct translation -->
   <string name="AllUsers">Alle Brukere/ProgramData</string>
 
   <!-- MessageBox strings-->
@@ -128,7 +130,8 @@
 
   <!-- Task tab-->
   <string name="Schedule">Planlegg</string>
-  <string name="EnterTaskCredentialsTitle">Pander To Me</string> <!-- Can't translate, don't know what pander is, or is it a joke perhaps -->
+  <string name="EnterTaskCredentialsTitle">Pander To Me</string>
+  <!-- Can't translate, don't know what pander is, or is it a joke perhaps -->
   <string name="EnterTaskCredentialsMessage">Du må oppgi passordet for brukeren oppgaven vil kjøre for, som er vist i den lille tekstboksen.</string>
   <string name="UnableToCreateTaskTitle">Hva sa jeg nettopp til deg.</string>
   <string name="UnableToCreateTaskMessage">Klarte ikke å lage oppgaven. Oppgaven har blitt slettet.</string>
@@ -223,7 +226,8 @@
   <string name="RestoreNoFilesMessage">Du har ikke valgt noen filer å gjenopprette.\nTenk på det du.</string>
 
   <string name="RestoreComplete">Gjenoppretting fullført.</string>
-  <string name="RestoreMultipleArchivesTitle">Convenience?</string> <!-- Need more info, whether it is meant as it's "easier" or "more comfortable" etc... -->
+  <string name="RestoreMultipleArchivesTitle">Convenience?</string>
+  <!-- Need more info, whether it is meant as it's "easier" or "more comfortable" etc... -->
   <string name="RestoreMultipleArchivesMessage">Du gjenoppretter mer enn ett arkiv,\n vil du at MASGAU ikke skal be deg om innspill med mindre det absolutt er nødvendig?</string>
 
   <string name="RestoreSomeFailed">Noen arkiv kunne ikke bli gjenopprettet</string>
@@ -243,7 +247,8 @@
   <!-- Monitor-specific strings -->
   <string name="Monitor">Overvåker</string>
   <string name="MonitorTitle">%MASGAU% %Monitor%</string>
-  <string name="MonitorSettingUp">%MonitorTitle%  setter opp..</string> <!-- Unsure -->
+  <string name="MonitorSettingUp">%MonitorTitle%  setter opp..</string>
+  <!-- Unsure -->
   <string name="MonitorMenuRescanGames">Søk igjennom spill på nytt</string>
   <string name="MonitorMenuAbout">Om</string>
   <string name="MonitorMenuSettings">Installinger...</string>
@@ -284,8 +289,8 @@
   <string name="AnalyzerDisclaimer">Innsendte rapporter er publisert til en offentlig server. Ingen involvert med MASGAU kan holdes ansvarlig for eventuelle ettervirkinger fra publiseringen av sensitiv informasjon gjennom disse rapportene, derfor se nøye over og redigere rapporten for informasjon som du ikke vil skal bli offentligjort. Ved å sende inn rapporten sier du deg enig i at det er gratis for offentlig spredning.</string>
 
   <!-- File types -->
-  <string name="Gb7FileDescription">MASGAU Saves Arkiv</string> 
-  <string name="Gb7FileDescriptionPlural">MASGAU Save Arkiver</string> 
+  <string name="Gb7FileDescription">MASGAU Saves Arkiv</string>
+  <string name="Gb7FileDescriptionPlural">MASGAU Save Arkiver</string>
   <string name="TxtFileDescription">Tekst fil</string>
   <string name="TxtFileDescriptionPlural">Tekst filer</string>
   <string name="AllFileDescription">Alle filer</string>
@@ -293,13 +298,16 @@
 
   <!-- Error messages -->
   <string name="Error">Error</string>
-  <string name="ReadWriteErrorTitle">Literacy %Error%</string> <!-- Don't know -->
-  <string name="UserLoadError">User Load %Error%</string> <!-- Unknown, direct translation won't work here -->
+  <string name="ReadWriteErrorTitle">Literacy %Error%</string>
+  <!-- Don't know -->
+  <string name="UserLoadError">User Load %Error%</string>
+  <!-- Unknown, direct translation won't work here -->
   <!-- Permission errors -->
   <string name="ReadPermissionError">Du har ikke rettigheter til å lese fra</string>
   <string name="WritePermissionError">Du har ikke rettigheter til å skrive til</string>
   <string name="ProcessRestorePermissionError">Feil under førsøk til å forandre tillatelser til å lese andre brukere</string>
-  <string name="ProcessBackupPermissionError">Error while trying to change process backup permission for reading other users</string> <!-- Unfortunately, every scenario I think of result in wrong translation -->
+  <string name="ProcessBackupPermissionError">Error while trying to change process backup permission for reading other users</string>
+  <!-- Unfortunately, every scenario I think of result in wrong translation -->
 
   <!-- Write errors-->
   <string name="WriteError">Feil under forsøk på å skrive</string>

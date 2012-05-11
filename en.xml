@@ -7,7 +7,7 @@
         I tend to put random things, sometimes jokes, as the dialog titles,
         and if I can I like to give the message an insulting tone.
         Feel free to be clever and use your sense of humor!-->
-  
+
   <!-- There are some strings that are meant to have variables inserted into them.
       They look like this:
         <string name="BackupMultipleGamesButton">_Back These %0 Up</string> 
@@ -15,19 +15,19 @@
       This is applicable to title/message pairs as well:
   -->
 
-<!-- Probably shouldn't translate this one -->
+  <!-- Probably shouldn't translate this one -->
   <string name="MASGAU">MASGAU</string>
   <string name="MASGAUPortable">%MASGAU% %Portable%</string>
   <string name="MASGAUPlural">%MASGAU%'s</string>
   <!-- You can translate this one, but be sure to keep the letters consistent with the acronym -->
   <string name="MASGAUFull" type="label">MASGAU Automatic Save Game Archive Utility</string>
-  
-<!-- These are strings that will get appended to the window titles -->
+
+  <!-- These are strings that will get appended to the window titles -->
   <string name="Portable">Portable</string>
   <string name="AllUsersMode">All Users Mode</string>
   <string name="SingleUserMode">Single User Mode</string>
 
-<!-- Ribbon strings -->
+  <!-- Ribbon strings -->
   <string name="Games" type="label" hotkey="G">Games</string>
   <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
   <string name="Schedule" type="label" hotkey="S">Schedule</string>
@@ -41,7 +41,7 @@
   <string name="AllFileDescription">All file</string>
   <string name="AllFileDescriptionPlural">All files</string>
 
-<!-- Strings for the jump lists -->
+  <!-- Strings for the jump lists -->
   <string name="MainProgram">Main Program</string>
   <string name="MainWindow">Main Window</string>
   <string name="JumpMainProgram">%MainProgram%</string>
@@ -53,7 +53,7 @@
   <string name="JumpMonitor">%MonitorTitle%</string>
   <string name="JumpMonitorDescription">%Open% %MASGAUPlural% %MonitorTitle%</string>
 
-<!-- Common strings-->
+  <!-- Common strings-->
   <string name="About">About</string>
   <string name="Backup">Backup</string>
   <string name="Choosing">Choosing</string>
@@ -81,7 +81,7 @@
   <string name="Updates">Updates</string>
   <string name="Update">Update</string>
 
-<!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
+  <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Apply" type="label" hotkey="A">Apply</string>
   <string name="Save" type="label" hotkey="S">Save</string>
   <string name="Select" type="label" hotkey="S">Select</string>
@@ -105,22 +105,22 @@
   <string name="OtherLocation" type="label" hotkey="L">Other Location...</string>
   <string name="OtherUser" type="label" hotkey="U">Other User...</string>
 
-<!-- Generic choice prompt strings -->
+  <!-- Generic choice prompt strings -->
   <string name="ChoiceTitle">You Must Make A Choice</string>
   <string name="ComboTitle">Choose One</string>
 
-<!-- Contributor strings-->
+  <!-- Contributor strings-->
   <string name="Contributors">Contributors</string>
   <string name="Contributor">Contributor</string>
 
-<!-- Platform names -->	
+  <!-- Platform names -->
   <string name="Linux">Linux</string>
   <string name="Windows">Windows</string>
   <string name="PlayStation">PlayStation</string>
   <string name="Steam">Steam</string>
   <string name="ScummVM">ScummVM</string>
 
-<!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
+  <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
   <string name="MyComputer" type="label">My Computer</string>
   <string name="ProgramFiles" type="label">Program Files</string>
   <string name="ProgramFilesX86" type="label">Program Files (x86)</string>
@@ -132,13 +132,13 @@
   <string name="Steamapps" type="label">Steamapps</string>
   <string name="PublicUser" type="label">Public User</string>
   <string name="AllUsers" type="label">All Users/ProgramData</string>
-  
-<!-- MessageBox strings-->
+
+  <!-- MessageBox strings-->
   <string name="Label">Label</string>
   <string name="MessageBox">Message Box</string>
-	<string name="ExceptionInformation">Exception Information</string>
+  <string name="ExceptionInformation">Exception Information</string>
 
-<!-- Settings strings -->
+  <!-- Settings strings -->
   <string name="Settings">Settings</string>
   <string name="LoadingSettings">Loading Settings...</string>
   <string name="CheckForUpdates">Check For _Updates</string>
@@ -186,7 +186,7 @@
   <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
   <string name="CriticalSettingsFailure" type="message">Something went horribly wrong while loading the settings</string>
 
-<!-- Email-related -->
+  <!-- Email-related -->
   <string name="EmailAddress">E-Mail Address</string>
   <!-- Buttons -->
   <string name="CheckingConnection">Checking Connection...</string>
@@ -199,7 +199,7 @@
   <string name="EmailRequest">Please Enter Your E-Mail Address In Case I Need To Contact You For More Info</string>
   <string name="ChangeLaterInSettings">You Can Change It Later In Settings</string>
 
-<!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
+  <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
   <!-- Backup Path -->
   <string name="SelectBackupPath">Choose where the backups will be saved</string>
   <string name="SelectBackupPathReadError" type="title">%ReadWriteErrorTitle%</string>
@@ -223,33 +223,26 @@
   <string name="SelectSteamPathRejected" type="title">No Go</string>
   <string name="SelectSteamPathRejected" type="message">The selected folder does not contain Steam.exe, so it's probably not a Steam folder</string>
 
-<!-- Game Information Strings -->
+  <!-- Game Information Strings -->
   <string name="NoGamesDetected">No Games Detected</string>
   <string name="GameDetected">1 Game Detected</string>
   <string name="GamesDetected">%0 Games Detected</string>
   <string name="DetectedGames">Detected Games</string>
 
-<!-- Backup tab -->
-  <string name="GamesAreDetecting">Please wait while MASGAU scans your computer for games...</string>
+  <!-- Backup/restore tab -->
+  <string name="BackupRestore" type="label" hotkey="B">Backup/Restore</string>
   <!-- Columns -->
   <string name="GameNameColumn">Secret Name (Don't Tell Anyone!)</string>
   <string name="GameTitleColumn">Game</string>
   <string name="GamePlatformColumn">Platform</string>
   <string name="GameBackupColumn">Backup</string>
   <string name="GameRegionColumn">Region</string>
-  <!-- Buttons-->
-  <string name="RedetectGamesButton">_Redetect Games</string>
-  <string name="BackupNoGamesButton">Back Nothing Up</string>
-  <string name="BackupOneGameButton">_Back This Up</string>
-  <string name="BackupMultipleGamesButton">_Back These %0 Up</string> 
-  <string name="BackupAllGamesButton">Back _Everything Up</string>
-  <!-- Context menu-->
-  <string name="BackupOneGameMenu">Back This Up</string>
-  <string name="BackupMultipleGamesMenu">Back These Up</string>
-  <string name="BackupContextCreateCustomArchive">Create Custom Archive</string>
-  <string name="BackupContextBackupNoGames">Back Nothing Up</string>
-  <string name="BackupContextPurge">Purge</string>
-  <string name="BackupContextEnableBackup">Enable Backup</string>
+  <!-- Backup buttons; the hotkey on the first one will be applied to the three others as well -->
+  <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
+  <string name="BackupNoGames" type="label" hotkey="S">Backup No Games</string>
+  <string name="BackupThisGame" type="label" hotkey="S">Backup Selected Game</string>
+  <string name="BackupTheseGames" type="label" hotkey="S">Backup %0 Selected Games</string>
+  <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <!-- Purging dialogs -->
   <string name="PurgeConfirmation" type="title">This could hurt</string>
   <string name="PurgeConfirmation" type="message">Purging erases all detected save paths for the specified game\nAre you sure you want to continue?</string>
@@ -258,7 +251,7 @@
   <string name="PurgeError" type="title">Purge Root Error</string>
   <string name="PurgeError" type="message">There was an error while attempting to purge %0</string>
 
-<!-- Backup process -->
+  <!-- Backup process -->
   <!-- The total # of games being processed-->
   <string name="GamesToBeBackedUpCount">%0 Games To Be Backed Up</string>
   <!-- %0: The name of the game being processed -->
@@ -282,7 +275,7 @@
   <string name="NothingToBackup" type="title">It feels like there's</string>
   <string name="NothingToBackup" type="message">Nothing at all to back up</string>
 
-<!-- Archive strings -->
+  <!-- Archive strings -->
   <!-- Manual Archive -->
   <string name="ManualArchiveTitle">Create Custom Archive</string>
   <string name="ManualArchiveSource">Where Do You Want To Get Saves From?</string>
@@ -294,7 +287,7 @@
   <string name="ArchiveMissingData" type="title">Lack Of Data Is Bad</string>
   <string name="ArchiveMissingData" type="message">The file %0 doesn't contain any MASGAU data\nThis probably means it's a corrupted archive, or not an archive at all\nPlease move it out of the backup folder or delete it</string>
 
-<!-- Restore tab -->
+  <!-- Restore tab -->
   <string name="ArchivesAreScanning">Please wait while MASGAU scans the archives in your backup folder...</string>
   <string name="NoArchivesFound">No Archives Found In Backup Folder</string>
   <string name="ScanningBackups">Scanning Backups (%0/%1)</string>
@@ -312,7 +305,7 @@
   <string name="RestoreOneButton">Restore _This</string>
   <string name="RestoreMultipleButton">Restore _These %0</string>
 
-<!-- Restore window -->
+  <!-- Restore window -->
   <string name="RestoreTitle">%MASGAU% Is Restoring</string>
   <string name="RestoreNoCandidatesFound">No Restore Candidates Found</string>
   <string name="RestoreNoLocationFound">No locations found</string>
@@ -326,8 +319,8 @@
   <string name="RestoreSelectFiles">Select Files To Restore</string>
   <string name="RestoreComplete">Restore Complete</string>
   <string name="RestoreCompleteWithComment">Other than that, the restore is done!</string>
-  
-<!-- Restore process -->
+
+  <!-- Restore process -->
   <string name="IsRestoring">%0 Is Restoring</string>
   <string name="DetectingGameForRestoration">Detecting game for restoration...</string>
   <string name="CheckingDestination">Checking Destination...</string>
@@ -351,7 +344,7 @@
   <string name="NoRestoreFileSelected" type="title">Nothing To Do</string>
   <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
-<!-- Task tab-->
+  <!-- Task tab-->
   <string name="Schedule">Schedule</string>
   <string name="EnterTaskCredentials" type="title">Pander To Me</string>
   <string name="EnterTaskCredentials" type="message">You must enter a password for the user the task will be running as,\nwhich is shown in the little text box right there.</string>
@@ -363,8 +356,8 @@
   <string name="TimeOfDay">Time Of Day</string>
   <string name="DayOfTheWeek">Day Of The Week</string>
   <string name="DayOfTheMonth">Day Of The Month</string>
-  
-<!-- Monitor-specific strings -->
+
+  <!-- Monitor-specific strings -->
   <string name="Monitor">Monitor</string>
   <string name="MonitorTitle">%MASGAU% %Monitor%</string>
   <string name="MonitorSettingUp">%MonitorTitle% is setting up...</string>
@@ -401,7 +394,7 @@
   <string name="MonitorBackupPathNotSet" type="title">Not Acceptable</string>
   <string name="MonitorBackupPathNotSet" type="message">Monitor cannot function without a backup path</string>
 
-<!-- Analyzer-specific strings -->
+  <!-- Analyzer-specific strings -->
   <string name="AnalyzerWindowTitle">Save Game Analyzer</string>
   <string name="GameNameQuestion">What Is The Game's Name?</string>
   <string name="ScanButton">_Scan And Generate Report</string>
@@ -427,7 +420,7 @@
   <string name="NeedPrefixAndSuffix" type="title">I'm not psychic</string>
   <string name="NeedPrefixAndSuffix" type="message">You need to specify but the prefix and suffix of the game's code</string>
   <!-- Searching window -->
-	<string name="SearchingWindowTitle">Seaching For Game Information...</string>
+  <string name="SearchingWindowTitle">Seaching For Game Information...</string>
   <string name="SearchingHeader">Where To Look First...</string>
   <string name="DumpingSaveFolder">Dumping Save Folder...</string>
   <string name="DumpingInstallFolder">Dumping Install Folder...</string>
@@ -436,11 +429,11 @@
   <string name="ScanningCurrentUserRegistry">Scanning Current User Registry...</string>
   <string name="ScanningStartMenu">Scanning Start Menu...</string>
   <!-- Analyzer report window -->
-	<string name="ReportWindowTitle">Here's The Report (Feel Free To Edit It)</string>
-	<string name="SaveReportQuestion">Where Do You Want To Save The Report?</string>
+  <string name="ReportWindowTitle">Here's The Report (Feel Free To Edit It)</string>
+  <string name="SaveReportQuestion">Where Do You Want To Save The Report?</string>
   <string name="AnalyzerDisclaimer">Submitted reports are published to a public server. No one involved with MASGAU can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
 
-<!-- Updater strings -->
+  <!-- Updater strings -->
   <string name="UpdaterWindowTitle">%MASGAU% Feels Inferior</string>
   <string name="CheckingForUpdates">Checking for updates...</string>
   <string name="UpdatesAvailable">There Are Updates Available</string>
@@ -476,7 +469,7 @@
   <string name="UpdateDownloadFailure" type="title">Getting Old</string>
   <string name="UpdateDownloadFailure" type="message">% 0 fialed to download from\n%1</string>
 
-<!-- Game detection process -->
+  <!-- Game detection process -->
   <!-- Initial system scanning -->
   <string name="DetectingSystemPaths">Detecting System Paths...</string>
   <string name="DetectingSteam">Detecting Steam...</string>
@@ -510,7 +503,7 @@
   <string name="UnknownGame" type="title">Unknown</string>
   <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0</string>
 
-<!-- General error messages -->
+  <!-- General error messages -->
   <string name="Error">Error</string>
   <string name="ReadWriteErrorTitle">Literacy %Error%</string>
   <string name="UserLoadError">User Load %Error%</string>
