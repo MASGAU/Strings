@@ -43,12 +43,12 @@
   <string name="GameNameQuestion">Quel est le nom du jeu ?</string>
   <string name="GameInstallQuestion">Où est installé le jeu ?</string>
   <string name="GameSavesQuestion">Où sont stockées les sauvegardes du jeu ?</string>
-  <string name="ScanButton">_Scanner et générer un rapport</string>
+  <string name="Scan">_Scanner et générer un rapport</string>
   <!-- Folder browser titles -->
   <string name="GameInstallPrompt">Sélectionnez le dossier d'installation</string>
   <string name="GameSavesPrompt">Sélectionnez le dossier des sauvegardes</string>
   <!-- Playstation tab -->
-  <string name="PlayStationScanButton">Scanner et générer un rapport</string>
+  <string name="PlayStationScan">Scanner et générer un rapport</string>
   <string name="PlayStationCodeQuestion">Quel est le code du jeu ?</string>
   <string name="PlayStationLocationQuestion">Où sont les sauvegardes PlayStation ?</string>
   <string name="PlayStationLocationPrompt">Sélectionner le dossier de sauvegarde PlayStation</string>

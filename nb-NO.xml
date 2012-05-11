@@ -33,27 +33,27 @@
   <string name="About">Om</string>
 
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
-  <string name="SelectButton">_Velg</string>
-  <string name="ApplyButton">_Bruk</string>
-  <string name="SubmitButton">_Send</string>
-  <string name="StopButton">_Stopp</string>
-  <string name="SaveButton">_Lagre</string>
-  <string name="UploadButton">_Last opp</string>
-  <string name="OKButton">_OK</string>
-  <string name="CancelButton">_Avbryt</string>
-  <string name="YesButton">_Ja</string>
-  <string name="NoButton">_Nei</string>
-  <string name="MaybeButton">_Kanskje</string>
-  <string name="CloseButton">_Lukk</string>
-  <string name="ChangeButton">_Endre</string>
-  <string name="OpenButton">_Åpne</string>
-  <string name="ResetButton">_Tilbakestill</string>
-  <string name="SelectAllButton">Velg _Alle</string>
-  <string name="SelectNoneButton">Velg _Ingen</string>
-  <string name="RestoreButton">_Gjenopprett</string>
-  <string name="SelectFilesButton">_Velg Filer</string>
-  <string name="OtherLocationButton">Andre _Steder...</string>
-  <string name="OtherUserButton">Andre _Brukere...</string>
+  <string name="Select">_Velg</string>
+  <string name="Apply">_Bruk</string>
+  <string name="Submit">_Send</string>
+  <string name="Stop">_Stopp</string>
+  <string name="Save">_Lagre</string>
+  <string name="Upload">_Last opp</string>
+  <string name="OK">_OK</string>
+  <string name="Cancel">_Avbryt</string>
+  <string name="Yes">_Ja</string>
+  <string name="No">_Nei</string>
+  <string name="Maybe">_Kanskje</string>
+  <string name="Close">_Lukk</string>
+  <string name="Change">_Endre</string>
+  <string name="Open">_Åpne</string>
+  <string name="Reset">_Tilbakestill</string>
+  <string name="SelectAll">Velg _Alle</string>
+  <string name="SelectNone">Velg _Ingen</string>
+  <string name="Restore">_Gjenopprett</string>
+  <string name="SelectFiles">_Velg Filer</string>
+  <string name="OtherLocation">Andre _Steder...</string>
+  <string name="OtherUser">Andre _Brukere...</string>
 
   <!-- Platform names -->
   <string name="Linux">Linux</string>
@@ -93,11 +93,11 @@
   <string name="GamePlatformColumn">Plattform</string>
   <string name="GameBackupColumn">Sikkerhetskopier</string>
 
-  <string name="RedetectGamesButton">_Gjenoppdag Spill</string>
-  <string name="BackupNoGamesButton">Ingenting å sikkerhetskopiere</string>
-  <string name="BackupOneGameButton">_Sikkerhetskopier denne</string>
-  <string name="BackupMultipleGamesButton">_Sikkerhetskopier disse %1</string>
-  <string name="BackupAllGamesButton">Sikkerhetskopier _Alt</string>
+  <string name="RedetectGames">_Gjenoppdag Spill</string>
+  <string name="BackupNoGames">Ingenting å sikkerhetskopiere</string>
+  <string name="BackupOneGame">_Sikkerhetskopier denne</string>
+  <string name="BackupMultipleGames">_Sikkerhetskopier disse %1</string>
+  <string name="BackupAllGames">Sikkerhetskopier _Alt</string>
   <string name="BackupOneGameMenu">Sikkerhetskopier denne</string>
   <string name="BackupMultipleGamesMenu">Sikkerhetskopier disse</string>
 
@@ -114,11 +114,11 @@
   <string name="ArchiveOwnerColumn">Eier</string>
   <string name="ArchiveDateColumn">Dato</string>
 
-  <string name="ReloadArchivesButton">_Last inn Arkiv</string>
+  <string name="ReloadArchives">_Last inn Arkiv</string>
   <string name="RestoreOtherBackup">Gjenopprett Annet Arkiv</string>
-  <string name="RestoreNoneButton">Ingenting å gjenopprette</string>
-  <string name="RestoreOneButton">_Gjenopprett denne</string>
-  <string name="RestoreMultipleButton">Gjenopprett _disse</string>
+  <string name="RestoreNone">Ingenting å gjenopprette</string>
+  <string name="RestoreOne">_Gjenopprett denne</string>
+  <string name="RestoreMultiple">Gjenopprett _disse</string>
 
   <string name="NoArchivesFound">Ingen arkiv funnet i sikkerhetskopi mappen</string>
 
@@ -136,7 +136,7 @@
   <string name="UnableToCreateTaskTitle">Hva sa jeg nettopp til deg.</string>
   <string name="UnableToCreateTaskMessage">Klarte ikke å lage oppgaven. Oppgaven har blitt slettet.</string>
 
-  <string name="DeleteTaskButton">_Slett Oppgave</string>
+  <string name="DeleteTask">_Slett Oppgave</string>
 
   <string name="Frequency">Hvor ofte</string>
   <string name="TimeOfDay">Tid på dagen</string>
@@ -263,13 +263,13 @@
   <string name="GameNameQuestion">Hva er spillets navn?</string>
   <string name="GameInstallQuestion">Hvor er spillet installert?</string>
   <string name="GameSavesQuestion">Hvor er spillets lagringsfiler?</string>
-  <string name="ScanButton">_Søk og lag en rapport </string>
+  <string name="Scan">_Søk og lag en rapport </string>
   <string name="InstallFolder">Installasjons mappe</string>
   <!-- Folder browser titles -->
   <string name="GameInstallPrompt">Velg Installasjons mappe</string>
   <string name="GameSavesPrompt">Velg lagringsplass</string>
   <!-- Playstation tab -->
-  <string name="PlayStationScanButton">Velg og lag en rapport</string>
+  <string name="PlayStationScan">Velg og lag en rapport</string>
   <string name="PlayStationCodeQuestion">Hva er dette spillets kode?</string>
   <string name="PlayStationLocationQuestion">Hvor er Playstations lagringsfiler</string>
   <string name="PlayStationLocationPrompt">Velg PlayStations Lagrings mappe</string>
@@ -325,9 +325,9 @@
   <string name="UpdaterWindowTitle">%MASGAU% føler seg mindreverdig</string>
   <string name="CheckingForUpdates">Ser etter oppdateringer...</string>
   <string name="UpdatesAvailable">Det er ingen oppdateringer tilgjengelig</string>
-  <string name="UpdateButton">_Oppdater dem</string>
-  <string name="DontUpdateButton">_Ikke oppdater dem</string>
-  <string name="UpdateCompleteButton">Oppdatering fullført! Klikk her for å lukke!</string>
+  <string name="Update">_Oppdater dem</string>
+  <string name="DontUpdate">_Ikke oppdater dem</string>
+  <string name="UpdateComplete">Oppdatering fullført! Klikk her for å lukke!</string>
   <string name="UpdateComplete">Oppdatering fullført!</string>
   <string name="Updates">Oppdateringer</string>
   <string name="Update">Oppdater</string>
