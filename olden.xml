@@ -15,40 +15,6 @@
       This is applicable to title/message pairs as well:
   -->
 
-  <!-- You can translate this one, but be sure to keep the letters consistent with the acronym -->
-  <string name="MASGAUFull" type="label">MASGAU Automatic Save Game Archive Utility</string>
-
-  <!-- These are strings that will get appended to the window titles -->
-  <string name="Portable">Portable</string>
-  <string name="AllUsersMode">All Users Mode</string>
-  <string name="SingleUserMode">Single User Mode</string>
-
-  <!-- Ribbon strings -->
-  <string name="Games" type="label" hotkey="G">Games</string>
-  <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
-  <string name="Schedule" type="label" hotkey="S">Schedule</string>
-
-
-  <!-- File types -->
-  <string name="Gb7FileDescription">MASGAU Save Archive</string>
-  <string name="Gb7FileDescriptionPlural">MASGAU Save Archives</string>
-  <string name="TxtFileDescription">Text file</string>
-  <string name="TxtFileDescriptionPlural">Text files</string>
-  <string name="AllFileDescription">All file</string>
-  <string name="AllFileDescriptionPlural">All files</string>
-
-  <!-- Strings for the jump lists -->
-  <string name="MainProgram">Main Program</string>
-  <string name="MainWindow">Main Window</string>
-  <string name="JumpMainProgram">%MainProgram%</string>
-  <string name="JumpMainProgramDescription">%Open% %MASGAUPlural% %MainProgram%</string>
-  <string name="JumpMainProgramAllUsers">%JumpMainProgram% (%AllUsersMode%)</string>
-  <string name="JumpMainProgramAllUsersDescription">Open %MASGAUPlural% %MainProgram% In %AllUsersMode%</string>
-  <string name="JumpAnalyzer">%AnalyzerWindowTitle%</string>
-  <string name="JumpAnalyzerDescription">%Open% %MASGAUPlural% %AnalyzerWindowTitle%</string>
-  <string name="JumpMonitor">%MonitorTitle%</string>
-  <string name="JumpMonitorDescription">%Open% %MASGAUPlural% %MonitorTitle%</string>
-
   <!-- Common strings-->
   <string name="About">About</string>
   <string name="Backup">Backup</string>
@@ -77,29 +43,6 @@
   <string name="Updates">Updates</string>
   <string name="Update">Update</string>
 
-  <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
-  <string name="Apply" type="label" hotkey="A">Apply</string>
-  <string name="Save" type="label" hotkey="S">Save</string>
-  <string name="Select" type="label" hotkey="S">Select</string>
-  <string name="Stop" type="label" hotkey="S">Stop</string>
-  <string name="Submit" type="label" hotkey="S">Submit</string>
-  <string name="Upload" type="label" hotkey="U">Upload</string>
-  <string name="OK" type="label" hotkey="O">OK</string>
-  <string name="Cancel" type="label" hotkey="C">Cancel</string>
-  <string name="Yes" type="label" hotkey="Y">Yes</string>
-  <string name="No" type="label" hotkey="N">No</string>
-  <string name="Maybe" type="label" hotkey="M">Maybe</string>
-  <string name="Close" type="label" hotkey="C">Close</string>
-  <string name="Change" type="label" hotkey="C">Change</string>
-  <string name="Open" type="label" hotkey="O">Open</string>
-  <string name="Reset" type="label" hotkey="R">Reset</string>
-  <string name="Refresh" type="label" hotkey="R">Refresh</string>
-  <string name="SelectAll" type="label" hotkey="A">Select All</string>
-  <string name="SelectNone" type="label" hotkey="N">Select None</string>
-  <string name="Restore" type="label" hotkey="R">Restore</string>
-  <string name="SelectFiles" type="label" hotkey="S">Select Files</string>
-  <string name="OtherLocation" type="label" hotkey="L">Other Location...</string>
-  <string name="OtherUser" type="label" hotkey="U">Other User...</string>
 
   <!-- Generic choice prompt strings -->
   <string name="ChoiceTitle">You Must Make A Choice</string>
@@ -117,14 +60,7 @@
   <string name="ScummVM">ScummVM</string>
 
 
-  <!-- MessageBox strings-->
-  <string name="Label">Label</string>
-  <string name="MessageBox">Message Box</string>
-  <string name="ExceptionInformation">Exception Information</string>
 
-  <!-- Settings strings -->
-  <string name="Settings">Settings</string>
-  <string name="LoadingSettings">Loading Settings...</string>
   <string name="IgnoreDates">_Ignore Dates During Backup</string>
   <string name="BackupPath">Backup Path</string>
   <string name="ValidatingBackupPath">Validating Backup Path...</string>
@@ -151,22 +87,6 @@
   <string name="GameSyncColumn">%Sync%</string>
   <string name="GameSyncLocationColumn">Sync Location</string>
   <string name="EnableSync">Enable Sync</string>
-  <!-- Errors -->
-  <string name="ConfigFileError">Config File Error</string>
-  <string name="ConfigOpenError" type="title">%ConfigFileError%</string>
-  <string name="ConfigOpenError" type="message">Unable to open config file for writing</string>
-  <string name="ConfigXMLError" type="title">%ConfigFileError%</string>
-  <string name="ConfigXMLError" type="message">XML Error while reading config file</string>
-  <string name="ConfigWatcherError" type="title">%ConfigFileError%</string>
-  <string name="ConfigWatcherError" type="message">Error while auto-updating settings</string>
-  <string name="ConfigPurgeError" type="title">%ConfigFileError%</string>
-  <string name="ConfigPurgeError" type="message">Error while trying to purge config file</string>
-  <string name="CouldNotDetermineConfigFilePath" type="title">%ConfigFileError%</string>
-  <string name="CouldNotDetermineConfigFilePath" type="message">Could not determine an acceptable path for the config file</string>
-  <string name="ErrorRefreshingAltPaths" type="title">%Error%</string>
-  <string name="ErrorRefreshingAltPaths" type="message">Error while auto-refreshing alt paths</string>
-  <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
-  <string name="CriticalSettingsFailure" type="message">Something went horribly wrong while loading the settings</string>
 
   <!-- Email-related -->
   <string name="EmailAddress">E-Mail Address</string>
@@ -205,11 +125,6 @@
   <string name="SelectSteamPathRejected" type="title">No Go</string>
   <string name="SelectSteamPathRejected" type="message">The selected folder does not contain Steam.exe, so it's probably not a Steam folder</string>
 
-  <!-- Game Information Strings -->
-  <string name="NoGamesDetected">No Games Detected</string>
-  <string name="GameDetected">1 Game Detected</string>
-  <string name="GamesDetected">%0 Games Detected</string>
-  <string name="DetectedGames">Detected Games</string>
 
   <!-- Backup/restore tab -->
   <!-- Columns -->
@@ -218,16 +133,6 @@
   <string name="GamePlatformColumn">Platform</string>
   <string name="GameBackupColumn">Backup</string>
   <string name="GameRegionColumn">Region</string>
-  <!-- Backup buttons; the hotkey on the first one will be applied to the three others as well -->
-  <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
-  <string name="BackupNoGames" type="label" hotkey="S">Backup No Games</string>
-  <string name="BackupThisGame" type="label" hotkey="S">Backup Selected Game</string>
-  <string name="BackupTheseGames" type="label" hotkey="S">Backup %0 Selected Games</string>
-  <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
-  <!-- Udpate buttons -->
-  <string name="CheckForUpdates" type="label" hotkey="U">Check For Updates</string>
-  <string name="DataUpdateAvailable" type="label" hotkey="U">Download Game Data Update</string>
-  <string name="ProgramUpdateAvailable" type="label" hotkey="U">Update MASGAU</string>
   <!-- Purging dialogs -->
   <string name="PurgeConfirmation" type="title">This could hurt</string>
   <string name="PurgeConfirmation" type="message">Purging erases all detected save paths for the specified game\nAre you sure you want to continue?</string>
@@ -307,19 +212,6 @@
   <string name="NoRestoreFileSelected" type="title">Nothing To Do</string>
   <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
-  <!-- Task tab-->
-  <string name="Schedule">Schedule</string>
-  <string name="EnterTaskCredentials" type="title">Pander To Me</string>
-  <string name="EnterTaskCredentials" type="message">You must enter a password for the user the task will be running as,\nwhich is shown in the little text box right there.</string>
-  <string name="TaskCredentials">User And Password To Run Task As</string>
-  <string name="UnableToCreateTask" type="title">What Did I Just Tell You</string>
-  <string name="UnableToCreateTask" type="message">Unable to create task. The task has been deleted.</string>
-  <string name="DeleteTask">_Delete Task</string>
-  <string name="Frequency">Frequency</string>
-  <string name="TimeOfDay">Time Of Day</string>
-  <string name="DayOfTheWeek">Day Of The Week</string>
-  <string name="DayOfTheMonth">Day Of The Month</string>
-
   <!-- Monitor-specific strings -->
   <!-- Tray icon tooltip -->
   <string name="MonitorNegativeGames">%MonitorTitle% is...WHAT!??!</string>
@@ -354,131 +246,5 @@
   <string name="InstallFolder">Install Folder</string>
   <string name="NeedGameInstallFolderFirst" type="title">Come on</string>
   <string name="NeedGameInstallFolderFirst" type="message">You need to specify the install folder for the game before you can click that</string>
-  <!-- Analyzer report window -->
-  <string name="ReportWindowTitle">Here's The Report (Feel Free To Edit It)</string>
-  <string name="SaveReportQuestion">Where Do You Want To Save The Report?</string>
-  <string name="AnalyzerDisclaimer" type="label">Submitted reports are published to a public server. No one involved with MASGAU can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
-
-  <!-- Updater strings -->
-  <string name="UpdaterWindowTitle">%MASGAU% Feels Inferior</string>
-  <string name="CheckingForUpdates" type="label">Checking for updates...</string>
-  <string name="UpdatesAvailable" type="label">There Are Updates Available</string>
-  <string name="Update" type="label" hotkey="U">Update Them</string>
-  <string name="DontUpdate" type="label" hotkey="D">Don't Update Them</string>
-  <string name="UpdateComplete" type="label" hotkey="C">Update Complete! Click Here to Close!</string>
-  <!-- These are prompts that appear to indicat wether updates are avaiable -->
-  <string name="DataUpdatesAvailable" type="title">MASGAU wishes to evolve</string>
-  <string name="DataUpdatesAvailable" type="message">There are data updates available\nWould you like to update?</string>
-  <string name="ProgramUpdateAvailable" type="title">There is a program update for MASGAU</string>
-  <string name="ProgramUpdateAvailable" type="message">Would you like to download it from this address?\n%0</string>
-  <string name="NoUpdatesFound" type="title">Not A Thing</string>
-  <string name="NoUpdatesFound" type="message">No Updates Found</string>
-  <!-- Errors -->
-  <string name="UpdatesXmlError">Update File XML Error</string>
-  <string name="UpdatesXmlNotFound" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlNotFound" type="message">The updates.xml file couldn't be found\nYou probably need to re-install</string>
-  <string name="UpdatesXmlFormatError" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlFormatError" type="message">XML Error while reading updates.xml</string>
-  <string name="UpdatesXmlNoUpdatesTag" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlNoUpdatesTag" type="message">Couldn't find the updates tag in updates.xml</string>
-  <string name="UpdatesXmlNoFilesTag" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlNoFilesTag" type="message">Couldn't find the files tag in the fileversions.xml downloaded from %0</string>
-  <string name="UpdatesXmlNoNameAttribute" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlNoNameAttribute" type="message">name attribute missing from the file tag in fileversions.xml downloaded from %0</string>
-  <string name="UpdatesXmlNoUrlAttribute" type="title">%UpdatesXmlError%</string>
-  <string name="UpdatesXmlNoUrlAttribute" type="message">url attribute missing in %0</string>
-  <string name="UpdateExecutableMissing" type="title">How could you let this happen?</string>
-  <string name="UpdateExecutableMissing" type="message">The updater executable is missing\nYou'll probably have to reinstall MASGAU before updating will work again</string>
-  <string name="BadUpdateData" type="title">Error Downloading</string>
-  <string name="BadUpdateData" type="message">%0 is producing bad data\nYou really should click Send Report so I can fix it</string>
-  <string name="UpdateDownloadFailure" type="title">Getting Old</string>
-  <string name="UpdateDownloadFailure" type="message">% 0 fialed to download from\n%1</string>
-
-  <!-- Game detection process -->
-  <!-- Initial system scanning -->
-  <string name="DetectingSystemPaths">Detecting System Paths...</string>
-  <string name="DetectingSteam">Detecting Steam...</string>
-  <string name="DetectingPlayStation">Detecting PlayStation Paths...</string>
-  <string name="DetectingScummVM">Detecting ScummVM Paths...</string>
-  <!-- Game XML loading -->
-  <string name="LoadingGameXmls">Loading Game XMLs</string>
-  <!-- Game XML Errors -->
-  <string name="CouldNotFindGameProfilesFolder" type="title">Trashy Talk, Yes?</string>
-  <string name="CouldNotFindGameProfilesFolder" type="message">Could not find game profiles folder</string>
-  <string name="NoXmlFilesInDataFolder" type="title">What the heck?</string>
-  <string name="NoXmlFilesInDataFolder" type="message">There are no XML files in the Data folder</string>
-  <string name="GameXmlError">Game XML Error</string>
-  <string name="GameXmlNoGamesTag" type="title">%GameXmlError%</string>
-  <string name="GameXmlNoGamesTag" type="message">Couldn't find the games tag in %0</string>
-  <string name="SpaceInGameName" type="title">%GameXmlError%</string>
-  <string name="SpaceInGameName" type="message">There's a space in the game name %0</string>
-  <string name="GameXmlParseError" type="title">%GameXmlError%</string>
-  <string name="GameXmlParseError" type="message">An error occured while parsing the game XML %0</string>
-  <string name="ImproperPsCodeUse" type="title">%GameXmlError%</string>
-  <string name="ImproperPsCodeUse" type="message">ps_code tag used for game (%0) that isn't on a PlayStation platform</string>
-  <!-- Game detection -->
-  <string name="DetectingGames">Detecting Games</string>
-  <string name="DetectingGamesProgress">Detecting Games (%0/%1)</string>
-  <string name="LoadingGamesData">Loading Games Data...</string>
-  <!-- Errors -->
-  <string name="DuplicateGame" type="title">Duplicate Game Data Entry</string>
-  <string name="DuplicateGame" type="message">There are two games labelled as %0</string>
-  <string name="ParentGameDoesntExist" type="title">Wasting my gorramn time</string>
-  <string name="ParentGameDoesntExist" type="message">The specified parent game %0 is not present in the profiles xml\nYou either spelled it wrong, or this is a chain effect from another error</string>
-  <string name="UnknownGame" type="title">Unknown</string>
-  <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0</string>
-
-  <!-- General error messages -->
-  <string name="Error">Error</string>
-  <string name="ReadWriteErrorTitle">Literacy %Error%</string>
-  <string name="UserLoadError">User Load %Error%</string>
-  <string name="NoFilesFound">No Files Found</string>
-  <!-- Permission errors -->
-  <string name="ReadPermissionError">You don't have permission to read from</string>
-  <string name="WritePermissionError">You don't have permission to write to</string>
-  <string name="ProcessRestorePermissionError" type="title">%UserLoadError%</string>
-  <string name="ProcessRestorePermissionError" type="message">Error while trying to change process restore permission for reading other users\nError code %0</string>
-  <string name="ProcessBackupPermissionError" type="title">%UserLoadError%</string>
-  <string name="ProcessBackupPermissionError" type="message">Error while trying to change process backup permission for reading other users\nError code %0</string>
-  <string name="PermissionChangeError" type="title">I'm a program, not a red shirt</string>
-  <string name="PermissionChangeError" type="message">An error occcured while trying to change the permissions on %0</string>
-  <!-- Write errors-->
-  <string name="WriteError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="WriteError" type="message">Error while trying to write %0</string>
-  <string name="WriteErrorPrompt">Pick somewhere else</string>
-  <string name="WriteDenied" type="title">%ReadWriteErrorTitle%</string>
-  <string name="WriteDenied" type="message">Unable to write to %0</string>
-  <string name="CreateError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="CreateError" type="message">An error occured while trying to create %0</string>
-  <string name="CopyError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="CopyError" type="message">An error occured while trying to copy %0 to %1</string>
-  <string name="FileToCopyNotFound" type="title">This May Or May Not Be Important</string>
-  <string name="FileToCopyNotFound" type="message">A file that was supposed to be copied, namely %0 could not be found</string>
-  <string name="FileCopiedNotFound" type="title">This May Or May Not Be Important</string>
-  <string name="FileCopiedNotFound" type="message">Okay so we copied a file to somewhere else and nothing went wrong,\nbut the file isn't where we copied it to :/\nThe file came from %0\nand was being copied to %1</string>
-  <string name="DeleteError" type="title">Cleanup</string>
-  <string name="DeleteError" type="message">An error occured while trying to delete %0</string>
-  <string name="FolderPrepError" type="title">Look Out!</string>
-  <string name="FolderPrepError" type="message">An error occured while trying to prep %0</string>
-  <string name="UnableToCreateOutputFolder">Unable to create output folder:\n%0</string>
-  <string name="UnableToCreateOutputFolder" type="title">And that's how it is</string>
-  <string name="UnableToCreateOutputFolder" type="message">%UnableToCreateOutputFolder%</string>
-  <string name="UnableToCreateOutputFolderAdmin" type="title">Nutbunnies</string>
-  <string name="UnableToCreateOutputFolderAdmin" type="message">%UnableToCreateOutputFolder%\nMASGAU is already trying in admin mode, so that means that your user is specifically denied access to this folder. Sorry.</string>
-  <string name="UnableToCreateOutputFolderRequest" type="title">Cheese and Crackers</string>
-  <string name="UnableToCreateOutputFolderRequest" type="message">%UnableToCreateOutputFolder%\nWould you like to try again as admin?</string>
-  <!-- Read errors -->
-  <string name="ReadError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="ReadError" type="message">Error while reading %0</string>
-  <string name="FileDoesntExist" type="title">Not there</string>
-  <string name="FileDoesntExist" type="message">The specified file doesn't exist:\n%0</string>
-  <string name="FileGatherError" type="title">Unanticipated error!</string>
-  <string name="FileGatherError" type="message">An error occured while trying to gather save files using the path %0</string>
-  <!-- Registry Errors -->
-  <string name="RegistryError">Registry Error</string>
-  <string name="RegistryKeyLoadError" type="title">%RegistryError%</string>
-  <string name="RegistryKeyLoadError" type="message">Error While Loading Registry Key</string>
-  <string name="UserRegistryLoadError" type="title">%UserLoadError%</string>
-  <string name="UserRegistryLoadError" type="message">Error while trying to load the registry file for user %0\nError code: %1</string>
 
 </strings>
