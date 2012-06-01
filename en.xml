@@ -167,13 +167,11 @@
   <string name="Settings" type="label">Settings</string>
   <string name="LoadingSettings" type="message">Loading Settings...</string>
   <!-- Setting/config Errors -->
-  <string name="ConfigFileError">Config File Error</string>
+  <string name="ConfigFileError" type="source">Config File Error</string>
   <string name="ConfigWatcherError" type="title">%ConfigFileError%</string>
   <string name="ConfigWatcherError" type="message">Error while auto-updating settings</string>
   <string name="CouldNotDetermineConfigFilePath" type="title">%ConfigFileError%</string>
   <string name="CouldNotDetermineConfigFilePath" type="message">Could not determine an acceptable path for the config file</string>
-  <string name="ErrorRefreshingAltPaths" type="title">%Error%</string>
-  <string name="ErrorRefreshingAltPaths" type="message">Error while auto-refreshing alt paths</string>
   <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
   <string name="CriticalSettingsFailure" type="message">Something went horribly wrong while loading the settings</string>
 
@@ -324,9 +322,9 @@
   <string name="XMLErrorMissingAttribute" type="message">The attribute %0 was not found on an &lt;%1&gt; tag in the file %2</string>
 
   <!-- MessageBox strings-->
-  <string name="Label">Label</string>
-  <string name="MessageBox">Message Box</string>
-  <string name="ExceptionInformation">Exception Information</string>
+  <string name="Label" type="label">Label</string>
+  <string name="MessageBox" type="label">Message Box</string>
+  <string name="ExceptionInformation" type="label">Exception Information</string>
 
 
 </strings>
