@@ -63,7 +63,6 @@
 
   <string name="IgnoreDates">_Ignore Dates During Backup</string>
   <string name="BackupPath">Backup Path</string>
-  <string name="ValidatingBackupPath">Validating Backup Path...</string>
   <string name="SteamPath">Steam Path</string>
   <string name="VersioningEnable">Make _Extra Copies</string>
   <string name="VersioningTime">At Least This Long Between Copies</string>
@@ -144,11 +143,6 @@
   <!-- Backup process -->
 
   <!-- Archive strings -->
-  <!-- Manual Archive -->
-  <string name="ManualArchiveTitle">Create Custom Archive</string>
-  <string name="ManualArchiveSource">Where Do You Want To Get Saves From?</string>
-  <string name="ManualArchiveFiles">Which Files Will Go Into The Backup?</string>
-  <string name="WhereSaveArchive">And where would you like to put this backup?</string>
   <!-- Errors-->
   <string name="FileNotArchive" type="title">File not archive</string>
   <string name="FileNotArchive" type="message">This file is not a properly formatted MASGAU archive</string>

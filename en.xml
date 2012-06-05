@@ -97,28 +97,41 @@
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
 
   <string name="Purge" type="label" hotkey="P">Purge</string>
-  <string name="Purge" type="tooltip">Erases the detected saves for, and optionally the archives related to, the selected games</string>
+  <string name="Purge" type="tooltip">Erases the detected locations of, and optionally the archives related to, the selected games</string>
+  <string name="PurgeJustGame" type="label">Purge Game Only</string>
+  <string name="PurgeJustGame" type="tooltip">Erases the detected locations of (but not the archvies related to) the selected games</string>
+  <string name="PurgeGameAndArchives" type="label">Purge Game And Archive</string>
+  <string name="PurgeGameAndArchives" type="tooltip">Erases the detected locations of, and the archives related to, the selected games</string>
+
+  
+  
   <!-- Udpate button (these are all displayed on the same button -->
   <string name="CheckForUpdates" type="label" hotkey="U">Check For Updates</string>
   <string name="CheckForUpdates" type="tooltip">Reaches out to the internet and checks if there is a new version of MASGAU, or if there is new game information</string>
   <string name="DataUpdateAvailable" type="label" hotkey="U">Download Game Data Update</string>
   <string name="ProgramUpdateAvailable" type="label" hotkey="U">Update MASGAU</string>
 
+  <!-- Manual Archive -->
+  <string name="ManualArchiveTitle" type="label">Create Custom Archive</string>
+  <string name="ManualArchiveSource" type="label">Where Do You Want To Get Saves From?</string>
+  <string name="ManualArchiveFiles" type="label">Which Files Will Go Into The Backup?</string>
+  <string name="WhereSaveArchive" type="label">And where would you like to put this backup?</string>
 
 
   <!-- Backup process -->
+  <string name="ValidatingBackupPath" type="message">Validating Backup Path...</string>
   <!-- %0: The total # of games being processed-->
-  <string name="GamesToBeBackedUpCount" type="label">%0 Games To Be Backed Up</string>
+  <string name="GamesToBeBackedUpCount" type="message">%0 Games To Be Backed Up</string>
   <!-- %0: The name of the game being processed -->
-  <string name="BackingUpSingleGame" type="label">Backing Up %0</string>
+  <string name="BackingUpSingleGame" type="message">Backing Up %0</string>
   <!--  %0: The name of the current game being processed
         %1: The nth game being processed
         %2: The total # of games being processed -->
-  <string name="BackingUpMultipleGames" type="label">(%1/%2) Backing Up %0...</string>
+  <string name="BackingUpMultipleGames" type="message">(%1/%2) Backing Up %0...</string>
   <!-- Archive Handler -->
   <!-- This is displayed while MASGAU is waiting for an in-use archive to become available
         %0 = The name of the game owning the archive -->
-  <string name="ArchiveInUseWaiting" type="label">%0 - Archive In Use, Waiting (%1/%2)</string>
+  <string name="ArchiveInUseWaiting" type="message">%0 - Archive In Use, Waiting (%1/%2)</string>
   <!-- Errors -->
   <string name="ArchiveInUseTimeout" type="title">Tired of waiting!</string>
   <!-- %0: The file name (without path) of the archive that has been inaccessible
@@ -186,10 +199,10 @@
   <string name="DetectingGamesProgress" type="message">Detecting Games (%0/%1)</string>
   <string name="LoadingGamesData" type="message">Loading Games Data...</string>
   <!-- Game Information Strings -->
-  <string name="NoGamesDetected" type="label">There Were No Games Detected</string>
-  <string name="GameDetected" type="label">A Single Game Was Detected</string>
+  <string name="NoGamesDetected" type="message">There Were No Games Detected</string>
+  <string name="GameDetected" type="message">A Single Game Was Detected</string>
   <!-- %0: The number of games detected -->
-  <string name="GamesDetected" type="label">There Were %0 Games Detected</string>
+  <string name="GamesDetected" type="message">There Were %0 Games Detected</string>
   <!-- Game XML loading -->
   <string name="LoadingGameXmls" type="message">Loading Game XMLs</string>
   <!-- Game XML Errors -->
