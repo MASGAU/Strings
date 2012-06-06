@@ -103,8 +103,20 @@
   <string name="PurgeGameAndArchives" type="label">Purge Game And Archive</string>
   <string name="PurgeGameAndArchives" type="tooltip">Erases the detected locations of, and the archives related to, the selected games</string>
 
-  
-  
+  <!-- Platform names -->
+  <string name="Platform" type="label">Platform: %0</string>
+  <string name="Linux" type="label">Linux</string>
+  <string name="Windows" type="label">Windows</string>
+  <string name="PlayStation" type="label">PlayStation</string>
+  <string name="Steam" type="label">Steam</string>
+  <string name="ScummVM" type="label">ScummVM</string>
+  <string name="Android" type="label">Android</string>
+
+  <!-- Region names -->
+  <string name="Region" type="label">Region: %0</string>
+  <string name="USA" type="label">United States</string>
+  <string name="EUR" type="label">Europe</string>
+
   <!-- Udpate button (these are all displayed on the same button -->
   <string name="CheckForUpdates" type="label" hotkey="U">Check For Updates</string>
   <string name="CheckForUpdates" type="tooltip">Reaches out to the internet and checks if there is a new version of MASGAU, or if there is new game information</string>
