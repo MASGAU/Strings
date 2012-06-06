@@ -84,6 +84,7 @@
   <!-- Backup/Restore tab  -->
   <string name="RefreshGames" type="label" hotkey="R">Refresh</string>
   <string name="RefreshGames" type="tooltip">Re-scans your computer for game saves</string>
+  <!-- Backup buttons -->
   <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
   <string name="BackupAllGames" type="tooltip">Backup all the detected game saves</string>
   <string name="BackupNoGames" type="label" hotkey="S">Backup No Games</string>
@@ -95,7 +96,18 @@
   <string name="BackupTheseGames" type="tooltip">Backup the %0 games that you have selected below</string>
   <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
+  <!-- Restore buttons -->
+  <string name="RestoreNone" type="label">Restore Nothing</string>
+  <string name="RestoreNone" type="tooltip">Select a game, and then an archive</string>
+  <string name="RestoreThis" type="label" hotkey="R">Restore Selected Archive</string>
+  <string name="RestoreThis" type="tooltip">Restore the archive you have selected below</string>
+  <string name="RestoreThese" type="label" hotkey="R">Restore The %0 Selected Archives</string>
+  <string name="RestoreThese" type="tooltip">Restore the archives you have selected below</string>
+  <string name="RestoreOther" type="label" hotkey="O">Restore Other...</string>
+  <string name="RestoreOther" type="tooltip">Select a .gb7 file from our computer to restore</string>
 
+  
+  <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
   <string name="Purge" type="tooltip">Erases the detected locations of, and optionally the archives related to, the selected games</string>
   <string name="PurgeJustGame" type="label">Purge Game Only</string>
@@ -247,7 +259,8 @@
   <!-- %0: The name of the missing game -->
   <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0</string>
 
-
+  <!-- Archive-related strings-->
+  <string name="LoadingArchives" type="message">Loading Archives (%0/%1)</string>
 
   <!-- Generic errors -->
   <string name="Error" type="source">Error</string>

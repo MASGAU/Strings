@@ -139,7 +139,6 @@
   <!-- Restore tab -->
   <string name="ArchivesAreScanning">Please wait while MASGAU scans the archives in your backup folder...</string>
   <string name="NoArchivesFound">No Archives Found In Backup Folder</string>
-  <string name="ScanningBackups">Scanning Backups (%0/%1)</string>
   <!-- Columns -->
   <string name="ArchiveNameColumn">Game</string>
   <string name="ArchiveTypeColumn">Type</string>
