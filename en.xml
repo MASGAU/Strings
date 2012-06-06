@@ -105,17 +105,24 @@
 
   <!-- Platform names -->
   <string name="Platform" type="label">Platform: %0</string>
-  <string name="Linux" type="label">Linux</string>
-  <string name="Windows" type="label">Windows</string>
-  <string name="PlayStation" type="label">PlayStation</string>
-  <string name="Steam" type="label">Steam</string>
-  <string name="ScummVM" type="label">ScummVM</string>
   <string name="Android" type="label">Android</string>
+  <string name="DOS" type="label">DOS</string>
+  <string name="Flash" type="label">Flash</string>
+  <string name="Linux" type="label">Linux</string>
+  <string name="Multiple" type="label">Multiple</string>
+  <string name="OSX" type="label">Mac OS X</string>
+  <string name="PS1" type="label">PlayStation</string>
+  <string name="PS2" type="label">PlayStation 2</string>
+  <string name="PS3" type="label">PlayStation 3</string>
+  <string name="PSP" type="label">PlayStation Portable</string>
+  <string name="ScummVM" type="label">ScummVM</string>
+  <string name="Steam" type="label">Steam</string>
+  <string name="Windows" type="label">Windows</string>
 
   <!-- Region names -->
   <string name="Region" type="label">Region: %0</string>
-  <string name="USA" type="label">United States</string>
   <string name="EUR" type="label">Europe</string>
+  <string name="USA" type="label">United States</string>
 
   <!-- Udpate button (these are all displayed on the same button -->
   <string name="CheckForUpdates" type="label" hotkey="U">Check For Updates</string>

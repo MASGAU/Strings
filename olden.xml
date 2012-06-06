@@ -48,13 +48,6 @@
   <string name="ChoiceTitle">You Must Make A Choice</string>
   <string name="ComboTitle">Choose One</string>
 
-  <!-- Contributor strings-->
-  <string name="Contributors">Contributors</string>
-  <string name="Contributor">Contributor</string>
-
-
-
-
   <string name="IgnoreDates">_Ignore Dates During Backup</string>
   <string name="BackupPath">Backup Path</string>
   <string name="SteamPath">Steam Path</string>
