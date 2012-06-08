@@ -153,44 +153,7 @@
   <string name="RestoreOne">Restore _This</string>
   <string name="RestoreMultiple">Restore _These %0</string>
 
-  <!-- Restore window -->
-  <string name="RestoreTitle">%MASGAU% Is Restoring</string>
-  <string name="RestoreNoCandidatesFound">No Restore Candidates Found</string>
-  <string name="RestoreNoLocationFound">No locations found</string>
-  <string name="RestoreRemovableDriveChoice">Choose the removable drive to restore to</string>
-  <string name="RestoreRemovableDrive">This removable drive will be used</string>
-  <string name="RestoreConfirmPath">Confirm Restore Location</string>
-  <string name="RestoreLocationChoice">Choose the location to restore to</string>
-  <string name="RestoreLocation">This location will be used</string>
-  <string name="RestoreUserChoice">Choose the user to restore to</string>
-  <string name="RestoreUser">This user will be used</string>
-  <string name="RestoreSelectFiles">Select Files To Restore</string>
-  <string name="RestoreComplete">Restore Complete</string>
-  <string name="RestoreCompleteWithComment">Other than that, the restore is done!</string>
 
-  <!-- Restore process -->
-  <string name="IsRestoring">%0 Is Restoring</string>
-  <string name="DetectingGameForRestoration">Detecting game for restoration...</string>
-  <string name="CheckingDestination">Checking Destination...</string>
-  <string name="ExtractingArchive">Extracting Archive...</string>
-  <string name="CopyingFilesToDestination">Copying Files To Destination...</string>
-  <string name="RestoringFile">%Restoring% %0</string>
-  <string name="RestoreMultipleArchives" type="title">Convenience?</string>
-  <string name="RestoreMultipleArchives" type="message">You're restoring more than one archive,\nwould you like MASGAU to not prompt you for input unless absolutely necessary?</string>
-  <!-- Errors -->
-  <string name="RestoreSomeFailed">Some archives did not restore</string>
-  <string name="RestoreProgramNotFound" type="title">People people people get up get up</string>
-  <string name="RestoreProgramNotFound" type="message">%0 can't be found.\nYou probably need to reinstall MASGAU</string>
-  <string name="NoRestorePathsDetected" type="title">Can't Restore If We Can't Find It</string>
-  <string name="NoRestorePathsDetected" type="message">No restore paths detected for %0</string>
-  <string name="NoUsersForEV" type="title">User Error</string>
-  <string name="NoUsersForEV" type="message">The environment variable %0 requires a user to restore to, but none was detected for it\nTry creating a save with a game that you know uses the folder</string>
-  <!-- This is displayed in the Main program -->
-  <string name="RestoreNoFiles" type="title">Restore Nothing? That's Stupid</string>
-  <string name="RestoreNoFiles" type="message">You haven't selected any files to restore\nThink about it</string>
-  <!-- This would only display only in the event of an internal error -->
-  <string name="NoRestoreFileSelected" type="title">Nothing To Do</string>
-  <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
   <!-- Monitor-specific strings -->
   <!-- Tray icon tooltip -->

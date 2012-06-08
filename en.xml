@@ -31,10 +31,15 @@
         the language being used-->
   <string name="MASGAUFull" type="label">MASGAU Automatic Save Game Archive Utility</string>
 
-  <!-- Program Modes - These get appended to the window title -->
+  <!-- %0 = The version number of the release (e.g. 0.10) 
+      %1 = The mode that MASGAU is running in (Single User, All Users, etc., sourced from Program Modes below)-->
+  <string name="MASGAUWindowTitle" type="label">MASGAU v.%0 - %1</string>
+
+  <!-- Program Modes - These get appended to the window title, as well as to the jump list items below -->
   <string name="AllUsersMode" type="source">All Users Mode</string>
   <string name="SingleUserMode" type="source">Single User Mode</string>
-  <string name="Portable" type="source">Portable</string>
+  <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
+  <string name="PortableMode" type="label">%0 Portable</string>
 
   <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
       so you don't need to worry about these hotkeys conflicting with the controls'-->
@@ -42,6 +47,9 @@
   <string name="Monitoring" type="label" hotkey="M">Monitor</string>
   <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
 
+  <!-- really generic messages -->
+  <string name="Stopping" type="message">Stopping...</string>
+  
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Apply" type="label" hotkey="A">Apply</string>
   <string name="Save" type="label" hotkey="S">Save</string>
@@ -174,6 +182,44 @@
   <string name="NothingToBackup" type="title">It feels like there's</string>
   <string name="NothingToBackup" type="message">Nothing at all to back up</string>
 
+  
+  <!-- Restore window -->
+  <string name="RestoreTitle" type="label">%MASGAU% Is Restoring</string>
+  <string name="RestoreNoCandidatesFound" type="label">No Restore Candidates Found</string>
+  <string name="RestoreNoLocationFound" type="label">No locations found</string>
+  <string name="RestoreRemovableDriveChoice" type="label">Choose the removable drive to restore to</string>
+  <string name="RestoreRemovableDrive" type="label">This removable drive will be used</string>
+  <string name="RestoreConfirmPath" type="label">Confirm Restore Location</string>
+  <string name="RestoreLocationChoice" type="label">Choose the location to restore to</string>
+  <string name="RestoreLocation" type="label">This location will be used</string>
+  <string name="RestoreUserChoice" type="label">Choose the user to restore to</string>
+  <string name="RestoreUser" type="label">This user will be used</string>
+  <string name="RestoreSelectFiles" type="label">Select Files To Restore</string>
+  <string name="RestoreComplete" type="label">Restore Complete</string>
+  <string name="RestoreCompleteWithComment" type="label">Other than that, the restore is done!</string>
+  <!-- Restore process -->
+  <string name="IsRestoring" type="message">%0 Is Restoring</string>
+  <string name="DetectingGameForRestoration" type="message">Detecting game for restoration...</string>
+  <string name="CheckingDestination" type="message">Checking Destination...</string>
+  <string name="ExtractingArchive" type="message">Extracting Archive...</string>
+  <string name="CopyingFilesToDestination" type="message">Copying Files To Destination...</string>
+  <string name="RestoringFile" type="message">Restoring %0</string>
+  <string name="RestoreMultipleArchives" type="title">Convenience?</string>
+  <string name="RestoreMultipleArchives" type="message">You're restoring more than one archive,\nwould you like MASGAU to not prompt you for input unless absolutely necessary?</string>
+  <!-- Errors -->
+  <string name="RestoreSomeFailed" type="label">Some archives did not restore</string>
+  <string name="RestoreProgramNotFound" type="title">People people people get up get up</string>
+  <string name="RestoreProgramNotFound" type="message">%0 can't be found.\nYou probably need to reinstall MASGAU</string>
+  <string name="NoRestorePathsDetected" type="title">Can't Restore If We Can't Find It</string>
+  <string name="NoRestorePathsDetected" type="message">No restore paths detected for %0</string>
+  <string name="NoUsersForEV" type="title">User Error</string>
+  <string name="NoUsersForEV" type="message">The environment variable %0 requires a user to restore to, but none was detected for it\nTry creating a save with a game that you know uses the folder</string>
+  <!-- This is displayed in the Main program -->
+  <string name="RestoreNoFiles" type="title">Restore Nothing? That's Stupid</string>
+  <string name="RestoreNoFiles" type="message">You haven't selected any files to restore\nThink about it</string>
+  <!-- This would only display only in the event of an internal error -->
+  <string name="NoRestoreFileSelected" type="title">Nothing To Do</string>
+  <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
   <!-- Analyzer stuff -->
   <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
