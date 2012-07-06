@@ -237,7 +237,7 @@
   <!-- Analyzer report stuff -->
   <string name="SaveReportQuestion" type="label">Where Do You Want To Save The Report?</string>
   <!-- This is important, and should be translated seriously -->
-  <string name="AnalyzerDisclaimer" type="label">Submitted reports are published to a public server. No one involved with MASGAU can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
+  <string name="AnalyzerDisclaimer" type="label">Submitted reports are published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
 
 
   <!-- Updater strings -->
