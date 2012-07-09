@@ -95,31 +95,38 @@
   <!-- Backup buttons -->
   <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
   <string name="BackupAllGames" type="tooltip">Backup all the detected game saves</string>
-  <string name="BackupNoGames" type="label" hotkey="S">Backup No Games</string>
-  <string name="BackupNoGames" type="tooltip">Select some games below, k?</string>
-  <string name="BackupThisGame" type="label" hotkey="S">Backup Selected Game</string>
-  <string name="BackupThisGame" type="tooltip">Backup the one solitary game you have selected below</string>
   <!-- %0: The number of games currently selected -->
-  <string name="BackupTheseGames" type="label" hotkey="S">Backup %0 Selected Games</string>
-  <string name="BackupTheseGames" type="tooltip">Backup the %0 games that you have selected below</string>
-  <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
+  <!-- This demonstrates conditional variables. The %0 specifies that we will test against the 0th variable passed by the program.
+        Inside of the brackest is a list of key-value pairs, seperated by a character. 
+        The first character will be used as the seperating character (here it's a pipe | ), so you can make it whatever character you want.
+        There must always be one key and one value. If %0 matches any of the keys, the value for that key will be used.
+        *ELSE is a special key, it will match anything not matched by the other keys, but only if there IS a value provided by the program.
+        *NULL is another special key that will be used when NO value is provided by the program. This is usually the case with the initial state of a button.
+        -->
+  <string name="BackupGames" type="label" hotkey="S">Backup %0{|0|No Games|1|Selected Game|*ELSE|%0 Selected Games|*NULL|No Games}</string>
+  <string name="BackupGames" type="tooltip">%0{|0|Select some games below, k?|1|Backup the one solitary game you have selected below|*ELSE|Backup the %0 games that you have selected below|*NULL|Select some games below, k?}</string>
+    <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
+  <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
+  <string name="BackupFolder" type="tooltip">Open/Change the backup folder</string>
+  <string name="ChangeBackupFolder" type="label" hotkey="C">Change Backup Folder...</string>
+  <string name="ChangeBackupFolder" type="tooltip">Change the backup folder</string>
+  <string name="OpenBackupFolder" type="label" hotkey="O">Open Backup Folder</string>
   <!-- Restore buttons -->
-  <string name="RestoreNone" type="label">Restore Nothing</string>
-  <string name="RestoreNone" type="tooltip">Select a game, and then an archive</string>
-  <string name="RestoreThis" type="label" hotkey="R">Restore Selected Archive</string>
-  <string name="RestoreThis" type="tooltip">Restore the archive you have selected below</string>
-  <string name="RestoreThese" type="label" hotkey="R">Restore The %0 Selected Archives</string>
-  <string name="RestoreThese" type="tooltip">Restore the archives you have selected below</string>
+  <!-- %0: The number of archives selected in the interface -->
+  <string name="RestoreGames" type="label" hotkey="R">Restore %0{|0|Nothing|1|Selected Archive|*ELSE|%0 Selected Archives|*NULL|Nothing}</string>
+  <string name="RestoreGames" type="tooltip">%0{|0|Select a game, and then an archive|1|Restore the archive you have selected below|*ELSE|Restore the archives you have selected below|*NULL|Select a game, and then an archive}</string>
   <string name="RestoreOther" type="label" hotkey="O">Restore Other...</string>
   <string name="RestoreOther" type="tooltip">Select a .gb7 file from our computer to restore</string>
 
-  
+  <!-- Archive list stuff -->
+  <string name="NumberOfArchives" type="label">There %0{|0|are no archives|1|is 1 archive|*ELSE|are %0 archives} in the backup folder for the %1{|0|what the hell|1|selected game|*ELSE|%1 selected games}:</string>
+
   <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
   <string name="Purge" type="tooltip">Erases the detected locations of, and optionally the archives related to, the selected games</string>
   <string name="PurgeJustGame" type="label">Purge Game Only</string>
-  <string name="PurgeJustGame" type="tooltip">Erases the detected locations of (but not the archvies related to) the selected games</string>
+  <string name="PurgeJustGame" type="tooltip">Erases the detected locations of (but not the archives related to) the selected games</string>
   <string name="PurgeGameAndArchives" type="label">Purge Game And Archive</string>
   <string name="PurgeGameAndArchives" type="tooltip">Erases the detected locations of, and the archives related to, the selected games</string>
 
@@ -264,6 +271,16 @@
   <string name="CouldNotDetermineConfigFilePath" type="message">Could not determine an acceptable path for the config file</string>
   <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
   <string name="CriticalSettingsFailure" type="message">Something went horribly wrong while loading the settings</string>
+  
+  <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
+  <!-- Backup Path -->
+  <string name="SelectBackupPath" type="label">Choose where the backups will be saved</string>
+  <string name="SelectBackupPathReadError" type="title">%ReadWriteError%</string>
+  <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% the selected backup folder</string>
+  <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>
+  <string name="SelectBackupPathWriteError" type="message">%WritePermissionError% the selected backup folder</string>
+
+
 
   <!-- Game detection process -->
   <!-- Initial system scanning -->

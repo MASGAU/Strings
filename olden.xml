@@ -87,13 +87,6 @@
   <string name="EmailRequest">Please Enter Your E-Mail Address In Case I Need To Contact You For More Info</string>
   <string name="ChangeLaterInSettings">You Can Change It Later In Settings</string>
 
-  <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
-  <!-- Backup Path -->
-  <string name="SelectBackupPath">Choose where the backups will be saved</string>
-  <string name="SelectBackupPathReadError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% the selected backup folder</string>
-  <string name="SelectBackupPathWriteError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="SelectBackupPathWriteError" type="message">%WritePermissionError% the selected backup folder</string>
   <!-- Sync path -->
   <string name="SelectSyncPath">Choose where the saves will be synced</string>
   <string name="SelectSyncPathReadError" type="title">%ReadWriteErrorTitle%</string>
