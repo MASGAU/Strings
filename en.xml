@@ -105,7 +105,7 @@
         -->
   <string name="BackupGames" type="label" hotkey="S">Backup %0{|0|No Games|1|Selected Game|*ELSE|%0 Selected Games|*NULL|No Games}</string>
   <string name="BackupGames" type="tooltip">%0{|0|Select some games below, k?|1|Backup the one solitary game you have selected below|*ELSE|Backup the %0 games that you have selected below|*NULL|Select some games below, k?}</string>
-    <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
+  <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
   <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
   <string name="BackupFolder" type="tooltip">Open/Change the backup folder</string>
@@ -229,6 +229,25 @@
   <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
   <!-- Analyzer stuff -->
+  <!-- Buttons in the Analyzer tab -->
+  <string name="AnalyzerGameTitle" type="label">1. Type Game Title</string>
+  <string name="AnalyzerPaths" type="label">2. Select Game Folders</string>
+  <string name="Analyze" type="label" hotkey="A">3. Analyze!</string>
+  <string name="SelectInstallLocation" type="label">Select Install Folder</string>
+  <string name="SelectSaveLocation" type="label">Select Save Folder</string>
+  <string name="SaveReport" type="label" hotkey="S">Save Report</string>
+  <string name="EmailReport" type="label" hotkey="E">E-Mail Report</string>
+  <string name="EmailReport" type="tooltip">E-Mail report to submissions@gamesave.info</string>
+  <string name="SendingReport" type="label">Sending Report...</string>
+  <string name="CantSendReport" type="label">Can't Send Report</string>
+  <string name="CantSendReport" type="tooltip">Automatic e-mail unavailable, please save the report and e-mail it to submissions@gamesave.info</string>
+  <string name="ReportSent" type="label">Report Sent!</string>
+  
+  <!-- These are displayed in the browse for folder dialogs -->
+  <string name="GameSavesPrompt" type="label">Select the game's save folder</string>
+  <string name="GameInstallPrompt" type="label">Select the game's install folder</string>
+  <!-- These are the folder select options -->
+  <string name="InstallFolder" type="label">Install Folder</string>
   <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
   <string name="MyComputer" type="label">My Computer</string>
   <string name="ProgramFiles" type="label">Program Files</string>
@@ -237,7 +256,7 @@
   <string name="SavedGames" type="label">Saved Games</string>
   <string name="VirtualStore" type="label">VirtualStore</string>
   <string name="LocalAppData" type="label">Local AppData</string>
-  <string name="AppData" type="label">(Roaming) AppData</string>
+  <string name="RoamingAppData" type="label">(Roaming) AppData</string>
   <string name="Steamapps" type="label">Steamapps</string>
   <string name="PublicUser" type="label">Public User</string>
   <string name="AllUsers" type="label">All Users/ProgramData</string>
@@ -245,7 +264,16 @@
   <string name="SaveReportQuestion" type="label">Where Do You Want To Save The Report?</string>
   <!-- This is important, and should be translated seriously -->
   <string name="AnalyzerDisclaimer" type="label">Submitted reports are published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
-
+  <!-- Analyzer progress -->
+  <string name="AnalyzingPlayStationSaves" type="message">Analyzing PlayStation Saves</string>
+  <string name="AnalyzingScummVM" type="message">Scanning for ScummVM entries</string>
+  <string name="DumpingSaveFolder" type="message">Dumping Save Folder</string>
+  <string name="DumpingInstallFolder" type="message">Dumping Install Folder</string>
+  <string name="DumpingVirtualStore" type="message">Dumping VirtualStore</string>
+  <string name="AnalyzingRegistry" type="message">Scanning Registry</string>
+  <string name="AnalyzingLocalMachineRegistry" type="message">Scanning Local Machine Registry</string>
+  <string name="AnalyzingCurrentUserRegistry" type="message">Scanning Current User Registry</string>
+  <string name="AnalyzingStartMenu" type="message">Sanning Start Menu For Shortcuts</string>
 
   <!-- Updater strings -->
   <string name="UpdaterWindowTitle" type="label">MASGAU Feels Inferior</string>
@@ -280,7 +308,9 @@
   <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>
   <string name="SelectBackupPathWriteError" type="message">%WritePermissionError% the selected backup folder</string>
 
-
+  <!-- E-mail prompts -->
+  <string name="EmailRequest" type="label">Please Enter Your E-Mail Address</string>
+  <string name="ChangeLaterInSettings" type="label">You Can Change It Later In Settings</string>
 
   <!-- Game detection process -->
   <!-- Initial system scanning -->
