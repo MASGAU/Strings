@@ -46,11 +46,15 @@
   <string name="BackupRestore" type="label" hotkey="B">Backup/Restore</string>
   <string name="Monitoring" type="label" hotkey="M">Monitor</string>
   <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
+  <string name="Games" type="label">Games</string>
 
   <!-- really generic messages -->
-  <string name="Stopping" type="message">Stopping...</string>
-  
+  <string name="Stopping" type="source">Stopping...</string>
+  <string name="Stopping" type="message">%Stopping%</string>
+  <string name="Stopping" type="label">%Stopping%</string>
+
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
+  <string name="Add" type="label" hotkey="A">Add</string>
   <string name="Apply" type="label" hotkey="A">Apply</string>
   <string name="Save" type="label" hotkey="S">Save</string>
   <string name="Select" type="label" hotkey="S">Select</string>
@@ -92,6 +96,8 @@
   <!-- Backup/Restore tab  -->
   <string name="RefreshGames" type="label" hotkey="R">Refresh</string>
   <string name="RefreshGames" type="tooltip">Re-scans your computer for game saves</string>
+  <string name="AddGame" type="label" hotkey="A">Add</string>
+  <string name="AddGame" type="tooltip">Add an undetected game to MASGAU</string>
   <!-- Backup buttons -->
   <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
   <string name="BackupAllGames" type="tooltip">Backup all the detected game saves</string>
@@ -121,6 +127,13 @@
 
   <!-- Archive list stuff -->
   <string name="NumberOfArchives" type="label">There %0{|0|are no archives|1|is 1 archive|*ELSE|are %0 archives} in the backup folder for the %1{|0|what the hell|1|selected game|*ELSE|%1 selected games}:</string>
+
+  <!-- Add game stuff -->
+  <string name="AddGameHeader" type="label">Add An Undetected Game!</string>
+  <string name="AddGameTitle" type="label">What's the game's title?</string>
+  <string name="AddGameLocation" type="label">Where're the saves?</string>
+  <string name="AddGameSaves" type="label">What files should be saved?</string>
+  <string name="AddGameExclusions" type="label">What files should NOT be saved?</string>
 
   <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
