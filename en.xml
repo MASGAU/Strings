@@ -113,8 +113,6 @@
   <string name="BackupGames" type="tooltip">%0{|0|Select some games below, k?|1|Backup the one solitary game you have selected below|*ELSE|Backup the %0 games that you have selected below|*NULL|Select some games below, k?}</string>
   <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
-  <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
-  <string name="BackupFolder" type="tooltip">Open/Change the backup folder</string>
   <string name="ChangeBackupFolder" type="label" hotkey="C">Change Backup Folder...</string>
   <string name="ChangeBackupFolder" type="tooltip">Change the backup folder</string>
   <string name="OpenBackupFolder" type="label" hotkey="O">Open Backup Folder</string>
@@ -161,7 +159,7 @@
 
   <!-- Region names -->
   <string name="Region" type="label">Region: %0</string>
-  <string name="EUR" type="label">Europe</string>
+  <string name="EU" type="label">Europe</string>
   <string name="USA" type="label">United States</string>
 
   <!-- Udpate button (these are all displayed on the same button -->
@@ -315,11 +313,30 @@
   
   <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
   <!-- Backup Path -->
+  <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
+  <string name="BackupFolder" type="tooltip">Open/Change the backup folder</string>
   <string name="SelectBackupPath" type="label">Choose where the backups will be saved</string>
   <string name="SelectBackupPathReadError" type="title">%ReadWriteError%</string>
   <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% the selected backup folder</string>
   <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>
   <string name="SelectBackupPathWriteError" type="message">%WritePermissionError% the selected backup folder</string>
+  <!-- Steam strings -->
+  <string name="SteamNotFound" type="tooltip">Steam Not Found</string>
+  <string name="SteamFound" type="tooltip">Steam Found At %0</string>
+  <string name="SelectSteamPath" type="label">Select the location of steam.exe</string>
+  <string name="SelectSteamPathRejected" type="title">No Go</string>
+  <string name="SelectSteamPathRejected" type="message">The selected folder does not contain Steam.exe, so it's probably not a Steam folder</string>
+  <!-- Alt Paths -->
+  <string name="AltSavePath" type="label" hotkey="A">Alt. Save Folders</string>
+  <string name="AltSavePath" type="tooltip">Alternate save folders are used to tell MASGAU non-standard folders that you use for storing your game</string>
+  <string name="AddAltSavePath" type="label">Add a folder...</string>
+  <!-- %0 - The full path of an alt save folder-->
+  <string name="RemoteAltSavePath" type="label">%0 (Click to remove)</string>
+  <string name="SelectAltPath" type="label">Add a new Alternative Save Folder</string>
+  <string name="SelectAltPathReadError" type="title">%ReadWriteErrorTitle%</string>
+  <string name="SelectAltPathReadError" type="message">Due to permissions or something, MASGAU can't read the folder you selected</string>
+  <string name="SelectAltPathDuplicate" type="title">Duplication</string>
+  <string name="SelectAltPathDuplicate" type="message">The folder you selected has already been added</string>
 
   <!-- E-mail prompts -->
   <string name="EmailRequest" type="label">Please Enter Your E-Mail Address</string>

@@ -93,16 +93,8 @@
   <string name="SelectSyncPathReadError" type="message">%ReadPermissionError% the selected sync folder</string>
   <string name="SelectSyncPathWriteError" type="title">%ReadWriteErrorTitle%</string>
   <string name="SelectSyncPathWriteError" type="message">%WritePermissionError% the selected sync folder</string>
-  <!-- Alt Paths -->
-  <string name="SelectAltPath">Choose a new Alternative Install Path</string>
-  <string name="SelectAltPathReadError" type="title">%ReadWriteErrorTitle%</string>
-  <string name="SelectAltPathReadError" type="message">Due to permissions or something, MASGAU can't read the folder you selected</string>
-  <string name="SelectAltPathDuplicate" type="title">Duplication</string>
-  <string name="SelectAltPathDuplicate" type="message">The path you selected has already been added</string>
   <!-- Steam path -->
   <string name="SelectSteamPath">Choose where Steam is located</string>
-  <string name="SelectSteamPathRejected" type="title">No Go</string>
-  <string name="SelectSteamPathRejected" type="message">The selected folder does not contain Steam.exe, so it's probably not a Steam folder</string>
 
 
   <!-- Backup/restore tab -->
