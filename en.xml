@@ -56,6 +56,7 @@
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Add" type="label" hotkey="A">Add</string>
   <string name="Apply" type="label" hotkey="A">Apply</string>
+  <string name="Browse" type="label">Browse...</string>
   <string name="Save" type="label" hotkey="S">Save</string>
   <string name="Select" type="label" hotkey="S">Select</string>
   <string name="Stop" type="label" hotkey="S">Stop</string>
@@ -132,7 +133,20 @@
   <string name="AddGameLocation" type="label">Where're the saves?</string>
   <string name="AddGameSaves" type="label">What files should be saved?</string>
   <string name="AddGameExclusions" type="label">What files should NOT be saved?</string>
-
+  <string name="SelectSaveFolder" type="label">Please select the folder containing the saves</string>
+  <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
+  <string name="MyComputer" type="label">My Computer</string>
+  <string name="ProgramFiles" type="label">Program Files</string>
+  <string name="ProgramFilesX86" type="label">Program Files (x86)</string>
+  <string name="MyDocuments" type="label">My Documents</string>
+  <string name="SavedGames" type="label">Saved Games</string>
+  <string name="VirtualStore" type="label">VirtualStore</string>
+  <string name="LocalAppData" type="label">Local AppData</string>
+  <string name="RoamingAppData" type="label">(Roaming) AppData</string>
+  <string name="Steamapps" type="label">Steamapps</string>
+  <string name="PublicUser" type="label">Public User</string>
+  <string name="AllUsers" type="label">All Users/ProgramData</string>
+  
   <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
   <string name="Purge" type="tooltip">Erases the detected locations of, and optionally the archives related to, the selected games</string>
@@ -257,20 +271,6 @@
   <!-- These are displayed in the browse for folder dialogs -->
   <string name="GameSavesPrompt" type="label">Select the game's save folder</string>
   <string name="GameInstallPrompt" type="label">Select the game's install folder</string>
-  <!-- These are the folder select options -->
-  <string name="InstallFolder" type="label">Install Folder</string>
-  <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
-  <string name="MyComputer" type="label">My Computer</string>
-  <string name="ProgramFiles" type="label">Program Files</string>
-  <string name="ProgramFilesX86" type="label">Program Files (x86)</string>
-  <string name="MyDocuments" type="label">My Documents</string>
-  <string name="SavedGames" type="label">Saved Games</string>
-  <string name="VirtualStore" type="label">VirtualStore</string>
-  <string name="LocalAppData" type="label">Local AppData</string>
-  <string name="RoamingAppData" type="label">(Roaming) AppData</string>
-  <string name="Steamapps" type="label">Steamapps</string>
-  <string name="PublicUser" type="label">Public User</string>
-  <string name="AllUsers" type="label">All Users/ProgramData</string>
   <!-- Analyzer report stuff -->
   <string name="SaveReportQuestion" type="label">Where Do You Want To Save The Report?</string>
   <!-- This is important, and should be translated seriously -->
