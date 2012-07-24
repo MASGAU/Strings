@@ -46,7 +46,12 @@
   <string name="BackupRestore" type="label" hotkey="B">Backup/Restore</string>
   <string name="Monitoring" type="label" hotkey="M">Monitor</string>
   <string name="Analyzer" type="label" hotkey="A">Analyzer</string>
+  
+  <!-- Ribbon groups -->
+  <string name="Game" type="label">Game</string>
   <string name="Games" type="label">Games</string>
+  <string name="Paths" type="label">Paths</string>
+  <string name="Other" type="label">Other</string>
 
   <!-- really generic messages -->
   <string name="Stopping" type="source">Stopping...</string>
@@ -95,10 +100,16 @@
   <string name="AllFileDescriptionPlural" type="label">All files</string>
 
   <!-- Backup/Restore tab  -->
-  <string name="RefreshGames" type="label" hotkey="R">Refresh</string>
+  <string name="RefreshGames" type="label" hotkey="R">Refresh Games</string>
   <string name="RefreshGames" type="tooltip">Re-scans your computer for game saves</string>
   <string name="AddGame" type="label" hotkey="A">Add</string>
   <string name="AddGame" type="tooltip">Add an undetected game to MASGAU</string>
+  <string name="EditGame" type="label" hotkey="E">Edit</string>
+  <string name="EditGame" type="tooltip">Edit the selected custom game</string>
+  <string name="DeleteGame" type="label" hotkey="D">Delete</string>
+  <string name="DeleteGame" type="tooltip">Delete the selected custom game</string>
+  <string name="CopyGame" type="label" hotkey="C">Copy</string>
+  <string name="CopyGame" type="tooltip">Copy the selected game into a new custom game</string>
   <!-- Backup buttons -->
   <string name="BackupAllGames" type="label" hotkey="B">Backup All Games</string>
   <string name="BackupAllGames" type="tooltip">Backup all the detected game saves</string>
@@ -114,7 +125,7 @@
   <string name="BackupGames" type="tooltip">%0{|0|Select some games below, k?|1|Backup the one solitary game you have selected below|*ELSE|Backup the %0 games that you have selected below|*NULL|Select some games below, k?}</string>
   <string name="CreateCustomBackup" type="label" hotkey="C">Create Custom Backup</string>
   <string name="CreateCustomBackup" type="tooltip">Create a backup using only the files you specify</string>
-  <string name="ChangeBackupFolder" type="label" hotkey="C">Change Backup Folder...</string>
+  <string name="ChangeBackupFolder" type="label" hotkey="B">Change Backup Folder...</string>
   <string name="ChangeBackupFolder" type="tooltip">Change the backup folder</string>
   <string name="OpenBackupFolder" type="label" hotkey="O">Open Backup Folder</string>
   <!-- Restore buttons -->
@@ -299,9 +310,28 @@
   <string name="BadUpdateData" type="message">%0 is producing bad data\nYou really should click Send Report so I can fix it</string>
 
 
+  <!-- Monitor strings -->
+  <string name="Monitor" type="label">Monitor</string>
+  <string name="MonitorNeedsBackupPath" type="message">Monitor Cannot Run Without A Backup Path</string>
+  <string name="MonitorNotRunning" type="message">Monitor Not Running, Please Restart</string>
+  <string name="MonitoredGameCount" type="message">Monitoring %0 Games</string>
+  <string name="BackupUpForMonitor" type="message">Updating Archive For %0</string>
+  <string name="SettingUpMonitorFor" type="message">Setting Up Monitor For %0 Games</string>
+
+
   <!-- Settings strings -->
-  <string name="Settings" type="label">Settings</string>
+  <string name="Settings" type="label" hotkey="S">Settings</string>
   <string name="LoadingSettings" type="message">Loading Settings...</string>
+  <string name="IgnoreDates" type="label" hotkey="I">Ignore Dates During Backup</string>
+  <string name="IgnoreDates" type="tooltip">MASGAU only backs up saves more recent than the archive date,\nthis will cause MASGAU to ignore the dates and back up everything anyway.</string>
+  <string name="AutoStart" type="label" hotkey="S">Start On Login</string>
+  <string name="AutoStart" type="tooltip">Start On Login</string>
+  <string name="Versioning" type="label">Versioning</string>
+  <string name="VersioningEnable" type="label" hotkey="V">Make Extra Copies</string>
+  <string name="VersioningEnable" type="tooltip">Enable this to have MASGAU create extra copies of the archive and a set time interval</string>
+  <string name="VersioningTiming" type="label">Every</string>
+  <string name="VersioningMaxCopies" type="label">Max Copies</string>
+
   <!-- Setting/config Errors -->
   <string name="ConfigFileError" type="source">Config File Error</string>
   <string name="ConfigWatcherError" type="title">%ConfigFileError%</string>
@@ -310,7 +340,8 @@
   <string name="CouldNotDetermineConfigFilePath" type="message">Could not determine an acceptable path for the config file</string>
   <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
   <string name="CriticalSettingsFailure" type="message">Something went horribly wrong while loading the settings</string>
-  
+  <string name="AutoStartEnableError" type="message">Something went wrong while trying to enable auto start</string>
+          
   <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
   <!-- Backup Path -->
   <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
@@ -351,6 +382,7 @@
   <!-- Game detection -->
   <string name="DetectingGames" type="message">Detecting Games</string>
   <string name="DetectingGamesProgress" type="message">Detecting Games (%0/%1)</string>
+  <string name="DetectingMonitoringGamesProgress" type="message">Detecting Games and Setting Up Monitors (%0/%1)</string>
   <string name="LoadingGamesData" type="message">Loading Games Data...</string>
   <!-- Game Information Strings -->
   <string name="NoGamesDetected" type="message">There Were No Games Detected</string>
