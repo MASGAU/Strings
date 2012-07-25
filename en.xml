@@ -57,6 +57,8 @@
   <string name="Stopping" type="source">Stopping...</string>
   <string name="Stopping" type="message">%Stopping%</string>
   <string name="Stopping" type="label">%Stopping%</string>
+  
+  <string name="SuppressFurtherMessages" type="label">Stop Asking Me This</string>
 
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Add" type="label" hotkey="A">Add</string>
@@ -103,7 +105,7 @@
   <string name="RefreshGames" type="label" hotkey="R">Refresh Games</string>
   <string name="RefreshGames" type="tooltip">Re-scans your computer for game saves</string>
   <string name="AddGame" type="label" hotkey="A">Add</string>
-  <string name="AddGame" type="tooltip">Add an undetected game to MASGAU</string>
+  <string name="AddGame" type="tooltip">Add custom game</string>
   <string name="EditGame" type="label" hotkey="E">Edit</string>
   <string name="EditGame" type="tooltip">Edit the selected custom game</string>
   <string name="DeleteGame" type="label" hotkey="D">Delete</string>
@@ -115,7 +117,7 @@
   <string name="BackupAllGames" type="tooltip">Backup all the detected game saves</string>
   <!-- %0: The number of games currently selected -->
   <!-- This demonstrates conditional variables. The %0 specifies that we will test against the 0th variable passed by the program.
-        Inside of the brackest is a list of key-value pairs, seperated by a character. 
+        Inside of the brackets is a list of key-value pairs, seperated by a character. 
         The first character will be used as the seperating character (here it's a pipe | ), so you can make it whatever character you want.
         There must always be one key and one value. If %0 matches any of the keys, the value for that key will be used.
         *ELSE is a special key, it will match anything not matched by the other keys, but only if there IS a value provided by the program.
@@ -133,17 +135,22 @@
   <string name="RestoreGames" type="label" hotkey="R">Restore %0{|0|Nothing|1|Selected Archive|*ELSE|%0 Selected Archives|*NULL|Nothing}</string>
   <string name="RestoreGames" type="tooltip">%0{|0|Select a game, and then an archive|1|Restore the archive you have selected below|*ELSE|Restore the archives you have selected below|*NULL|Select a game, and then an archive}</string>
   <string name="RestoreOther" type="label" hotkey="O">Restore Other...</string>
-  <string name="RestoreOther" type="tooltip">Select a .gb7 file from our computer to restore</string>
+  <string name="RestoreOther" type="tooltip">Select a .gb7 file from your computer to restore</string>
 
   <!-- Archive list stuff -->
   <string name="NumberOfArchives" type="label">There %0{|0|are no archives|1|is 1 archive|*ELSE|are %0 archives} in the backup folder for the %1{|0|what the hell|1|selected game|*ELSE|%1 selected games}:</string>
 
   <!-- Add game stuff -->
   <string name="AddGameHeader" type="label">Add An Undetected Game!</string>
-  <string name="AddGameTitle" type="label">What's the game's title?</string>
+  <string name="AddGameTitle" type="label">What is the game's title?</string>
+  <string name="AddGameTitleNotUnique" type="label">What is the game's title? (Needs To Be Unique)</string>
   <string name="AddGameLocation" type="label">Where're the saves?</string>
+
+  <string name="FileCriteriaExplanation" type="source">You can use a full file name to specify a specific file,\nor a pattern like *.xml to specify multiple files.\nLeave blank for all files and subfolders.</string>
   <string name="AddGameSaves" type="label">What files should be saved?</string>
+  <string name="AddGameSaves" type="tooltip">%FileCriteriaExplanation%</string>
   <string name="AddGameExclusions" type="label">What files should NOT be saved?</string>
+  <string name="AddGameExclusions" type="tooltip">%FileCriteriaExplanation%</string>
   <string name="SelectSaveFolder" type="label">Please select the folder containing the saves</string>
   <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
   <string name="MyComputer" type="label">My Computer</string>
@@ -289,8 +296,7 @@
   <!-- Analyzer progress -->
   <string name="AnalyzingPlayStationSaves" type="message">Analyzing PlayStation Saves</string>
   <string name="AnalyzingScummVM" type="message">Scanning for ScummVM entries</string>
-  <string name="DumpingSaveFolder" type="message">Dumping Save Folder</string>
-  <string name="DumpingInstallFolder" type="message">Dumping Install Folder</string>
+  <string name="DumpingFolder" type="message">Dumping Folder</string>
   <string name="DumpingVirtualStore" type="message">Dumping VirtualStore</string>
   <string name="AnalyzingRegistry" type="message">Scanning Registry</string>
   <string name="AnalyzingLocalMachineRegistry" type="message">Scanning Local Machine Registry</string>
@@ -318,6 +324,12 @@
   <string name="BackupUpForMonitor" type="message">Updating Archive For %0</string>
   <string name="SettingUpMonitorFor" type="message">Setting Up Monitor For %0 Games</string>
 
+  
+  <!-- Link strings -->
+  <string name="Link" type="label">Link</string>
+  <string name="ClickToLink" type="tooltip">Click to link this game</string>
+  <string name="IsLinked" type="tooltip">All %0 of the detected locations for this game are linked</string>
+  <string name="PartiallyLinked" type="tooltip">%0 of the %1 detected locations for this game %0{|1|is|*ELSE|are} linked</string>
 
   <!-- Settings strings -->
   <string name="Settings" type="label" hotkey="S">Settings</string>
@@ -331,6 +343,16 @@
   <string name="VersioningEnable" type="tooltip">Enable this to have MASGAU create extra copies of the archive and a set time interval</string>
   <string name="VersioningTiming" type="label">Every</string>
   <string name="VersioningMaxCopies" type="label">Max Copies</string>
+  <string name="Seconds" type="label">Seconds</string>
+  <string name="Minutes" type="label">Minutes</string>
+  <string name="Hours" type="label">Hours</string>
+  <string name="Days" type="label">Days</string>
+  <string name="Weeks" type="label">Weeks</string>
+  <string name="Months" type="label">Months</string>
+  <string name="Years" type="label">Years</string>
+  <string name="Decades" type="label">Decades</string>
+  <string name="Centuries" type="label">Centuries</string>
+  <string name="Millenia" type="label">Millenia</string>
 
   <!-- Setting/config Errors -->
   <string name="ConfigFileError" type="source">Config File Error</string>
