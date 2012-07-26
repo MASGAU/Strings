@@ -110,6 +110,8 @@
   <string name="EditGame" type="tooltip">Edit the selected custom game</string>
   <string name="DeleteGame" type="label" hotkey="D">Delete</string>
   <string name="DeleteGame" type="tooltip">Delete the selected custom game</string>
+  <string name="SubmitGame" type="label" hotkey="S">Submit</string>
+  <string name="SubmitGame" type="tooltip">Submit the unsubmitted custom games</string>
   <string name="CopyGame" type="label" hotkey="C">Copy</string>
   <string name="CopyGame" type="tooltip">Copy the selected game into a new custom game</string>
   <!-- Backup buttons -->
@@ -164,6 +166,10 @@
   <string name="Steamapps" type="label">Steamapps</string>
   <string name="PublicUser" type="label">Public User</string>
   <string name="AllUsers" type="label">All Users/ProgramData</string>
+  <!-- For confirming the deleting of a game -->
+  <!-- %0 = the number of games to delete -->
+  <string name="DeleteGameConfirm" type="title">You Sure?</string>
+  <string name="DeleteGameConfirm" type="message">Are you sure you want to delete %0{|1|this %0 game|*ELSE|these %0 games}?</string>
   
   <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
@@ -199,6 +205,18 @@
   <string name="CheckForUpdates" type="tooltip">Reaches out to the internet and checks if there is a new version of MASGAU, or if there is new game information</string>
   <string name="DataUpdateAvailable" type="label" hotkey="U">Download Game Data Update</string>
   <string name="ProgramUpdateAvailable" type="label" hotkey="U">Update MASGAU</string>
+
+  <!-- email strings -->
+  <string name="ManualMail" type="source">You can manually mail it to submissions@gamesave.info</string>
+  <string name="CheckingConnection" type="label">Checking Connection...</string>
+  <string name="EmailReport" type="label">Email Report</string>
+  <string name="CantSendReport" type="label">Email Blocked</string>
+  <string name="CantSendReport" type="tooltip">%ManualMail%</string>
+  <string name="SendingReport" type="label">Sending Report...</string>
+  <string name="SendFailed" type="label">Send Failed</string>
+  <!-- %0 - the error information for the failed email send -->
+  <string name="SendFailed" type="tooltip">%ManualMail%\n%0</string>
+  <string name="ReportSent" type="label">Report Sent!</string>
 
   <!-- Manual Archive -->
   <string name="ManualArchiveTitle" type="label">Create Custom Archive</string>
@@ -272,12 +290,8 @@
   <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
 
   <!-- Analyzer stuff -->
-  <!-- Buttons in the Analyzer tab -->
-  <string name="AnalyzerGameTitle" type="label">1. Type Game Title</string>
-  <string name="AnalyzerPaths" type="label">2. Select Game Folders</string>
-  <string name="Analyze" type="label" hotkey="A">3. Analyze!</string>
-  <string name="SelectInstallLocation" type="label">Select Install Folder</string>
-  <string name="SelectSaveLocation" type="label">Select Save Folder</string>
+  <string name="PleaseSubmitGame" type="title">Pretty Please?</string>
+  <string name="PleaseSubmitGame" type="message">Would you like to submit this added game to GameSave.Info?\nIt will require a system scan that will take a minute or two,\nbut it will allow this game to be available in future updates.\nIf you choose no, you can use the "Submit" button if you change your mind.</string>
   <string name="SaveReport" type="label" hotkey="S">Save Report</string>
   <string name="EmailReport" type="label" hotkey="E">E-Mail Report</string>
   <string name="EmailReport" type="tooltip">E-Mail report to submissions@gamesave.info</string>
@@ -285,14 +299,17 @@
   <string name="CantSendReport" type="label">Can't Send Report</string>
   <string name="CantSendReport" type="tooltip">Automatic e-mail unavailable, please save the report and e-mail it to submissions@gamesave.info</string>
   <string name="ReportSent" type="label">Report Sent!</string>
+  <string name="AskSubmitGame" type="title">Let's Make Sure</string>
+  <string name="AskSubmitGame" type="message">Do you want to submit %0?</string>
   
+
   <!-- These are displayed in the browse for folder dialogs -->
   <string name="GameSavesPrompt" type="label">Select the game's save folder</string>
   <string name="GameInstallPrompt" type="label">Select the game's install folder</string>
   <!-- Analyzer report stuff -->
   <string name="SaveReportQuestion" type="label">Where Do You Want To Save The Report?</string>
   <!-- This is important, and should be translated seriously -->
-  <string name="AnalyzerDisclaimer" type="label">Submitted reports are published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
+  <string name="AnalyzerDisclaimer" type="label">Submitted reports are e-mailed to submissions@gamesave.info and published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
   <!-- Analyzer progress -->
   <string name="AnalyzingPlayStationSaves" type="message">Analyzing PlayStation Saves</string>
   <string name="AnalyzingScummVM" type="message">Scanning for ScummVM entries</string>
