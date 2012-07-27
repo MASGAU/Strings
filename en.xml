@@ -444,6 +444,8 @@
   <!-- Game XML loading -->
   <string name="LoadingGameXmls" type="message">Loading Game XMLs</string>
   <!-- Game XML Errors -->
+  <!-- %0 = Schema file location -->
+  <string name="SchemaNotFound" type="message">Schema file not found at %0! Please Re-install</string>
   <string name="CouldNotFindGameProfilesFolder" type="title">Trashy Talk, Yes?</string>
   <string name="CouldNotFindGameProfilesFolder" type="message">Could not find game profiles folder</string>
   <string name="NoXmlFilesInDataFolder" type="title">What the heck?</string>
