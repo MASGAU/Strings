@@ -209,7 +209,7 @@
   <!-- email strings -->
   <string name="ManualMail" type="source">You can manually mail it to submissions@gamesave.info</string>
   <string name="CheckingConnection" type="label">Checking Connection...</string>
-  <string name="EmailReport" type="label">Email Report</string>
+  <string name="SendReport" type="label">Send Report</string>
   <string name="CantSendReport" type="label">Email Blocked</string>
   <string name="CantSendReport" type="tooltip">%ManualMail%</string>
   <string name="SendingReport" type="label">Sending Report...</string>
