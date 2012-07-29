@@ -309,7 +309,7 @@
   <!-- Analyzer report stuff -->
   <string name="SaveReportQuestion" type="label">Where Do You Want To Save The Report?</string>
   <!-- This is important, and should be translated seriously -->
-  <string name="AnalyzerDisclaimer" type="label">Submitted reports are e-mailed to submissions@gamesave.info and published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.</string>
+  <string name="AnalyzerDisclaimer" type="label">Submitted reports are e-mailed to submissions@gamesave.info and published to a public server. No one involved with MASGAU or GameSave.Info can be held liable for any repurcusions from the publishing of sensitive information through these reports, so please carefully look over and edit the report for any information that you do not want to be made public. By submitting a report you are agreeing that it is free for public dispersal.\nDue to how the data is collected, this report may contain more information than expected. You can edit out anything you like, or send it anyway and I'll filter it down to the relevant information before posting. If information for any additional games are present when submitted, I will separate it out and treat it as an additional game submission.</string>
   <!-- Analyzer progress -->
   <string name="AnalyzingPlayStationSaves" type="message">Analyzing PlayStation Saves</string>
   <string name="AnalyzingScummVM" type="message">Scanning for ScummVM entries</string>
@@ -357,7 +357,7 @@
   <string name="AutoStart" type="tooltip">Start On Login</string>
   <string name="Versioning" type="label">Versioning</string>
   <string name="VersioningEnable" type="label" hotkey="V">Make Extra Copies</string>
-  <string name="VersioningEnable" type="tooltip">Enable this to have MASGAU create extra copies of the archive and a set time interval</string>
+  <string name="VersioningEnable" type="tooltip">Enable this to have MASGAU create extra copies of the archive at a set time interval</string>
   <string name="VersioningTiming" type="label">Every</string>
   <string name="VersioningMaxCopies" type="label">Max Copies</string>
   <string name="Seconds" type="label">Seconds</string>
@@ -400,18 +400,21 @@
   <string name="AltSavePath" type="label" hotkey="A">Alt. Save Folders</string>
   <string name="AltSavePath" type="tooltip">Alternate save folders are used to tell MASGAU non-standard folders that you use for storing your game</string>
   <string name="AddAltSavePath" type="label">Add a folder...</string>
+  <string name="YouWillHavetoManuallyRefresh" type="source">If not, you will have to manually refresh or restart MASGAU to redetect properly.</string>
   <string name="AskRefreshGames" type="source">Showers are refreshing too</string>
   <string name="AskRefreshGames" type="title">%AskRefreshGames%</string>
   <string name="AskRefreshGames" type="message">Would you like to refresh?</string>
   <string name="RefreshForRemovedSavePath" type="title">%AskRefreshGames%</string>
-  <string name="RefreshForRemovedSavePath" type="message">Would you like to refresh to undetect game(s) that may have been in the removed save path?</string>
+  <string name="RefreshForRemovedSavePath" type="message">Would you like to refresh to undetect game(s) that may have been in the removed save path?\n%YouWillHavetoManuallyRefresh%</string>
   <string name="RefreshForNewSavePath" type="title">%AskRefreshGames%</string>
-  <string name="RefreshForNewSavePath" type="message">Would you like to refresh to detect game(s) in the newly added save path?</string>
+  <string name="RefreshForNewSavePath" type="message">Would you like to refresh to detect game(s) in the newly added save path?\n%YouWillHavetoManuallyRefresh%</string>
   <string name="RefreshForNewSteamPath" type="title">%AskRefreshGames%</string>
-  <string name="RefreshForNewSteamPath" type="message">Would you like to refresh to detect game(s) in the newly added Steam path?</string>
+  <string name="RefreshForNewSteamPath" type="message">Would you like to refresh to detect game(s) in the newly added Steam path?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForUpdate" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForUpdate" type="message">Would you like to refresh to detect game(s) in the newly updated data?\n%YouWillHavetoManuallyRefresh%</string>
 
-  
-  
+
+
 
   <!-- %0 - The full path of an alt save folder-->
   <string name="RemoteAltSavePath" type="label">%0 (Click to remove)</string>
