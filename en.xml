@@ -52,6 +52,8 @@
   <string name="Games" type="label">Games</string>
   <string name="Paths" type="label">Paths</string>
   <string name="Other" type="label">Other</string>
+  <string name="File" type="label">File</string>
+  <string name="Ready" type="label">Ready</string>
 
   <!-- really generic messages -->
   <string name="Stopping" type="source">Stopping...</string>
@@ -266,7 +268,7 @@
   <string name="RestoreComplete" type="label">Restore Complete</string>
   <string name="RestoreCompleteWithComment" type="label">Other than that, the restore is done!</string>
   <!-- Restore process -->
-  <string name="IsRestoring" type="message">%0 Is Restoring</string>
+  <string name="IsRestoring" type="label">%0 Is Restoring</string>
   <string name="DetectingGameForRestoration" type="message">Detecting game for restoration...</string>
   <string name="CheckingDestination" type="message">Checking Destination...</string>
   <string name="ExtractingArchive" type="message">Extracting Archive...</string>
@@ -288,6 +290,7 @@
   <!-- This would only display only in the event of an internal error -->
   <string name="NoRestoreFileSelected" type="title">Nothing To Do</string>
   <string name="NoRestoreFileSelected" type="message">No File Was Selected To Restore</string>
+  <string name="Finished" type="label">Finished</string>
 
   <!-- Analyzer stuff -->
   <string name="PleaseSubmitGame" type="title">Pretty Please?</string>
