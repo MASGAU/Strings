@@ -203,10 +203,15 @@
   <string name="USA" type="label">United States</string>
 
   <!-- Udpate button (these are all displayed on the same button -->
+  <string name="CheckingForUpdates" type="label" hotkey="U">Checking For Updates...</string>
   <string name="CheckForUpdates" type="label" hotkey="U">Check For Updates</string>
   <string name="CheckForUpdates" type="tooltip">Reaches out to the internet and checks if there is a new version of MASGAU, or if there is new game information</string>
-  <string name="DataUpdateAvailable" type="label" hotkey="U">Download Game Data Update</string>
+  <string name="DataUpdateAvailable" type="label" hotkey="U">Update Game Data</string>
+  <string name="DataUpdateAvailable" type="tooltip">Click to download the latest game data from the interwebs</string>
   <string name="ProgramUpdateAvailable" type="label" hotkey="U">Update MASGAU</string>
+  <string name="ProgramUpdateAvailable" type="tooltip">Click to download the latest version of MASAU from the interwebs</string>
+  <!-- %0: The name of the current file being updated -->
+  <string name="UpdatingFile" type="message">Updating %0</string>
 
   <!-- email strings -->
   <string name="ManualMail" type="source">You can manually mail it to submissions@gamesave.info</string>
@@ -323,18 +328,6 @@
   <string name="AnalyzingCurrentUserRegistry" type="message">Scanning Current User Registry</string>
   <string name="AnalyzingStartMenu" type="message">Sanning Start Menu For Shortcuts</string>
 
-  <!-- Updater strings -->
-  <string name="UpdaterWindowTitle" type="label">MASGAU Feels Inferior</string>
-  <string name="CheckingForUpdates" type="label">Checking for updates...</string>
-  <string name="UpdatesAvailable" type="label">There Are Updates Available</string>
-  <string name="Update" type="label" hotkey="U">Update Them</string>
-  <string name="DontUpdate" type="label" hotkey="D">Don't Update Them</string>
-  <string name="UpdateComplete" type="label" hotkey="C">Update Complete! Click Here to Close!</string>
-  <!-- Errors -->
-  <string name="BadUpdateData" type="title">Error Downloading</string>
-  <!-- %0: The URL that is producing bad data -->
-  <string name="BadUpdateData" type="message">%0 is producing bad data\nYou really should click Send Report so I can fix it</string>
-
 
   <!-- Monitor strings -->
   <string name="Monitor" type="label">Monitor</string>
@@ -450,6 +443,9 @@
   <!-- Game XML loading -->
   <string name="LoadingGameXmls" type="message">Loading Game XMLs</string>
   <!-- Game XML Errors -->
+  <string name="GameDataCorrupted" type="title">So sad...</string>
+  <!-- %: The data file that has been corrupted -->
+  <string name="GameDataCorrupted" type="message">It appears that %0 has been corrupted. Would you like to repair it?\nNOTE: This will wipe out any changes and updates for this file.\nYou will have to click the update button to get it up to date again.</string>
   <!-- %0 = Schema file location -->
   <string name="SchemaNotFound" type="message">Schema file not found at %0! Please Re-install</string>
   <string name="CouldNotFindGameProfilesFolder" type="title">Trashy Talk, Yes?</string>
@@ -496,6 +492,9 @@
   <string name="FileNotFoundCritical" type="title">%FileNotFound%</string>
   <!-- %0: The name of the file that wasn't found -->
   <string name="FileNotFoundCritical" type="message">The file %0 could not be found\nYou probably need to re-install</string>
+  <string name="FileCorruptedCritical" type="title">Not As Much As A Politician</string>
+  <!-- %0: The name of the file that wasn't found -->
+  <string name="FileCorruptedCritical" type="message">The file %0 seems to have become corrupted\nYou probably need to re-install</string>
   <!-- Read errors -->
   <string name="ReadError" type="title">%ReadWriteErrorTitle%</string>
   <!-- %0: The name of the file (sometimes with path) that couldn't be read-->
@@ -540,10 +539,10 @@
   <string name="CopyError" type="title">%ReadWriteError%</string>
   <!-- %0: The source file to be copied 
         %1: The destination to be copied to-->
-  <string name="CopyError" type="message">An error occured while trying to copy %0 to %1</string>
+  <string name="CopyError" type="message">An error occured while trying to copy %0 to\n%1</string>
   <string name="FileToCopyNotFound" type="title">This May Or May Not Be Important</string>
   <!-- %0: The file that could not be found to be copied -->
-  <string name="FileToCopyNotFound" type="message">A file that was supposed to be copied, namely %0 could not be found</string>
+  <string name="FileToCopyNotFound" type="message">A file that was supposed to be copied, namely %0, could not be found</string>
   <string name="FileCopiedNotFound" type="title">This May Or May Not Be Important</string>
   <!-- %0: The source file to be copied 
         %1: The destination to be copied to-->
