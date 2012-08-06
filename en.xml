@@ -448,7 +448,7 @@
   <string name="GameDataCorruptedRestore" type="message">It appears that %0 has been corrupted. Would you like to restore it?\nNOTE: This will wipe out any changes and updates to this file.\nYou will have to click the update button to get it up to date again.</string>
   <string name="GameDataCorruptedDelete" type="title">So sad...</string>
   <!-- %0: The data file that has been corrupted -->
-  <string name="GameDataCorruptedDelete" type="message">It appears that %0 has been corrupted. Would you like to delete it?\nNOTE: This will wipe out any entries contained in this file irrevocably.</string>
+  <string name="GameDataCorruptedDelete" type="message">It appears that %0 has been corrupted. Would you like to delete it?\nNOTE: This will irrevocably wipe out any entries contained in this file.</string>
   <string name="GameDataObsolete" type="title">Ch-ch-ch-changes</string>
   <!-- %0: The data file that has been corrupted -->
   <string name="GameDataObsolete" type="message">It appears that %0 was written using version %1 of the GameSave.Info format.\nWould you like MASGAU to attempt to auto-upgrade to it to version %2?</string>
