@@ -247,10 +247,10 @@
         %0 = The name of the game owning the archive -->
   <string name="ArchiveInUseWaiting" type="message">%0 - Archive In Use, Waiting (%1/%2)</string>
   <!-- Errors -->
-  <string name="ArchiveInUseTimeout" type="title">Tired of waiting!</string>
+  <string name="FileInUseTimeout" type="title">Tired of waiting!</string>
   <!-- %0: The file name (without path) of the archive that has been inaccessible
         %1: How many seconds the file has been inaccessible-->
-  <string name="ArchiveInUseTimeout" type="message">The archive %0 has been unaccessible for %1 seconds, it will be skipped</string>
+  <string name="FileInUseTimeout" type="message">The archive %0 has been unaccessible for %1 seconds, it will be skipped</string>
   <string name="RevisionCopyError" type="title">Versioning is for wusses anyway</string>
   <!-- %0: The name of the archive that was un-copyable -->
   <string name="RevisionCopyError" type="message">An error occured while trying to make a revision copy of %0</string>
@@ -443,9 +443,15 @@
   <!-- Game XML loading -->
   <string name="LoadingGameXmls" type="message">Loading Game XMLs</string>
   <!-- Game XML Errors -->
-  <string name="GameDataCorrupted" type="title">So sad...</string>
-  <!-- %: The data file that has been corrupted -->
-  <string name="GameDataCorrupted" type="message">It appears that %0 has been corrupted. Would you like to repair it?\nNOTE: This will wipe out any changes and updates for this file.\nYou will have to click the update button to get it up to date again.</string>
+  <string name="GameDataCorruptedRestore" type="title">So sad...</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataCorruptedRestore" type="message">It appears that %0 has been corrupted. Would you like to restore it?\nNOTE: This will wipe out any changes and updates to this file.\nYou will have to click the update button to get it up to date again.</string>
+  <string name="GameDataCorruptedDelete" type="title">So sad...</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataCorruptedDelete" type="message">It appears that %0 has been corrupted. Would you like to delete it?\nNOTE: This will wipe out any entries contained in this file irrevocably.</string>
+  <string name="GameDataObsolete" type="title">Ch-ch-ch-changes</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataObsolete" type="message">It appears that %0 was written using version %1 of the GameSave.Info format.\nWould you like MASGAU to attempt to auto-upgrade to it to version %2?</string>
   <!-- %0 = Schema file location -->
   <string name="SchemaNotFound" type="message">Schema file not found at %0! Please Re-install</string>
   <string name="CouldNotFindGameProfilesFolder" type="title">Trashy Talk, Yes?</string>
