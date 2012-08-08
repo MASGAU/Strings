@@ -41,6 +41,11 @@
   <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
   <string name="PortableMode" type="label">%0 Portable</string>
 
+  <string name="AllUserModeButton" type="tooltip">Running in All Users Mode (Click to switch to Single User Mode)</string>
+  <string name="SingleUserModeButton" type="tooltip">Running in Single User Mode (Click to switch to All Users Mode)</string>
+
+  <string name="ExitMASGAU" type="label">Exit MASGAU</string>
+
   <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
       so you don't need to worry about these hotkeys conflicting with the controls'-->
   <string name="BackupRestore" type="label" hotkey="B">Backup/Restore</string>
@@ -408,6 +413,8 @@
   <string name="RefreshForNewSteamPath" type="message">Would you like to refresh to detect game(s) in the newly added Steam path?\n%YouWillHavetoManuallyRefresh%</string>
   <string name="RefreshForUpdate" type="title">%AskRefreshGames%</string>
   <string name="RefreshForUpdate" type="message">Would you like to refresh to detect game(s) in the newly updated data?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForChangedBackupPath" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForChangedBackupPath" type="message">Would you like to refresh to detect archives(s) in the newly updated backup path?\n%YouWillHavetoManuallyRefresh%</string>
 
 
 
@@ -448,7 +455,7 @@
   <string name="GameDataCorruptedRestore" type="message">It appears that %0 has been corrupted. Would you like to restore it?\nNOTE: This will wipe out any changes and updates to this file.\nYou will have to click the update button to get it up to date again.</string>
   <string name="GameDataCorruptedDelete" type="title">So sad...</string>
   <!-- %0: The data file that has been corrupted -->
-  <string name="GameDataCorruptedDelete" type="message">It appears that %0 has been corrupted. Would you like to delete it?\nNOTE: This will irrevocably wipe out any entries contained in this file.</string>
+  <string name="GameDataCorruptedDelete" type="message">It appears that %0 has been corrupted. Would you like to delete it?\nNOTE: This will irrevocably wipe out any entries contained in this file.\nIf this file was added through a data update, just click update to rebuild it.</string>
   <string name="GameDataObsolete" type="title">Ch-ch-ch-changes</string>
   <!-- %0: The data file that has been corrupted -->
   <string name="GameDataObsolete" type="message">It appears that %0 was written using version %1 of the GameSave.Info format.\nWould you like MASGAU to attempt to auto-upgrade to it to version %2?</string>
@@ -467,8 +474,10 @@
   <string name="ImproperPsCodeUse" type="message">&lt;ps_code&gt; tag used for game (%0) that isn't on a PlayStation platform</string>
   <!-- Errors -->
   <string name="DuplicateGame" type="title">Duplicate Game Data Entry</string>
-  <!-- %0: The name of the game -->
-  <string name="DuplicateGame" type="message">There are two games labelled as %0</string>
+  <!-- %0: The name of the game 
+       %1: The name of one of the files containing the duplicate game 
+       %2 : The name of the second file-->
+  <string name="DuplicateGame" type="message">There are two games labelled as %0.\nThe first is in %1 and the second is in %2.</string>
   <string name="ParentGameDoesntExist" type="title">Wasting my gorramn time</string>
   <!-- %0: The name of the missing parent game -->
   <string name="ParentGameDoesntExist" type="message">The specified parent game %0 is not present in the profiles xml\nYou either spelled it wrong, or this is a chain effect from another error</string>
