@@ -29,7 +29,10 @@
         The first word should always be MASGAU, and the other words should all start with
         (in this order) an A, an S, a G, an A, and a U, or visualy similar characters in
         the language being used-->
-  <string name="MASGAUFull" type="label">MASGAU Automatic Save Game Archive Utility</string>
+  <string name="MASGAUFull" type="source">MASGAU Automatic Save Game Archive Utility</string>
+  <!-- %0: The version number of MASGAU -->
+  <string name="MASGAUAboutVersion" type="label">%MASGAUFull% v.%0</string>
+  <string name="AboutClose" type="label">Thanks, That's All I Needed To Know</string>
 
   <!-- %0 = The version number of the release (e.g. 0.10) 
       %1 = The mode that MASGAU is running in (Single User, All Users, etc., sourced from Program Modes below)-->
@@ -185,7 +188,13 @@
   <string name="PurgeJustGame" type="tooltip">Erases the detected locations of (but not the archives related to) the selected games</string>
   <string name="PurgeGameAndArchives" type="label">Purge Game And Archive</string>
   <string name="PurgeGameAndArchives" type="tooltip">Erases the detected locations of, and the archives related to, the selected games</string>
-
+  <string name="PurgeAllRoots" type="label">Purge All Detected Roots</string>
+  <string name="PurgeJustGameQuestion" type="title">This is kinda dangerous</string>
+  <string name="PurgeJustGameQuestion" type="message">Which detected location(s) of %0 do you want to purge?</string>
+  <string name="PurgeGameAndArchivesQuestion" type="title">This is more than a little dangerous</string>
+  <string name="PurgeGameAndArchivesQuestion" type="message">Are you sure you want to erase all the detected locations\nand archives in the backup folder for %0?</string>
+  <string name="Purging" type="message">Purging %0</string>
+  
   <!-- Platform names -->
   <string name="Platform" type="label">Platform: %0</string>
   <string name="Android" type="label">Android</string>
@@ -415,6 +424,8 @@
   <string name="RefreshForUpdate" type="message">Would you like to refresh to detect game(s) in the newly updated data?\n%YouWillHavetoManuallyRefresh%</string>
   <string name="RefreshForChangedBackupPath" type="title">%AskRefreshGames%</string>
   <string name="RefreshForChangedBackupPath" type="message">Would you like to refresh to detect archives(s) in the newly updated backup path?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForPurge" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForPurge" type="message">Would you like to refresh to undetect the purged games?\n%YouWillHavetoManuallyRefresh%</string>
 
 
 
