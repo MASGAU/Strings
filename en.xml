@@ -194,7 +194,9 @@
   <string name="PurgeGameAndArchivesQuestion" type="title">This is more than a little dangerous</string>
   <string name="PurgeGameAndArchivesQuestion" type="message">Are you sure you want to erase all the detected locations\nand archives in the backup folder for %0?</string>
   <string name="Purging" type="message">Purging %0</string>
-  
+  <string name="PurgeError" type="title">Purge Root Error</string>
+  <string name="PurgeError" type="message">There was an error while attempting to purge %0</string>
+
   <!-- Platform names -->
   <string name="Platform" type="label">Platform: %0</string>
   <string name="Android" type="label">Android</string>
@@ -279,8 +281,8 @@
   <string name="RestoreRemovableDriveChoice" type="label">Choose the removable drive to restore to</string>
   <string name="RestoreRemovableDrive" type="label">This removable drive will be used</string>
   <string name="RestoreConfirmPath" type="label">Confirm Restore Location</string>
-  <string name="RestoreLocationChoice" type="label">Choose the location to restore to</string>
-  <string name="RestoreLocation" type="label">This location will be used</string>
+  <string name="RestoreLocationChoice" type="label">Choose the location for MASGAU to restore to</string>
+  <string name="RestoreLocation" type="label">MASGAU will use this location to restore to</string>
   <string name="RestoreUserChoice" type="label">Choose the user to restore to</string>
   <string name="RestoreUser" type="label">This user will be used</string>
   <string name="RestoreSelectFiles" type="label">Select Files To Restore</string>

@@ -108,8 +108,6 @@
   <string name="PurgeConfirmation" type="message">Purging erases all detected save paths for the specified game\nAre you sure you want to continue?</string>
   <string name="PurgeRootChoice" type="title">Multiple Roots Detected</string>
   <string name="PurgeRootChoice" type="message">Choose The Root To Purge</string>
-  <string name="PurgeError" type="title">Purge Root Error</string>
-  <string name="PurgeError" type="message">There was an error while attempting to purge %0</string>
 
   <!-- Backup process -->
 
