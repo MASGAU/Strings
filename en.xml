@@ -103,6 +103,8 @@
   <string name="JumpMainProgramAllUsers" type="tooltip">Open MASGAU in %AllUsersMode%</string>
 
 
+  <string name="RunningInTray" type="message">MASGAU Is Running In The Tray\nClick This Icon To Open The Window Again\nRight-Click This Icon To Exit MASGAU</string>
+  
   <!-- File types -->
   <string name="Gb7FileDescription" type="label">MASGAU Save Archive</string>
   <string name="Gb7FileDescriptionPlural" type="label">MASGAU Save Archives</string>
@@ -183,7 +185,7 @@
   
   <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="P">Purge</string>
-  <string name="Purge" type="tooltip">Erases the detected locations of, and optionally the archives related to, the selected games</string>
+  <string name="Purge" type="tooltip">Erases the detected locations of the selected games</string>
   <string name="PurgeJustGame" type="label">Purge Game Only</string>
   <string name="PurgeJustGame" type="tooltip">Erases the detected locations of (but not the archives related to) the selected games</string>
   <string name="PurgeGameAndArchives" type="label">Purge Game And Archive</string>
