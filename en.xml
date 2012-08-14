@@ -67,8 +67,9 @@
   <string name="Stopping" type="source">Stopping...</string>
   <string name="Stopping" type="message">%Stopping%</string>
   <string name="Stopping" type="label">%Stopping%</string>
-  
-  <string name="SuppressFurtherMessages" type="label">Stop Asking Me This</string>
+
+  <string name="SuppressFurtherRequests" type="label">Stop Asking Me This</string>
+  <string name="SuppressFurtherMessages" type="label">Stop Telling Me This</string>
 
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Add" type="label" hotkey="A">Add</string>
@@ -616,4 +617,8 @@
   <string name="ExceptionInformation" type="label">Exception Information</string>
 
 
+  <string name="ElevationXPWarning" type="message">Elevation Requires Freedom</string>
+
+  <string name="ElevationXPWarning" type="message">A window may appear after this one that will have a check box labelled:\n"Protect my computer and data from unauthorized program activity"\nThis needs to be UNCHECKED or MASGAU will NOT be able to perform the requested operation.</string>
+  
 </strings>
