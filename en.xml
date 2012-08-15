@@ -503,9 +503,7 @@
   <string name="ParentGameDoesntExist" type="title">Wasting my gorramn time</string>
   <!-- %0: The name of the missing parent game -->
   <string name="ParentGameDoesntExist" type="message">The specified parent game %0 is not present in the profiles xml\nYou either spelled it wrong, or this is a chain effect from another error</string>
-  <string name="UnknownGame" type="title">Unknown</string>
-  <!-- %0: The name of the missing game -->
-  <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0</string>
+
 
   <!-- Archive-related strings-->
   <string name="LoadingArchives" type="message">Loading Archives (%0/%1)</string>
@@ -624,7 +622,12 @@
 
 
   <string name="ElevationXPWarning" type="title">Elevation Requires Freedom</string>
-
   <string name="ElevationXPWarning" type="message">A window may appear after this one that will have a check box labelled:\n"Protect my computer and data from unauthorized program activity"\nThis needs to be UNCHECKED or MASGAU will NOT be able to perform the requested operation.</string>
+
+  <string name="UnknownGame" type="title">Unknown</string>
+  <!-- %0: The name of the missing game -->
+  <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0.\nPlease click "Send Report" so that I can work on fixing this.</string>
+  <string name="ArchiveGameNotFound" type="label">The game this archive is for couldn't be found,\nbut the archive has a record of the folder it came from.\nYou can restore to this folder if desired.</string>
   
+
 </strings>
