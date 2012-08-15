@@ -227,7 +227,7 @@
   <string name="CheckForUpdates" type="tooltip">Reaches out to the internet and checks if there is a new version of MASGAU, or if there is new game information</string>
   <string name="DataUpdateAvailable" type="label" hotkey="U">Update Game Data</string>
   <string name="DataUpdateAvailable" type="tooltip">Click to download the latest game data from the interwebs</string>
-  <string name="DataUpdateAvailable" type="message">There are update game data files!\nClick "Update Game Data" in the main window to download them!</string>
+  <string name="DataUpdateAvailable" type="message">There are new game data files!\nClick "Update Game Data" in the main window to download them!</string>
   <string name="ProgramUpdateAvailable" type="label" hotkey="U">Update MASGAU</string>
   <string name="ProgramUpdateAvailable" type="tooltip">Click to download the latest version of MASAU from the interwebs</string>
   <string name="ProgramUpdateAvailable" type="message">There is a new version of MASGAU available!\nClick "Update MASGAU" in the main window to download it!</string>
