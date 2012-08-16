@@ -71,6 +71,9 @@
   <string name="SuppressFurtherRequests" type="label">Stop Asking Me This</string>
   <string name="SuppressFurtherMessages" type="label">Stop Telling Me This</string>
 
+  <!-- Used when an XML file with an unknown version is encountered -->
+  <string name="UnknownVersion" type="label">Unknown</string>
+  
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Add" type="label" hotkey="A">Add</string>
   <string name="Apply" type="label" hotkey="A">Apply</string>
@@ -199,6 +202,11 @@
   <string name="Purging" type="message">Purging %0</string>
   <string name="PurgeError" type="title">Purge Root Error</string>
   <string name="PurgeError" type="message">There was an error while attempting to purge %0</string>
+
+  <!-- Problem reporting strings -->
+  <string name="ReportProblem" type="label">Report A Problem</string>
+  <string name="ReportProblem" type="tooltip">Click here to send me an e-mail telling me about a problem you're having, or if you just want to say hi!</string>
+  <string name="PleaseDescribeProblem" type="label">Please Describe Your Problem</string>
 
   <!-- Platform names -->
   <string name="Platform" type="label">Platform: %0</string>
@@ -628,6 +636,7 @@
   <!-- %0: The name of the missing game -->
   <string name="UnknownGame" type="message">MASGAU doesn't have information for the game %0.\nPlease click "Send Report" so that I can work on fixing this.</string>
   <string name="ArchiveGameNotFound" type="label">The game this archive is for couldn't be found,\nbut the archive has a record of the folder it came from.\nYou can restore to this folder if desired.</string>
-  
 
+
+  
 </strings>
