@@ -465,8 +465,7 @@
   <string name="DetectingScummVM" type="message">Detecting ScummVM Paths...</string>
   <!-- Game detection -->
   <string name="DetectingGames" type="message">Detecting Games</string>
-  <string name="DetectingGamesProgress" type="message">Detecting Games (%0/%1)</string>
-  <string name="DetectingMonitoringGamesProgress" type="message">Detecting Games and Setting Up Monitors (%0/%1)</string>
+  <string name="DetectingMonitoringGames" type="message">Detecting Games and Setting Up Monitors</string>
   <string name="LoadingGamesData" type="message">Loading Games Data...</string>
   <!-- Game Information Strings -->
   <string name="NoGamesDetected" type="message">There Were No Games Detected</string>
@@ -514,7 +513,7 @@
 
 
   <!-- Archive-related strings-->
-  <string name="LoadingArchives" type="message">Loading Archives (%0/%1)</string>
+  <string name="LoadingArchives" type="message">Loading Archives</string>
 
   <!-- Generic errors -->
   <string name="Error" type="source">Error</string>
