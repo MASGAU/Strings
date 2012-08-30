@@ -62,8 +62,6 @@
   <!-- This is displayed on the restore tab when the backup path isn't set -->
   <string name="BackupFolderNotSet">Backup Path Has Not Been Set\nYou Can Set It From The Settings Tab</string>
   <!-- This is used for a pop-up alert -->
-  <string name="BackupPathNotSet" type="title">Can't continue</string>
-  <string name="BackupPathNotSet" type="message">Backup path not set, please set it from the main program</string>
   <!-- Monitor-specific settings -->
   <string name="MonitorSettingsTitle">%MASGAU% %Monitor% %Settings%</string>
   <string name="StartMonitorOnLogin">Start Monitor On Login</string>

@@ -106,6 +106,34 @@
   <string name="JumpMainProgramAllUsers" type="label">MASGAU (%AllUsersMode%)</string>
   <string name="JumpMainProgramAllUsers" type="tooltip">Open MASGAU in %AllUsersMode%</string>
 
+  
+  <!-- Version ID translations -->
+  <!-- Operating systems -->
+  <string name="Linux" type="label">Linux</string>
+  <string name="DOS" type="label">DOS</string>
+  <string name="OSX" type="label">OSX</string>
+  <string name="PS1" type="label">PlayStation 1</string>
+  <string name="PS2" type="label">PlayStation 2</string>
+  <string name="PS3" type="label">PlayStation 2</string>
+  <string name="PSP" type="label">PlayStation Portable</string>
+  <string name="Windows" type="label">Windows</string>
+  <string name="WindowsXP" type="label">Windows XP</string>
+  <string name="WindowsVista" type="label">Windows Vista, 7 &amp; 8</string>
+  <string name="Android" type="label">Android</string>
+  
+  <!-- Platforms -->
+  <string name="Flash" type="label">Flash</string>
+  <string name="ScummVM" type="label">ScummVM</string>
+  <string name="SteamCloud" type="label">Steam Cloud</string>
+  <string name="UbisoftSaveStorage" type="label">Ubisoft Launcher Save Storage</string>
+  <string name="RenPy" type="label">Ren'Py</string>
+
+  <!-- Medias -->
+  <string name="Steam" type="label">Steam</string>
+  <string name="Floppy" type="label">Floppy Disk</string>
+  <string name="CD" type="label">CD</string>
+  <string name="GoG" type="label">GoG.com</string>
+  <string name="Download" type="label">Download</string>
 
   <string name="RunningInTray" type="message">MASGAU Is Running In The Tray\nClick This Icon To Open The Window Again\nRight-Click This Icon To Exit MASGAU</string>
   
@@ -156,6 +184,8 @@
   <string name="RestoreOther" type="tooltip">Select a .gb7 file from your computer to restore</string>
 
   <!-- Archive list stuff -->
+  <string name="SelectGameForArchives" type="label">To restore an archive, first select the game(s) you want to restore</string>
+  <string name="SelectGameForArchives" type="label"></string>
   <string name="NumberOfArchives" type="label">There %0{|0|are no archives|1|is 1 archive|*ELSE|are %0 archives} in the backup folder for the %1{|0|what the hell|1|selected game|*ELSE|%1 selected games}:</string>
 
   <!-- Add game stuff -->
@@ -519,6 +549,10 @@
   <string name="Error" type="source">Error</string>
   <string name="ReadWriteError" type="source">Literacy %Error%</string>
   <string name="UserLoadError" type="source">User Load %Error%</string>
+
+  <string name="BackupPathNotSet" type="title">Can't continue</string>
+  <string name="BackupPathNotSet" type="message">Backup path not set, please set it</string>
+
 
   <!-- Generic exe-running errors -->
   <string name="ExeRunError" type="title">Running is for wimps</string>
