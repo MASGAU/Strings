@@ -535,8 +535,9 @@
   <string name="DuplicateGame" type="title">Duplicate Game Data Entry</string>
   <!-- %0: The name of the game 
        %1: The name of one of the files containing the duplicate game 
-       %2 : The name of the second file-->
-  <string name="DuplicateGame" type="message">There are two games labelled as %0.\nThe first is in %1 and the second is in %2.</string>
+       %2: The name of the second file
+       %3: The name of the file that will be used-->
+  <string name="DuplicateGame" type="message">There are two games labelled as %0.\nThe first is in %1 and the second is in %2.\nThe one from %3 will be used.</string>
   <string name="ParentGameDoesntExist" type="title">Wasting my gorramn time</string>
   <!-- %0: The name of the missing parent game -->
   <string name="ParentGameDoesntExist" type="message">The specified parent game %0 is not present in the profiles xml\nYou either spelled it wrong, or this is a chain effect from another error</string>
