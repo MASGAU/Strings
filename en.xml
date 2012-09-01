@@ -47,6 +47,9 @@
   <string name="AllUserModeButton" type="tooltip">Running in All Users Mode (Click to switch to Single User Mode)</string>
   <string name="SingleUserModeButton" type="tooltip">Running in Single User Mode (Click to switch to All Users Mode)</string>
 
+  <string name="SendToTaskBar" type="tooltip">Send To Task Bar</string>
+  <string name="ToggleFullscreen" type="tooltip">Toggle Fullscreen</string>
+  <string name="CloseWindow" type="tooltip">Close Window</string>
   <string name="ExitMASGAU" type="label">Exit MASGAU</string>
 
   <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
