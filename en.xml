@@ -65,6 +65,7 @@
   <string name="Other" type="label">Other</string>
   <string name="File" type="label">File</string>
   <string name="Ready" type="label">Ready</string>
+  <string name="RestoreArchives" type="label">Restore/Archives</string>
 
   <!-- really generic messages -->
   <string name="Stopping" type="source">Stopping...</string>
@@ -185,6 +186,13 @@
   <string name="RestoreGames" type="tooltip">%0{|0|Select a game, and then an archive|1|Restore the archive you have selected below|*ELSE|Restore the archives you have selected below|*NULL|Select a game, and then an archive}</string>
   <string name="RestoreOther" type="label" hotkey="O">Restore Other...</string>
   <string name="RestoreOther" type="tooltip">Select a .gb7 file from your computer to restore</string>
+
+  <!-- Delete archive button -->
+  <string name="DeleteSelectedArchives" type="label" hotkey="D">Delete %0{|0|Nothing|1|Selected Archive|*ELSE|%0 Selected Archives|*NULL|Nothing}</string>
+  <string name="DeleteSelectedArchives" type="tooltip">%0{|0|Select a game, and then an archive|1|Delete the archive you have selected below|*ELSE|Delete the archives you have selected below|*NULL|Select a game, and then an archive}</string>
+  <string name="DeleteArchiveConfirm" type="title">Like the sands of the hourglass, so are the archives of our lives</string>
+  <!--  %0 - The archive to be deleted -->
+  <string name="DeleteArchiveConfirm" type="message">Are you sure you want to delete %0?</string>
 
   <!-- Archive list stuff -->
   <string name="SelectGameForArchives" type="label">Archive(s) in the backup folder for the selected game(s) will appear here</string>
