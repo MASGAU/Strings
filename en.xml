@@ -348,6 +348,7 @@
   <string name="ExtractingArchive" type="message">Extracting Archive...</string>
   <string name="CopyingFilesToDestination" type="message">Copying Files To Destination...</string>
   <string name="RestoringFile" type="message">Restoring %0</string>
+  <string name="RestoringFile" type="label">Restoring %0</string>
   <string name="RestoreMultipleArchives" type="title">Convenience?</string>
   <string name="RestoreMultipleArchives" type="message">You're restoring more than one archive,\nwould you like MASGAU to not prompt you for input unless absolutely necessary?</string>
   <!-- Errors -->
