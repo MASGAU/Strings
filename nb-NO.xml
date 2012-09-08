@@ -1,42 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strings.xsd">
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strings.xsd" lang="nb-NO">
   <!--  For some of these, there are pairs of strings that have the same name,
-        but one will have Title at the end, and the other Message.
+        but one will have  a type of "title" , and the other "message".
         These are for dialog boxes that are entirely translated, and should be
         translated with the thought that they will be displayed together.
         I tend to put random things, sometimes jokes, as the dialog titles,
         and if I can I like to give the message an insulting tone.
         Feel free to be clever and use your sense of humor!-->
 
+  <!-- There are some strings that are meant to have variables inserted into them.
+      They look like this:
+        <string name="BackupMultipleGames">Back These %0 Up</string> 
+      The first variable will be inserted at %0, the second at %1, and so on.
+      
+      Title/message pairs, which are typically retreived together, will perform the
+      replacement procedure on each string as if it was an independent string, 
+      so a %0 in the title AND a %0 in the message will BOTH be repalced with the SAME variable.
+  -->
+
+  <!-- Strings that contain words surrounded by % are used to refer to other strings
+        For instance %MASGAU% will be automatically replaced by the contents of the string called MASGAU
+        These will ONLY use strings that are of type "source" -->
 
   <!-- Probably shouldn't translate this one -->
   <string name="MASGAU" type="source">MASGAU</string>
+
+  <!-- You can translate this one, but be sure to keep the letters consistent with the acronym;
+        The first word should always be MASGAU, and the other words should all start with
+        (in this order) an A, an S, a G, an A, and a U, or visualy similar characters in
+        the language being used-->
   <string name="MASGAUFull" type="source">MASGAU Automatic Save Game Archive Utility</string>
+  <!-- %0: The version number of MASGAU -->
   <string name="MASGAUAboutVersion" type="label">%MASGAUFull% versjon:%0</string>
   <string name="AboutClose" type="label">Takk, det var alt jeg trengte å vite</string>
 
+  <!-- %0 = The version number of the release (e.g. 0.10) 
+      %1 = The mode that MASGAU is running in (Single User, All Users, etc., sourced from Program Modes below)-->
   <string name="MASGAUWindowTitle" type="label">MASGAU versjon:%0 - %1</string>
 
+  <!-- Program Modes - These get appended to the window title, as well as to the jump list items below -->
   <string name="AllUsersMode" type="source">Alle brukere modus</string>
   <string name="SingleUserMode" type="source">Enkeltbrukermodus</string>
+  <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
   <string name="PortableMode" type="label">%0 Portabel</string>
 
   <string name="AllUserModeButton" type="tooltip">Kjører i %AllUsersMode% (Klikk for å bytte til %SingleUserMode%)</string>
   <string name="SingleUserModeButton" type="tooltip">Kjører i %SingleUserMode% (Klikk for å bytte til %AllUsersMode%)</string>
 
+  <string name="SendToTaskBar" type="tooltip">Send til oppgavelinjen.</string>
+  <!--<string name="ToggleFullscreen" type="tooltip">Toggle Fullscreen</string> Not sure-->
+  <string name="CloseWindow" type="tooltip">Lukk Vindu</string>
   <string name="ExitMASGAU" type="label">Avslutt MASGAU</string>
 
+  <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
+      so you don't need to worry about these hotkeys conflicting with the controls'-->
   <string name="BackupRestore" type="label" hotkey="S">Sikkerhetskopier/Gjenopprett</string>
   <string name="Monitoring" type="label" hotkey="O">Overvåker</string>
   <string name="Analyzer" type="label" hotkey="A">Analyserer</string>
 
+  <!-- Ribbon groups -->
   <string name="Game" type="label">Spill</string>
-  <string name="Games" type="label">%Game%</string>
+  <string name="Games" type="label">Spill</string>
   <string name="Paths" type="label">Baner</string>
   <string name="Other" type="label">Andre</string>
   <string name="File" type="label">Fil</string>
   <string name="Ready" type="label">Klar</string>
+  <string name="RestoreArchives" type="label">Gjenopprett/Arkiver</string>
 
+  <!-- really generic messages -->
   <string name="Stopping" type="source">Stopper...</string>
   <string name="Stopping" type="message">Stopper...</string>
   <string name="Stopping" type="label">Stopper...</string>
@@ -44,8 +75,10 @@
   <string name="SuppressFurtherRequests" type="label">Stopp å spørre meg om dette</string>
   <string name="SuppressFurtherMessages" type="label">Stopp å fortelle meg om dette</string>
 
+  <!-- Used when an XML file with an unknown version is encountered -->
   <string name="UnkownVersion" type="label">Ukjent</string>
 
+  <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
   <string name="Add" type="label" hotkey="L">Legg til</string>
   <string name="Apply" type="label" hotkey="B">Bruk</string>
   <string name="Browse" type="label">Bla</string>
@@ -71,13 +104,19 @@
   <string name="Backup" type="label" hotkey="S">Ta sikkerhetskopi</string>
   <string name="Restore" type="label" hotkey="G">Gjenopprett</string>
 
+  <!-- Strings for the jump lists -->
   <string name="JumpMainProgram" type="label">MASGAU (%SingleUserMode%)</string>
   <string name="JumpMainProgram" type="tooltip">Åpne MASGAU i %SingleUserMode%</string>
   <string name="JumpMainProgramAllUsers" type="label">MASGAU (%AllUsersMode%)</string>
   <string name="JumpMainProgramAllUsers" type="tooltip">Åpne MASGAU i %AllUSersMode%</string>
 
+  <!-- Medias -->
+  <string name="Floppy" type="label">Diskett</string>
+  <string name="Download" type="label">Nedlastning</string>
+
   <string name="RunningInTray" type="message">MASGAU kjører i statusfeltet\nKlikk på dette ikonet for å åpne vinduet igjen\nHøyreklikk dette ikonet for å Avslutte MASGAU</string>
 
+  <!-- File types -->
   <string name="Gb7FileDescription" type="label">MASGAU Lagrings Arkiv</string>
   <string name="Gb7FileDescriptionPlural" type="label">MASGAU Lagrings Arkiver</string>
   <string name="TxtFileDescription" type="label">Tekst fil</string>
@@ -85,6 +124,7 @@
   <string name="AllFileDescription" type="label">Alle filer</string>
   <string name="AllFileDescriptionPlural" type="label">Alle filene</string>
 
+  <!-- Backup/Restore tab  -->
   <string name="RefreshGames" type="label" hotkey="O">Oppdater spill</string>
   <string name="RefreshGames" type="tooltip">Søker igjennom datamaskinen etter nye lagringsfiler</string>
   <string name="AddGame" type="label" hotkey="L">Legg til</string>
@@ -97,10 +137,17 @@
   <string name="SubmitGame" type="tooltip">Send inn de usendte egendefinerte spillene</string>
   <string name="CopyGame" type="label" hotkey="C">Kopier</string>
   <string name="CopyGame" type="tooltip">Kopier det valgte spillet til ett nytt egendefinert spill</string>
-
+  <!-- Backup buttons -->
   <string name="BackupAllGames" type="label" hotkey="B">Sikkerhetskopier alle spillene</string>
   <string name="BackupAllGames" type="tooltip">Sikkerhetskopier alle spillene som er funnet!</string>
-
+  <!-- %0: The number of games currently selected -->
+  <!-- This demonstrates conditional variables. The %0 specifies that we will test against the 0th variable passed by the program.
+        Inside of the brackets is a list of key-value pairs, seperated by a character. 
+        The first character will be used as the seperating character (here it's a pipe | ), so you can make it whatever character you want.
+        There must always be one key and one value. If %0 matches any of the keys, the value for that key will be used.
+        *ELSE is a special key, it will match anything not matched by the other keys, but only if there IS a value provided by the program.
+        *NULL is another special key that will be used when NO value is provided by the program. This is usually the case with the initial state of a button.
+        -->
   <string name="BackupGames" type="label" hotkey="S">Sikkerhetskopier %0{|0|Ingen spill|1|det valgte spillet|*ELSE|de valgte spillene|*NULL|Ingen spill}</string>
   <string name="BackupGames" type="tooltip">%0{|0|Velg noen spill nedenfor, ok?|1|Sikkerhetskopier kun det ene spillet du har valgt nedenfor|*ELSE|Sikkerhetskopier %0 spillene som du har valgt nedenfor|*NULL|Velg noen spill nedenfor, ok?}</string>
   <string name="CreateCustomBackup" type="label" hotkey="T">Lag en tilpasset sikkerhetskopi</string>
@@ -108,14 +155,25 @@
   <string name="ChangeBackupFolder" type="label" hotkey="B">Bytt sikkerhetskopi mappe...</string>
   <string name="ChangeBackupFolder" type="tooltip">Bytt sikkerhetskopi mappen</string>
   <string name="OpenBackupFolder" type="label" hotkey="O">Åpne sikkerhetskopi mappen</string>
-
+  <!-- Restore buttons -->
+  <!-- %0: The number of archives selected in the interface -->
   <string name="RestoreGames" type="label" hotkey="R">Gjenopprett %0{|0|ingenting|1|det valgte arkivet|*ELSE|de %0 valgte arkivene|*NULL|ingenting}</string>
   <string name="RestoreGames" type="tooltip">%0{|0|Velg ett spill, deretter ett arkiv|1|Gjenopprett det arkivet du har valgt nedenfor|*ELSE|Gjenopprett arkivene du har valgt nedenfor|*NULL|Velg ett spill, deretter ett arkiv}</string>
   <string name="RestoreOther" type="label" hotkey="O">Gjenopprett annet...</string>
   <string name="RestoreOther" type="tooltip">Velg ett .gb7 fil fra din maskin som skal gjenopprettes</string>
 
+  <!-- Delete archive button -->
+  <string name="DeleteSelectedArchives" type="label" hotkey="D">Slett %0{|0|ingenting|1|det valgte arkivet|*ELSE|%0 de valgte arkivene|*NULL|ingenting}</string>
+  <string name="DeleteSelectedArchives" type="tooltip">%0{|0|Velg ett spill, deretter ett arkiv|1|Slett arkivet du valgte nedenfor|*ELSE|Slett arkivene du har valgt nedenfor.|*NULL|Velg ett spill, deretter ett arkiv}</string>
+  <string name="DeleteArchiveConfirm" type="title">Som sanden i timeglasset, så er arkivene våre liv</string>
+  <!--  %0 - The archive to be deleted -->
+  <string name="DeleteArchiveConfirm" type="message">Er du sikker på at du vil slette {0}?</string>
+
+  <!-- Archive list stuff -->
+  <string name="SelectGameForArchives" type="label">Arkiv(er) i gjenopprettelses mappen for det valgte spillet vil bli vist her</string>
   <string name="NumberOfArchives" type="label">Det er %0{|0|ingen arkiv|*ELSE|%0 arkiv} i sikkerhetskopi mappen for %1{|0|ka fan?|1|det valgte spillet|*ELSE|de %1 spillene}</string>
 
+  <!-- Add game stuff -->
   <string name="AddGameHeader" type="label">Legg til ett uoppdaget spill!</string>
   <string name="AddGameTitle" type="label">Hva er spillets tittel?</string>
   <string name="AddGameTitleNotUnique" type="label">Hva er spillets tittel? (Må være unikt)</string>
@@ -127,21 +185,20 @@
   <string name="AddGameExclusions" type="label">Hvilke filer skal IKKE bli lagret?</string>
   <string name="AddGameExclusions" type="tooltip">%FileCriteriaExplanation%</string>
   <string name="SelectSaveFolder" type="label">Vennligst velg mappen som inneholder lagringsfilene</string>
+  <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
   <string name="MyComputer" type="label">Min Datamaskin</string>
   <string name="ProgramFiles" type="label">Programfiler</string>
   <string name="ProgramFilesX86" type="label">Programfiler (x86)</string>
   <string name="MyDocuments" type="label">Mine Dokumenter</string>
   <string name="SavedGames" type="label">Lagrede spill</string>
-  <string name="VirtualStore" type="label">VirtualStore</string>
-  <string name="LocalAppData" type="label">Local AppData</string>
-  <string name="RoamingAppData" type="label">(Roaming) AppData</string>
-  <string name="Steamapps" type="label">Steamapps</string>
   <string name="PublicUser" type="label">Felles Brukere</string>
   <string name="AllUsers" type="label">Alle Brukere\ProgramData</string>
-
+  <!-- For confirming the deleting of a game -->
+  <!-- %0 = the number of games to delete -->
   <string name="DeleteGameConfirm" type="title">Er du sikker?</string>
   <string name="DeleteGameConfirm" type="message">Er du sikker på at du vil slette %0{|1|dette %0 spillet|*ELSE|disse %0 spillene}?</string>
 
+  <!-- Purge strings -->
   <string name="Purge" type="label" hotkey="R">Rensk</string>
   <string name="Purge" type="tooltip">Slett de oppdagede banene til de valgte spillene</string>
   <string name="PurgeJustGame" type="label">Rensk kun spill</string>
@@ -157,32 +214,31 @@
   <string name="PurgeError" type="title">Rensk røtter feil</string>
   <string name="PurgeError" type="message">Det skjedde en feil mens rensking av %0 pågikk</string>
 
+  <!-- Problem reporting strings -->
   <string name="ReportProblem" type="label">Rapporter ett problem</string>
   <string name="ReportProblem" type="tooltip">Klikk her for å sende meg en e-post som forteller meg om ett problem du har, eller hvis du bare ønsker å si hei! (Kun Engelsk)</string>
   <string name="PleaseDescribeProblem" type="label">Vennligst forklar problemet ditt</string>
 
+  <!-- Platform names -->
   <string name="Platform" type="label">Plattform: %0</string>
-  <string name="Android" type="label">Android</string>
-  <string name="DOS" type="label">DOS</string>
-  <string name="Flash" type="label">Flash</string>
-  <string name="Linux" type="label">Linux</string>
-  <string name="Multiple" type="label">flere</string>
-  <string name="OSX" type="label">Mac OS X</string>
-  <string name="PS1" type="label">PlayStation</string>
-  <string name="PS2" type="label">PlayStation 2</string>
-  <string name="PS3" type="label">PlayStation 3</string>
-  <string name="PSP" type="label">PlayStation Portable</string>
-  <string name="ScummVM" type="label">ScummVM</string>
-  <string name="Steam" type="label">Steam</string>
-  <string name="Windows" type="label">Windows</string>
-
+  <string name="Multiple" type="label">Flere</string>
+  
   <!-- Region names -->
   <string name="Region" type="label">Område: %0</string>
   <string name="EU" type="label">Europa</string>
   <string name="USA" type="label">Forente Stater</string>
 
+  <!-- Udpate button (these are all displayed on the same button -->
   <string name="CheckingForUpdates" type="label" hotkey="O">Ser etter Oppdateringer...</string>
   <string name="CheckForUpdates" type="label" hotkey="O">Se etter Oppdateringer</string>
   <string name="CheckForUpdates" type="tooltip">Når ut til internett og sjekker om det er en ny versjon av MASGAU, eller om der er nye spillinformasjoner.</string>
-  
+  <string name="DataUpdateAvailable" type="label" hotkey="O">Oppdater spillinformasjon.</string>
+  <string name="DataUpdateAvailable" type="tooltip">Klikk for å laste ned de siste spillinformasjonene fra internett.</string>
+  <string name="DataUpdateAvailable" type="message">Det er nye spillinformasjonsfiler!\nKlikk "Oppdater spillinformasjon." i hoved vinduet for å laste dem ned!</string>
+  <string name="ProgramUpdateAvailable" type="label" hotkey="O">Oppdater MASGAU</string>
+  <string name="ProgramUpdateAvailable" type="tooltip">Klikk for å laste ned den siste versjonen av MASGAU fra internett.</string>
+  <string name="ProgramUpdateAvailable" type="message">Det er en ny versjon av MAGAU tilgjengelig!\nKill "Oppdater MASGAU" i hoved vinduet for å laste den ned!</string>
+  <!-- %0: The name of the current file being updated -->
+  <string name="UpdatingFile" type="message">Oppdaterer %0</string>
+
 </strings>
