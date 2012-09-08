@@ -47,6 +47,9 @@
   <string name="AllUserModeButton" type="tooltip">Running in All Users Mode (Click to switch to Single User Mode)</string>
   <string name="SingleUserModeButton" type="tooltip">Running in Single User Mode (Click to switch to All Users Mode)</string>
 
+  <string name="SendToTaskBar" type="tooltip">Send To Task Bar</string>
+  <string name="ToggleFullscreen" type="tooltip">Toggle Fullscreen</string>
+  <string name="CloseWindow" type="tooltip">Close Window</string>
   <string name="ExitMASGAU" type="label">Exit MASGAU</string>
 
   <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
@@ -62,6 +65,7 @@
   <string name="Other" type="label">Other</string>
   <string name="File" type="label">File</string>
   <string name="Ready" type="label">Ready</string>
+  <string name="RestoreArchives" type="label">Restore/Archives</string>
 
   <!-- really generic messages -->
   <string name="Stopping" type="source">Stopping...</string>
@@ -183,9 +187,15 @@
   <string name="RestoreOther" type="label" hotkey="O">Restore Other...</string>
   <string name="RestoreOther" type="tooltip">Select a .gb7 file from your computer to restore</string>
 
+  <!-- Delete archive button -->
+  <string name="DeleteSelectedArchives" type="label" hotkey="D">Delete %0{|0|Nothing|1|Selected Archive|*ELSE|%0 Selected Archives|*NULL|Nothing}</string>
+  <string name="DeleteSelectedArchives" type="tooltip">%0{|0|Select a game, and then an archive|1|Delete the archive you have selected below|*ELSE|Delete the archives you have selected below|*NULL|Select a game, and then an archive}</string>
+  <string name="DeleteArchiveConfirm" type="title">Like the sands of the hourglass, so are the archives of our lives</string>
+  <!--  %0 - The archive to be deleted -->
+  <string name="DeleteArchiveConfirm" type="message">Are you sure you want to delete %0?</string>
+
   <!-- Archive list stuff -->
-  <string name="SelectGameForArchives" type="label">To restore an archive, first select the game(s) you want to restore</string>
-  <string name="SelectGameForArchives" type="label"></string>
+  <string name="SelectGameForArchives" type="label">Archive(s) in the backup folder for the selected game(s) will appear here</string>
   <string name="NumberOfArchives" type="label">There %0{|0|are no archives|1|is 1 archive|*ELSE|are %0 archives} in the backup folder for the %1{|0|what the hell|1|selected game|*ELSE|%1 selected games}:</string>
 
   <!-- Add game stuff -->
@@ -338,6 +348,7 @@
   <string name="ExtractingArchive" type="message">Extracting Archive...</string>
   <string name="CopyingFilesToDestination" type="message">Copying Files To Destination...</string>
   <string name="RestoringFile" type="message">Restoring %0</string>
+  <string name="RestoringFile" type="label">Restoring %0</string>
   <string name="RestoreMultipleArchives" type="title">Convenience?</string>
   <string name="RestoreMultipleArchives" type="message">You're restoring more than one archive,\nwould you like MASGAU to not prompt you for input unless absolutely necessary?</string>
   <!-- Errors -->
@@ -535,8 +546,9 @@
   <string name="DuplicateGame" type="title">Duplicate Game Data Entry</string>
   <!-- %0: The name of the game 
        %1: The name of one of the files containing the duplicate game 
-       %2 : The name of the second file-->
-  <string name="DuplicateGame" type="message">There are two games labelled as %0.\nThe first is in %1 and the second is in %2.</string>
+       %2: The name of the second file
+       %3: The name of the file that will be used-->
+  <string name="DuplicateGame" type="message">There are two games labelled as %0.\nThe first is in %1 and the second is in %2.\nThe one from %3 will be used.</string>
   <string name="ParentGameDoesntExist" type="title">Wasting my gorramn time</string>
   <!-- %0: The name of the missing parent game -->
   <string name="ParentGameDoesntExist" type="message">The specified parent game %0 is not present in the profiles xml\nYou either spelled it wrong, or this is a chain effect from another error</string>
