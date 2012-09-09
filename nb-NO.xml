@@ -241,4 +241,90 @@
   <!-- %0: The name of the current file being updated -->
   <string name="UpdatingFile" type="message">Oppdaterer %0</string>
 
+  <!-- email strings -->
+  <string name="ManualMail" type="source">Du kan manuelt sende eposten til submissions@gamesave.info</string>
+  <string name="CheckingConnection" type="label">Sjekker tilkoblingen...</string>
+  <string name="SendReport" type="label">Send Rapport</string>
+  <string name="CantSendReport" type="label">Epost blokkert</string>
+  <string name="CantSendReport" type="tooltip">%ManualMail%</string>
+  <string name="SendingReport" type="label">Sender Rapport...</string>
+  <string name="SendFailed" type="label">Sending Feilet</string>
+  <!-- %0 - the error information for the failed email send -->
+  <string name="SendFailed" type="tooltip">%ManualMail%\n%0</string>
+  <string name="ReportSent" type="label">Rapporten er sendt!</string>
+  
+  <!-- Manual Archive -->
+  <string name="ManualArchiveTitle" type="label">Lag et tilpasset arkiv</string>
+  <string name="ManualArchiveSource" type="label">Hvor vil du hente lagringsfilene ifra?</string>
+  <string name="ManualArchiveFiles" type="label">Hvilke filer skal legges i sikkerhetskopien?</string>
+  <string name="WhereSaveArchive" type="label">Og hvor vil du legge denne sikkerhetskopien?</string>
+
+
+  <!-- Backup process -->
+  <string name="ValidatingBackupPath" type="message">Validerer sikkerhetskopi banen...</string>
+  <!-- %0: The total # of games being processed-->
+  <string name="GamesToBeBackedUpCount" type="message">%0 Spill som skal sikkerhetskopieres</string>
+  <!-- %0: The name of the game being processed -->
+  <string name="BackingUpSingleGame" type="message">Sikkerhetskopierer %0</string>
+  <!--  %0: The name of the current game being processed
+        %1: The nth game being processed
+        %2: The total # of games being processed -->
+  <string name="BackingUpMultipleGames" type="message">(%1/%2) Sikkerhetskopierer %0...</string>
+  <!-- Archive Handler -->
+  <!-- This is displayed while MASGAU is waiting for an in-use archive to become available
+        %0 = The name of the game owning the archive -->
+  <string name="ArchiveInUseWaiting" type="message">%0 - Arkiv i bruk, venter (%1/%2)</string>
+  <!-- Errors -->
+  <string name="FileInUseTimeout" type="title">Lei av å vente!</string>
+  <!-- %0: The file name (without path) of the archive that has been inaccessible
+        %1: How many seconds the file has been inaccessible-->
+  <string name="FileInUseTimeout" type="message">Arkivet %0 har vært utilgjengelig i %1 sekunder, den vil bli hoppet over</string>
+  <string name="RevisionCopyError" type="title">Versjonskontroll er for pingler uansett</string>
+  <!-- %0: The name of the archive that was un-copyable -->
+  <string name="RevisionCopyError" type="message">Det oppstod en feil under forsøket på lage en revisjons kopi av %0</string>
+  <string name="NothingToBackup" type="title">Det føles som at det er</string>
+  <string name="NothingToBackup" type="message">Ingenting å sikkerhetskopiere</string>
+
+
+  <!-- Restore window -->
+  <string name="RestoreTitle" type="label">%MASGAU% gjenoppretter</string>
+  <string name="RestoreNoCandidatesFound" type="label">Ingen gjenopprettelses kandidater funnet</string>
+  <string name="RestoreNoLocationFound" type="label">Ingen baner funnet</string>
+  <string name="RestoreRemovableDriveChoice" type="label">Velg den flyttbare stasjonen å gjenopprette til</string>
+  <string name="RestoreRemovableDrive" type="label">Denne flyttbare stasjonen kommer til å bli brukt</string>
+  <string name="RestoreConfirmPath" type="label">Bekreft gjenopprettelses plasseringen</string>
+  <string name="RestoreLocationChoice" type="label">Velg plasseringen MASGAU skal gjenopprette til</string>
+  <string name="RestoreLocation" type="label">MASGAU vil bruke denne plasseringen å gjonopprette til</string>
+  <string name="RestoreUserChoice" type="label">Velg brukeren å gjenopprette til</string>
+  <string name="RestoreUser" type="label">Denne brukeren vil bli brukt</string>
+  <string name="RestoreSelectFiles" type="label">Velg filer som skal gjenopprettes</string>
+  <string name="RestoreComplete" type="label">Gjenopprettingen er fullført</string>
+  <string name="RestoreCompleteWithComment" type="label">Annet enn det, gjenopprettelsen er ferdig!</string>
+  <!-- Restore process -->
+  <string name="IsRestoring" type="label">%0 gjenoppretter</string>
+  <string name="DetectingGameForRestoration" type="message">Oppdager spill for gjenoppretting...</string>
+  <string name="CheckingDestination" type="message">Kontrollerer destinasjonen...</string>
+  <string name="ExtractingArchive" type="message">Pakker ut arkivet...</string>
+  <string name="CopyingFilesToDestination" type="message">Kopierer filene til destinasjonen...</string>
+  <string name="RestoringFile" type="message">Gjenoppretter %0</string>
+  <string name="RestoringFile" type="label">Gjenoppretter %0</string>
+  <string name="RestoreMultipleArchives" type="title">Praktisk?</string>
+  <string name="RestoreMultipleArchives" type="message">Du gjenoppretter mer enn ett arkiv,\n vil du at MASGAU ikke skal spørre deg for innspill med mindre absolutt nødvending?</string>
+  <!-- Errors -->
+  <string name="RestoreSomeFailed" type="label">Noen arkiver ble ikke gjenopprettet</string>
+  <string name="RestoreProgramNotFound" type="title">Folk folk folk, stå opp stå opp</string>
+  <string name="RestoreProgramNotFound" type="message">%0 ble ikke funnet.\nDu må kanskje installere MASGAU på nytt.</string>
+  <string name="NoRestorePathsDetected" type="title">Kan ikke gjenopprette det vi ikke kan finne</string>
+  <string name="NoRestorePathsDetected" type="message">Ingen gjenopprettelses baner funnet for %0</string>
+  <string name="NoUsersForEV" type="title">Bruker feil</string>
+  <string name="NoUsersForEV" type="message">Systemvariabelen %0 krever en bruker å gjenopprette til, men ingen ble oppdaget\nPrøv å lage en lagringsfil med ett spill du vet bruker mappen</string>
+  <!-- This is displayed in the Main program -->
+  <string name="RestoreNoFiles" type="title">Gjenopprette ingenting? Det er bare dumt</string>
+  <string name="RestoreNoFiles" type="message">Du har ikke valgt noen filer å gjenopprette\nTenk på det du</string>
+  <!-- This would only display only in the event of an internal error -->
+  <string name="NoRestoreFileSelected" type="title">Ingenting å gjøre</string>
+  <string name="NoRestoreFileSelected" type="message">Ingen filer var valgt til gjenoppretting</string>
+  <string name="Finished" type="label">Fullført</string>
+  
+
 </strings>
