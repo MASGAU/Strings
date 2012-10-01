@@ -220,6 +220,7 @@
   <string name="LocalAppData" type="label">Local AppData</string>
   <string name="RoamingAppData" type="label">(Roaming) AppData</string>
   <string name="Steamapps" type="label">Steamapps</string>
+  <string name="SteamUserData" type="label">Steam User Data (Steam Cloud)</string>
   <string name="PublicUser" type="label">Public User</string>
   <string name="AllUsers" type="label">All Users/ProgramData</string>
   <!-- For confirming the deleting of a game -->
