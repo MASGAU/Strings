@@ -191,6 +191,7 @@
   <string name="ProgramFilesX86" type="label">Programfiler (x86)</string>
   <string name="MyDocuments" type="label">Mine Dokumenter</string>
   <string name="SavedGames" type="label">Lagrede spill</string>
+  <string name="SteamUserData" type="label">Steam Bruker Data (Steam Skyen)</string>
   <string name="PublicUser" type="label">Felles Brukere</string>
   <string name="AllUsers" type="label">Alle Brukere\ProgramData</string>
   <!-- For confirming the deleting of a game -->
