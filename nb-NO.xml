@@ -1,336 +1,644 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strings.xsd">
+<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strings.xsd" lang="nb-NO">
   <!--  For some of these, there are pairs of strings that have the same name,
-        but one will have Title at the end, and the other Message.
+        but one will have  a type of "title" , and the other "message".
         These are for dialog boxes that are entirely translated, and should be
         translated with the thought that they will be displayed together.
         I tend to put random things, sometimes jokes, as the dialog titles,
         and if I can I like to give the message an insulting tone.
         Feel free to be clever and use your sense of humor!-->
 
+  <!-- There are some strings that are meant to have variables inserted into them.
+      They look like this:
+        <string name="BackupMultipleGames">Back These %0 Up</string> 
+      The first variable will be inserted at %0, the second at %1, and so on.
+      
+      Title/message pairs, which are typically retreived together, will perform the
+      replacement procedure on each string as if it was an independent string, 
+      so a %0 in the title AND a %0 in the message will BOTH be repalced with the SAME variable.
+  -->
+
+  <!-- Strings that contain words surrounded by % are used to refer to other strings
+        For instance %MASGAU% will be automatically replaced by the contents of the string called MASGAU
+        These will ONLY use strings that are of type "source" -->
 
   <!-- Probably shouldn't translate this one -->
-  <string name="MASGAU">MASGAU</string>
-  <string name="MASGAUFullTitle">MASGAU Automatisk arkiveringsverktøy for lagringsfiler</string>
-  <string name="MASGAUPlural">%MASGAU%'s</string>
+  <string name="MASGAU" type="source">MASGAU</string>
 
-  <!-- Common strings-->
-  <string name="Loading">Laster</string>
-  <string name="Ready">Klar</string>
-  <string name="Progress">Fremdrift</string>
+  <!-- You can translate this one, but be sure to keep the letters consistent with the acronym;
+        The first word should always be MASGAU, and the other words should all start with
+        (in this order) an A, an S, a G, an A, and a U, or visualy similar characters in
+        the language being used-->
+  <string name="MASGAUFull" type="source">MASGAU Automatic Save Game Archive Utility</string>
+  <!-- %0: The version number of MASGAU -->
+  <string name="MASGAUAboutVersion" type="label">%MASGAUFull% versjon:%0</string>
+  <string name="AboutClose" type="label">Takk, det var alt jeg trengte å vite</string>
 
-  <string name="Portable">Portabel</string>
-  <string name="MainProgram">Hovedprogram</string>
-  <string name="AllUsersMode">Alle brukere modus</string>
+  <!-- %0 = The version number of the release (e.g. 0.10) 
+      %1 = The mode that MASGAU is running in (Single User, All Users, etc., sourced from Program Modes below)-->
+  <string name="MASGAUWindowTitle" type="label">MASGAU versjon:%0 - %1</string>
 
-  <string name="File">Fil</string>
-  <string name="Stop">Stopp</string>
-  <string name="Stopping">Stopper</string>
-  <string name="Finished">Ferdig</string>
-  <string name="Backup">Sikkerhetskopier</string>
-  <string name="Open">Åpne</string>
+  <!-- Program Modes - These get appended to the window title, as well as to the jump list items below -->
+  <string name="AllUsersMode" type="source">Alle brukere modus</string>
+  <string name="SingleUserMode" type="source">Enkeltbrukermodus</string>
+  <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
+  <string name="PortableMode" type="label">%0 Portabel</string>
 
-  <string name="About">Om</string>
+  <string name="AllUserModeButton" type="tooltip">Kjører i %AllUsersMode% (Klikk for å bytte til %SingleUserMode%)</string>
+  <string name="SingleUserModeButton" type="tooltip">Kjører i %SingleUserMode% (Klikk for å bytte til %AllUsersMode%)</string>
+
+  <string name="SendToTaskBar" type="tooltip">Send til oppgavelinjen.</string>
+  <!--<string name="ToggleFullscreen" type="tooltip">Toggle Fullscreen</string> Not sure-->
+  <string name="CloseWindow" type="tooltip">Lukk Vindu</string>
+  <string name="ExitMASGAU" type="label">Avslutt MASGAU</string>
+
+  <!-- Ribbon tab headers; the hotkeys here are displayed before thsoe of the ribbon controls,
+      so you don't need to worry about these hotkeys conflicting with the controls'-->
+  <string name="BackupRestore" type="label" hotkey="S">Sikkerhetskopier/Gjenopprett</string>
+  <string name="Monitoring" type="label" hotkey="O">Overvåker</string>
+  <string name="Analyzer" type="label" hotkey="A">Analyserer</string>
+
+  <!-- Ribbon groups -->
+  <string name="Game" type="label">Spill</string>
+  <string name="Games" type="label">Spill</string>
+  <string name="Paths" type="label">Baner</string>
+  <string name="Other" type="label">Andre</string>
+  <string name="File" type="label">Fil</string>
+  <string name="Ready" type="label">Klar</string>
+  <string name="RestoreArchives" type="label">Gjenopprett/Arkiver</string>
+
+  <!-- really generic messages -->
+  <string name="Stopping" type="source">Stopper...</string>
+  <string name="Stopping" type="message">Stopper...</string>
+  <string name="Stopping" type="label">Stopper...</string>
+
+  <string name="SuppressFurtherRequests" type="label">Stopp å spørre meg om dette</string>
+  <string name="SuppressFurtherMessages" type="label">Stopp å fortelle meg om dette</string>
+
+  <!-- Used when an XML file with an unknown version is encountered -->
+  <string name="UnkownVersion" type="label">Ukjent</string>
 
   <!-- Button stuff (the underlines are for key combos, so choose letters wisely) -->
-  <string name="Select">_Velg</string>
-  <string name="Apply">_Bruk</string>
-  <string name="Submit">_Send</string>
-  <string name="Stop">_Stopp</string>
-  <string name="Save">_Lagre</string>
-  <string name="Upload">_Last opp</string>
-  <string name="OK">_OK</string>
-  <string name="Cancel">_Avbryt</string>
-  <string name="Yes">_Ja</string>
-  <string name="No">_Nei</string>
-  <string name="Maybe">_Kanskje</string>
-  <string name="Close">_Lukk</string>
-  <string name="Change">_Endre</string>
-  <string name="Open">_Åpne</string>
-  <string name="Reset">_Tilbakestill</string>
-  <string name="SelectAll">Velg _Alle</string>
-  <string name="SelectNone">Velg _Ingen</string>
-  <string name="Restore">_Gjenopprett</string>
-  <string name="SelectFiles">_Velg Filer</string>
-  <string name="OtherLocation">Andre _Steder...</string>
-  <string name="OtherUser">Andre _Brukere...</string>
+  <string name="Add" type="label" hotkey="L">Legg til</string>
+  <string name="Apply" type="label" hotkey="B">Bruk</string>
+  <string name="Browse" type="label">Bla</string>
+  <string name="Save" type="label" hotkey="S">Lagre</string>
+  <string name="Select" type="label" hotkey="V">Velg</string>
+  <string name="Stop" type="label" hotkey="S">Stopp</string>
+  <string name="Submit" type="label" hotkey="S">Send inn</string>
+  <string name="Upload" type="label" hotkey="L">Last opp</string>
+  <string name="OK" type="label" hotkey="O">OK</string>
+  <string name="Cancel" type="label" hotkey="A">Avbryt</string>
+  <string name="Yes" type="label" hotkey="J">Ja</string>
+  <string name="No" type="label" hotkey="N">Nei</string>
+  <string name="Kanskje" type="label" hotkey="K">Kanskje</string>
+  <string name="Close" type="label" hotkey="L">Lukk</string>
+  <string name="Change" type="label" hotkey="E">Endre</string>
+  <string name="Open" type="label" hotkey="O">Åpne</string>
+  <string name="Reset" type="label" hotkey="T">Tilbakestill</string>
+  <string name="SelectAll" type="label" hotkey="A">Velg Alle</string>
+  <string name="SelectNone" type="label" hotkey="I">Velg Ingen</string>
+  <string name="SelectFiles" type="label" hotkey="V">Velg Filer</string>
+  <string name="OtherLocation" type="label" hotkey="S">Annet Sted...</string>
+  <string name="OtherUser" type="label" hotkey="B">Annen Bruker...</string>
+  <string name="Backup" type="label" hotkey="S">Ta sikkerhetskopi</string>
+  <string name="Restore" type="label" hotkey="G">Gjenopprett</string>
 
-  <!-- Platform names -->
-  <string name="Linux">Linux</string>
-  <string name="Windows">Windows</string>
-  <string name="PlayStation">PlayStation</string>
-  <string name="Steam">Steam</string>
+  <!-- Strings for the jump lists -->
+  <string name="JumpMainProgram" type="label">MASGAU (%SingleUserMode%)</string>
+  <string name="JumpMainProgram" type="tooltip">Åpne MASGAU i %SingleUserMode%</string>
+  <string name="JumpMainProgramAllUsers" type="label">MASGAU (%AllUsersMode%)</string>
+  <string name="JumpMainProgramAllUsers" type="tooltip">Åpne MASGAU i %AllUSersMode%</string>
 
-  <!-- Location names - Most of these will NOT need to be translated, but are here to accomodate the auto-translate system -->
-  <string name="MyComputer">Min Datamaskin</string>
-  <string name="ProgramFiles">Programfiler</string>
-  <string name="ProgramFilesX86">Programfiler (x86)</string>
-  <string name="MyDocuments">Mine dokumenter</string>
-  <string name="SavedGames">Lagrede Spill</string>
-  <string name="VirtualStore">VirtualStore</string>
+  <!-- Medias -->
+  <string name="Floppy" type="label">Diskett</string>
+  <string name="Download" type="label">Nedlastning</string>
 
-  <string name="LocalAppData">Lokal AppData</string>
-  <string name="AppData">(Roaming) AppData</string>
-  <!-- Its called this in norwegian windows -->
-  <string name="Steamapps">Steamapps</string>
-  <string name="PublicUser">Offentlig Bruker</string>
-  <!-- I have disabled creation of public user, but this is the direct translation -->
-  <string name="AllUsers">Alle Brukere/ProgramData</string>
-
-  <!-- MessageBox strings-->
-  <string name="Label">Etikett</string>
-  <string name="MessageBox">Meldingsboks</string>
-  <string name="ExceptionInformation">Unntaks Informasjon</string>
-
-  <!-- Main Window strings-->
-  <string name="MainWindow">Hoved vindu</string>
-
-  <!-- Backup tab -->
-  <string name="NoGamesDetected">Ingen spill funnet</string>
-
-  <string name="GameNameColumn">Hemmelig Navn (Ikke si det til noen!)</string>
-  <string name="GameTitleColumn">Spill</string>
-  <string name="GamePlatformColumn">Plattform</string>
-  <string name="GameBackupColumn">Sikkerhetskopier</string>
-
-  <string name="RedetectGames">_Gjenoppdag Spill</string>
-  <string name="BackupNoGames">Ingenting å sikkerhetskopiere</string>
-  <string name="BackupOneGame">_Sikkerhetskopier denne</string>
-  <string name="BackupMultipleGames">_Sikkerhetskopier disse %1</string>
-  <string name="BackupAllGames">Sikkerhetskopier _Alt</string>
-  <string name="BackupOneGameMenu">Sikkerhetskopier denne</string>
-  <string name="BackupMultipleGamesMenu">Sikkerhetskopier disse</string>
-
-  <string name="DetectedGames">Oppdagede Spill</string>
-
-  <string name="BackupContextCreateCustomArchive">Lag Tilpasset Arkiv</string>
-  <string name="BackupContextBackupNoGames">Ingenting å sikkerhetskopiere</string>
-  <string name="BackupContextPurge">Rensk opp</string>
-  <string name="BackupContextEnableBackup">Aktiver Sikkerhetskopiering</string>
-
-  <!-- Restore tab -->
-  <string name="ArchiveNameColumn">Spill</string>
-  <string name="ArchiveTypeColumn">Type</string>
-  <string name="ArchiveOwnerColumn">Eier</string>
-  <string name="ArchiveDateColumn">Dato</string>
-
-  <string name="ReloadArchives">_Last inn Arkiv</string>
-  <string name="RestoreOtherBackup">Gjenopprett Annet Arkiv</string>
-  <string name="RestoreNone">Ingenting å gjenopprette</string>
-  <string name="RestoreOne">_Gjenopprett denne</string>
-  <string name="RestoreMultiple">Gjenopprett _disse</string>
-
-  <string name="NoArchivesFound">Ingen arkiv funnet i sikkerhetskopi mappen</string>
-
-  <string name="BackupFolderNotSet">Sikkerhetskopi mappen har ikke blitt satt\nDu kan sette denne under instillinger fanen</string>
-
-  <string name="SelectArchive">Velg Arkiv å gjenopprette</string>
-  <string name="FileNotArchiveTitle">Filen er inget arkiv</string>
-  <string name="FileNotArchiveMessage">Denne filen er ikke ett riktig formatert MASGAU arkiv</string>
-
-  <!-- Task tab-->
-  <string name="Schedule">Planlegg</string>
-  <string name="EnterTaskCredentialsTitle">Pander To Me</string>
-  <!-- Can't translate, don't know what pander is, or is it a joke perhaps -->
-  <string name="EnterTaskCredentialsMessage">Du må oppgi passordet for brukeren oppgaven vil kjøre for, som er vist i den lille tekstboksen.</string>
-  <string name="UnableToCreateTaskTitle">Hva sa jeg nettopp til deg.</string>
-  <string name="UnableToCreateTaskMessage">Klarte ikke å lage oppgaven. Oppgaven har blitt slettet.</string>
-
-  <string name="DeleteTask">_Slett Oppgave</string>
-
-  <string name="Frequency">Hvor ofte</string>
-  <string name="TimeOfDay">Tid på dagen</string>
-  <string name="DayOfTheWeek">Hvilken dag i uken</string>
-  <string name="DayOfTheMonth">Hvilken dato i måneden</string>
-
-  <string name="TaskCredentials">Bruker og passord for å kjøre oppgaven som</string>
-
-  <!-- About tab-->
-  <string name="Contributor">Bidragsyter</string>
-  <string name="Count">Antall</string>
-
-  <!-- Custom tab -->
-  <string name="Custom">Tilpasset</string>
-
-  <!-- Custom archive strings-->
-  <string name="WhereSaveArchive">Og hvor vil du lagre denne sikkerhetskopien?</string>
-
-  <!-- Email Button strings -->
-  <string name="CheckingConnection">Kontrollerer tilkoblingen...</string>
-  <string name="SendReport">_Send rapport</string>
-  <string name="CantSendReport">Kan ikke sende rapporten</string>
-  <string name="SendingReport">Sender rapport...</string>
-  <string name="SendFailed">Mislykket å sende</string>
-  <string name="ReportSent">Rapporten er sendt</string>
-
-  <!-- Email prompt strings -->
-  <string name="EmailRequest">Vennligst skriv inn din e postadresse i tilfelle jeg trenger å kontakte deg for mere informasjon</string>
-  <string name="ChangeLaterInSettings">Du kan forandre dette senere under Instillinger</string>
-
-  <!-- Settings -->
-  <string name="Settings">Instillinger</string>
-  <string name="EmailAddress">E-postaddresse</string>
-  <string name="AutoUpdate">Se etter oppdateringer _automatisk</string>
-  <string name="IgnoreDates">_Ignorer datoer i løpet av sikkerhetskopieringen</string>
-  <string name="BackupPath">Sikkerhetskopierings banen</string>
-  <string name="SteamPath">Steam bane</string>
-  <string name="CheckForUpdates">Se etter _oppdateringer</string>
-  <string name="VersioningEnable">Lag _ekstra kopier</string>
-  <string name="VersioningTime">Minst dette imellom kopier</string>
-  <string name="VersioningCount">Antall kopier på det meste</string>
-  <string name="AltPaths">Alternativ lagrings baner</string>
-  <string name="AddAltPath">Legg til ny bane</string>
-  <string name="RemoveNoAltPaths">Fjern Ingenting</string>
-  <string name="RemoveAltPaths">Fjern Baner</string>
-  <string name="RemoveAltPath">Fjern Bane</string>
-
-  <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
-  <string name="SelectBackupPath">Velg hvor sikkerhetskopier skal bli lagret</string>
-  <string name="SelectBackupPathReadError">%ReadPermissionError% den valgte sikkerhetskopi mappen</string>
-  <string name="SelectBackupPathWriteError">%WritePermissionError% den valgte sikkerhetskopi mappen</string>
-  <string name="SelectSyncPath">Velg hvor lagringsfilene skal bli synkronisert</string>
-  <string name="SelectSyncPathReadError">%ReadPermissionError% den valgte synkronisering smappen</string>
-  <string name="SelectSyncPathWriteError">%WritePermissionError% den valgte synkronisering smappen</string>
-  <string name="SelectAltPath">Velg en alternativ installasjons bane</string>
-  <string name="SelectAltPathReadError">På grunn av tillatelse eller noe, kan MASGAU ikke lese den mappen du valgte</string>
-  <string name="SelectAltPathDuplicateTitle">Nøyaktig Kopi</string>
-  <string name="SelectAltPathDuplicateMessage">Banen du har valgt er allerede lagt til</string>
-  <string name="SelectSteamPath">Velg hvor Steam er installert</string>
-  <string name="SelectSteamPathRejectedTitle">Prøv igjen</string>
-  <string name="SelectSteamPathRejectedMessage">Den valgte mappen har ikke Steam.exe, så den er muligens ikke en Steam mappe</string>
-
-  <!-- Restore process -->
-  <string name="RestoreTitle">%MASGAU% gjenoppretter</string>
-  <string name="Restore">Gjenopprett</string>
-  <string name="Restoring">Gjenoppretter</string>
-  <string name="Detecting">Oppdager</string>
-  <string name="Choosing">Velger</string>
-  <string name="Done">Ferdig</string>
-  <string name="Files">Filer</string>
-  <string name="SelectFiles">Velg Filer</string>
-
-  <string name="RestoreNoCandidatesFound">Ingen gjenopprettelses kandidat ble funnet</string>
-  <string name="RestoreNoLocationFound">Ingen steder funnet</string>
-
-  <string name="RestoreRemovableDriveChoice">Velg den flyttbare stasjonen å gjenopprette til</string>
-  <string name="RestoreRemovableDrive">Denne flyttbare stasjonen vil bli brukt</string>
-
-  <string name="RestoreConfirmPath">Bekreft gjenopprettelses sted</string>
-  <string name="RestoreLocationChoice">Velg stedet å gjenopprette til</string>
-  <string name="RestoreLocation">Denne plassen vil bli brukt</string>
-  <string name="RestoreUserChoice">Velg brukeren å gjenopprette til</string>
-  <string name="RestoreUser">Denne brukeren vil bli brukt</string>
-  <string name="RestoreSelectFiles">Velg filer som skal gjenopprettes.</string>
-
-  <string name="RestoreNoFilesTitle">Ingenting å gjenopprette? Det er dumt.</string>
-  <string name="RestoreNoFilesMessage">Du har ikke valgt noen filer å gjenopprette.\nTenk på det du.</string>
-
-  <string name="RestoreComplete">Gjenoppretting fullført.</string>
-  <string name="RestoreMultipleArchivesTitle">Convenience?</string>
-  <!-- Need more info, whether it is meant as it's "easier" or "more comfortable" etc... -->
-  <string name="RestoreMultipleArchivesMessage">Du gjenoppretter mer enn ett arkiv,\n vil du at MASGAU ikke skal be deg om innspill med mindre det absolutt er nødvendig?</string>
-
-  <string name="RestoreSomeFailed">Noen arkiv kunne ikke bli gjenopprettet</string>
-
-  <string name="RestoreCompleteWithComment">Annet enn det, gjenopprettingen er fullført!</string>
-
-  <!-- Windows 7 Jump List -->
-  <string name="JumpMainProgram">%MainProgram%</string>
-  <string name="JumpMainProgramDescription">%Open% %MASGAUPlural% %MainProgram%</string>
-  <string name="JumpMainProgramAllUsers">%JumpMainProgram% (%AllUsersMode%)</string>
-  <string name="JumpMainProgramAllUsersDescription">Åpne %MASGAUPlural% %MainProgram% i %AllUsersMode%</string>
-  <string name="JumpAnalyzer">%AnalyzerWindowTitle%</string>
-  <string name="JumpAnalyzerDescription">%Open% %MASGAUPlural% %AnalyzerWindowTitle%</string>
-  <string name="JumpMonitor">%MonitorTitle%</string>
-  <string name="JumpMonitorDescription">%Open% %MASGAUPlural% %MonitorTitle%</string>
-
-  <!-- Monitor-specific strings -->
-  <string name="Monitor">Overvåker</string>
-  <string name="MonitorTitle">%MASGAU% %Monitor%</string>
-  <string name="MonitorSettingUp">%MonitorTitle%  setter opp..</string>
-  <!-- Unsure -->
-  <string name="MonitorMenuRescanGames">Søk igjennom spill på nytt</string>
-  <string name="MonitorMenuAbout">Om</string>
-  <string name="MonitorMenuSettings">Installinger...</string>
-  <string name="MonitorMenuExit">Lukk</string>
-  <string name="MonitorNegativeGames">%MonitorTitle% er...HVA!??!</string>
-  <string name="MonitorZeroGames">%MonitorTitle%  forfølger ingen spill</string>
-  <string name="MonitorOneGame">%MonitorTitle% forfølger ett spill</string>
-  <string name="MonitorMultipleGames">%MonitorTitle% forfølger %1 spill</string>
-
-  <!-- Analyzer-specific strings -->
-  <string name="AnalyzerWindowTitle">Savegame Analyserer</string>
-  <string name="GameNameQuestion">Hva er spillets navn?</string>
-  <string name="GameInstallQuestion">Hvor er spillet installert?</string>
-  <string name="GameSavesQuestion">Hvor er spillets lagringsfiler?</string>
-  <string name="Scan">_Søk og lag en rapport </string>
-  <string name="InstallFolder">Installasjons mappe</string>
-  <!-- Folder browser titles -->
-  <string name="GameInstallPrompt">Velg Installasjons mappe</string>
-  <string name="GameSavesPrompt">Velg lagringsplass</string>
-  <!-- Playstation tab -->
-  <string name="PlayStationScan">Velg og lag en rapport</string>
-  <string name="PlayStationCodeQuestion">Hva er dette spillets kode?</string>
-  <string name="PlayStationLocationQuestion">Hvor er Playstations lagringsfiler</string>
-  <string name="PlayStationLocationPrompt">Velg PlayStations Lagrings mappe</string>
-  <!-- Searching window -->
-  <string name="SearchingWindowTitle">Søker etter Spill informasjon...</string>
-  <string name="SearchingHeader">Hvor skal vi se først..</string>
-  <!-- This is the only valid place where saves can be translated -->
-  <string name="DumpingSaveFolder">Dumper Lagrings mappe...</string>
-  <string name="DumpingInstallFolder">Dumper installasjons mappe...</string>
-  <string name="DumpingVirtualStoreFolder">Dumper VirtualStore mapper...</string>
-  <string name="ScanningLocalMachineRegistry">Søker Lokal Maskin Registeret...</string>
-  <string name="ScanningCurrentUserRegistry">Søker Pålogget brukers Register...</string>
-  <string name="ScanningStartMenu">Søker startmenyen...</string>
-  <!-- Analyzer report -->
-  <string name="ReportWindowTitle">Her er rapporten (Føl deg fri til å redigere den))</string>
-  <string name="SaveReportQuestion">"Hvor vil du lagre rapporten?"</string>
-  <string name="AnalyzerDisclaimer">Innsendte rapporter er publisert til en offentlig server. Ingen involvert med MASGAU kan holdes ansvarlig for eventuelle ettervirkinger fra publiseringen av sensitiv informasjon gjennom disse rapportene, derfor se nøye over og redigere rapporten for informasjon som du ikke vil skal bli offentligjort. Ved å sende inn rapporten sier du deg enig i at det er gratis for offentlig spredning.</string>
+  <string name="RunningInTray" type="message">MASGAU kjører i statusfeltet\nKlikk på dette ikonet for å åpne vinduet igjen\nHøyreklikk dette ikonet for å Avslutte MASGAU</string>
 
   <!-- File types -->
-  <string name="Gb7FileDescription">MASGAU Saves Arkiv</string>
-  <string name="Gb7FileDescriptionPlural">MASGAU Save Arkiver</string>
-  <string name="TxtFileDescription">Tekst fil</string>
-  <string name="TxtFileDescriptionPlural">Tekst filer</string>
-  <string name="AllFileDescription">Alle filer</string>
-  <string name="AllFileDescriptionPlural">All filer</string>
+  <string name="Gb7FileDescription" type="label">MASGAU Lagrings Arkiv</string>
+  <string name="Gb7FileDescriptionPlural" type="label">MASGAU Lagrings Arkiver</string>
+  <string name="TxtFileDescription" type="label">Tekst fil</string>
+  <string name="TxtFileDescription" type="label">Tekst filer</string>
+  <string name="AllFileDescription" type="label">Alle filer</string>
+  <string name="AllFileDescriptionPlural" type="label">Alle filene</string>
 
-  <!-- Error messages -->
-  <string name="Error">Error</string>
-  <string name="ReadWriteErrorTitle">Literacy %Error%</string>
-  <!-- Don't know -->
-  <string name="UserLoadError">User Load %Error%</string>
-  <!-- Unknown, direct translation won't work here -->
+  <!-- Backup/Restore tab  -->
+  <string name="RefreshGames" type="label" hotkey="O">Oppdater spill</string>
+  <string name="RefreshGames" type="tooltip">Søker igjennom datamaskinen etter nye lagringsfiler</string>
+  <string name="AddGame" type="label" hotkey="L">Legg til</string>
+  <string name="AddGame" type="tooltip">Legg til egendefinert spill</string>
+  <string name="EditGame" type="label" hotkey="R">Rediger spill</string>
+  <string name="EditGame" type="tooltip">Rediger det valgte egendefinerte spillet</string>
+  <string name="DeleteGame" type="label" hotkey="D">Slett</string>
+  <string name="DeleteGame" type="tooltip">Slett det valgte egendefinerte spillet</string>
+  <string name="SubmitGame" type="label" hotkey="S">Send inn</string>
+  <string name="SubmitGame" type="tooltip">Send inn de usendte egendefinerte spillene</string>
+  <string name="CopyGame" type="label" hotkey="C">Kopier</string>
+  <string name="CopyGame" type="tooltip">Kopier det valgte spillet til ett nytt egendefinert spill</string>
+  <!-- Backup buttons -->
+  <string name="BackupAllGames" type="label" hotkey="B">Sikkerhetskopier alle spillene</string>
+  <string name="BackupAllGames" type="tooltip">Sikkerhetskopier alle spillene som er funnet!</string>
+  <!-- %0: The number of games currently selected -->
+  <!-- This demonstrates conditional variables. The %0 specifies that we will test against the 0th variable passed by the program.
+        Inside of the brackets is a list of key-value pairs, seperated by a character. 
+        The first character will be used as the seperating character (here it's a pipe | ), so you can make it whatever character you want.
+        There must always be one key and one value. If %0 matches any of the keys, the value for that key will be used.
+        *ELSE is a special key, it will match anything not matched by the other keys, but only if there IS a value provided by the program.
+        *NULL is another special key that will be used when NO value is provided by the program. This is usually the case with the initial state of a button.
+        -->
+  <string name="BackupGames" type="label" hotkey="S">Sikkerhetskopier %0{|0|Ingen spill|1|det valgte spillet|*ELSE|de valgte spillene|*NULL|Ingen spill}</string>
+  <string name="BackupGames" type="tooltip">%0{|0|Velg noen spill nedenfor, ok?|1|Sikkerhetskopier kun det ene spillet du har valgt nedenfor|*ELSE|Sikkerhetskopier %0 spillene som du har valgt nedenfor|*NULL|Velg noen spill nedenfor, ok?}</string>
+  <string name="CreateCustomBackup" type="label" hotkey="T">Lag en tilpasset sikkerhetskopi</string>
+  <string name="CreateCustomBackup" type="tooltip">Lag en sikkerhetskopi med kun de filene du velger</string>
+  <string name="ChangeBackupFolder" type="label" hotkey="B">Bytt sikkerhetskopi mappe...</string>
+  <string name="ChangeBackupFolder" type="tooltip">Bytt sikkerhetskopi mappen</string>
+  <string name="OpenBackupFolder" type="label" hotkey="O">Åpne sikkerhetskopi mappen</string>
+  <!-- Restore buttons -->
+  <!-- %0: The number of archives selected in the interface -->
+  <string name="RestoreGames" type="label" hotkey="R">Gjenopprett %0{|0|ingenting|1|det valgte arkivet|*ELSE|de %0 valgte arkivene|*NULL|ingenting}</string>
+  <string name="RestoreGames" type="tooltip">%0{|0|Velg ett spill, deretter ett arkiv|1|Gjenopprett det arkivet du har valgt nedenfor|*ELSE|Gjenopprett arkivene du har valgt nedenfor|*NULL|Velg ett spill, deretter ett arkiv}</string>
+  <string name="RestoreOther" type="label" hotkey="O">Gjenopprett annet...</string>
+  <string name="RestoreOther" type="tooltip">Velg ett .gb7 fil fra din maskin som skal gjenopprettes</string>
+
+  <!-- Delete archive button -->
+  <string name="DeleteSelectedArchives" type="label" hotkey="D">Slett %0{|0|ingenting|1|det valgte arkivet|*ELSE|%0 de valgte arkivene|*NULL|ingenting}</string>
+  <string name="DeleteSelectedArchives" type="tooltip">%0{|0|Velg ett spill, deretter ett arkiv|1|Slett arkivet du valgte nedenfor|*ELSE|Slett arkivene du har valgt nedenfor.|*NULL|Velg ett spill, deretter ett arkiv}</string>
+  <string name="DeleteArchiveConfirm" type="title">Som sanden i timeglasset, så er arkivene våre liv</string>
+  <!--  %0 - The archive to be deleted -->
+  <string name="DeleteArchiveConfirm" type="message">Er du sikker på at du vil slette %0?</string>
+
+  <!-- Archive list stuff -->
+  <string name="SelectGameForArchives" type="label">Arkiv(er) i gjenopprettelses mappen for det valgte spillet vil bli vist her</string>
+  <string name="NumberOfArchives" type="label">Det er %0{|0|ingen arkiv|*ELSE|%0 arkiv} i sikkerhetskopi mappen for %1{|0|ka fan?|1|det valgte spillet|*ELSE|de %1 spillene}</string>
+
+  <!-- Add game stuff -->
+  <string name="AddGameHeader" type="label">Legg til ett uoppdaget spill!</string>
+  <string name="AddGameTitle" type="label">Hva er spillets tittel?</string>
+  <string name="AddGameTitleNotUnique" type="label">Hva er spillets tittel? (Må være unikt)</string>
+  <string name="AddGameLocation" type="label">Hvor er lagringsfilene?</string>
+
+  <string name="FileCriteriaExplanation" type="source">Du kan bruke ett fullt filnavn som angir en bestemt fil,\neller ett mønster som *.xml for å angi flere filer.\nLa stå tom for alle filer og undermapper.</string>
+  <string name="AddGameSaves" type="label">Hvilke filer skal lagres?</string>
+  <string name="AddGameSaves" type="tooltip">%FileCriteriaExplanation%</string>
+  <string name="AddGameExclusions" type="label">Hvilke filer skal IKKE bli lagret?</string>
+  <string name="AddGameExclusions" type="tooltip">%FileCriteriaExplanation%</string>
+  <string name="SelectSaveFolder" type="label">Vennligst velg mappen som inneholder lagringsfilene</string>
+  <!-- Location names - Do NOT translate these unless the folder names are legitimately different on your system!-->
+  <string name="MyComputer" type="label">Min Datamaskin</string>
+  <string name="ProgramFiles" type="label">Programfiler</string>
+  <string name="ProgramFilesX86" type="label">Programfiler (x86)</string>
+  <string name="MyDocuments" type="label">Mine Dokumenter</string>
+  <string name="SavedGames" type="label">Lagrede spill</string>
+  <string name="SteamUserData" type="label">Steam Bruker Data (Steam Skyen)</string>
+  <string name="PublicUser" type="label">Felles Brukere</string>
+  <string name="AllUsers" type="label">Alle Brukere\ProgramData</string>
+  <!-- For confirming the deleting of a game -->
+  <!-- %0 = the number of games to delete -->
+  <string name="DeleteGameConfirm" type="title">Er du sikker?</string>
+  <string name="DeleteGameConfirm" type="message">Er du sikker på at du vil slette %0{|1|dette %0 spillet|*ELSE|disse %0 spillene}?</string>
+
+  <!-- Purge strings -->
+  <string name="Purge" type="label" hotkey="R">Rensk</string>
+  <string name="Purge" type="tooltip">Slett de oppdagede banene til de valgte spillene</string>
+  <string name="PurgeJustGame" type="label">Rensk kun spill</string>
+  <string name="PurgeJustGame" type="tooltip">Slett de oppdagede banene av (men ikke arkivene relatert til) de valgte spillene</string>
+  <string name="PurgeGameAndArchives" type="label">Rensk spill og arkiv</string>
+  <string name="PurgeGameAndArchives" type="tooltip">Slett de oppdagede banene av, og de arkivene de er relatert til, de valgte spillene</string>
+  <string name="PurgeAllRoots" type="label">Rensk alle oppdagede røtter</string>
+  <string name="PurgeJustGameQuestion" type="title">Dette er farlig (på en måte)</string>
+  <string name="PurgeJustGameQuestion" type="message">Hvilke oppdagede baner til %0 vil du renske?</string>
+  <string name="PurgeGameAndArchivesQuestion" type="title">Dette er litt mer enn farlig</string>
+  <string name="PurgeGameAndArchivesQuestion" type="message">Er du sikker på at du vil slette alle oppdagede baner\nog arkiver i sikkerhetskopierings mappen for %0?</string>
+  <string name="Purging" type="message">Rensker %0</string>
+  <string name="PurgeError" type="title">Rensk røtter feil</string>
+  <string name="PurgeError" type="message">Det skjedde en feil mens rensking av %0 pågikk</string>
+
+  <!-- Problem reporting strings -->
+  <string name="ReportProblem" type="label">Rapporter ett problem</string>
+  <string name="ReportProblem" type="tooltip">Klikk her for å sende meg en e-post som forteller meg om ett problem du har, eller hvis du bare ønsker å si hei! (Kun Engelsk)</string>
+  <string name="PleaseDescribeProblem" type="label">Vennligst forklar problemet ditt</string>
+
+  <!-- Platform names -->
+  <string name="Platform" type="label">Plattform: %0</string>
+  <string name="Multiple" type="label">Flere</string>
+  
+  <!-- Region names -->
+  <string name="Region" type="label">Område: %0</string>
+  <string name="EU" type="label">Europa</string>
+  <string name="USA" type="label">Forente Stater</string>
+
+  <!-- Udpate button (these are all displayed on the same button -->
+  <string name="CheckingForUpdates" type="label" hotkey="U">Ser etter Oppdateringer...</string>
+  <string name="CheckForUpdates" type="label" hotkey="U">Se etter Oppdateringer</string>
+  <string name="CheckForUpdates" type="tooltip">Når ut til internett og sjekker om det er en ny versjon av MASGAU, eller om der er nye spillinformasjoner.</string>
+  <string name="DataUpdateAvailable" type="label" hotkey="U">Oppdater spillinformasjon.</string>
+  <string name="DataUpdateAvailable" type="tooltip">Klikk for å laste ned de siste spillinformasjonene fra internett.</string>
+  <string name="DataUpdateAvailable" type="message">Det er nye spillinformasjonsfiler!\nKlikk "Oppdater spillinformasjon." i hoved vinduet for å laste dem ned!</string>
+  <string name="ProgramUpdateAvailable" type="label" hotkey="U">Oppdater MASGAU</string>
+  <string name="ProgramUpdateAvailable" type="tooltip">Klikk for å laste ned den siste versjonen av MASGAU fra internett.</string>
+  <string name="ProgramUpdateAvailable" type="message">Det er en ny versjon av MAGAU tilgjengelig!\nKill "Oppdater MASGAU" i hoved vinduet for å laste den ned!</string>
+  <!-- %0: The name of the current file being updated -->
+  <string name="UpdatingFile" type="message">Oppdaterer %0</string>
+
+  <!-- email strings -->
+  <string name="ManualMail" type="source">Du kan manuelt sende eposten til submissions@gamesave.info</string>
+  <string name="CheckingConnection" type="label">Sjekker tilkoblingen...</string>
+  <string name="SendReport" type="label">Send Rapport</string>
+  <string name="CantSendReport" type="label">Epost blokkert</string>
+  <string name="CantSendReport" type="tooltip">%ManualMail%</string>
+  <string name="SendingReport" type="label">Sender Rapport...</string>
+  <string name="SendFailed" type="label">Sending Feilet</string>
+  <!-- %0 - the error information for the failed email send -->
+  <string name="SendFailed" type="tooltip">%ManualMail%\n%0</string>
+  <string name="ReportSent" type="label">Rapporten er sendt!</string>
+  
+  <!-- Manual Archive -->
+  <string name="ManualArchiveTitle" type="label">Lag et tilpasset arkiv</string>
+  <string name="ManualArchiveSource" type="label">Hvor vil du hente lagringsfilene ifra?</string>
+  <string name="ManualArchiveFiles" type="label">Hvilke filer skal legges i sikkerhetskopien?</string>
+  <string name="WhereSaveArchive" type="label">Og hvor vil du legge denne sikkerhetskopien?</string>
+
+
+  <!-- Backup process -->
+  <string name="ValidatingBackupPath" type="message">Validerer sikkerhetskopi banen...</string>
+  <!-- %0: The total # of games being processed-->
+  <string name="GamesToBeBackedUpCount" type="message">%0 Spill som skal sikkerhetskopieres</string>
+  <!-- %0: The name of the game being processed -->
+  <string name="BackingUpSingleGame" type="message">Sikkerhetskopierer %0</string>
+  <!--  %0: The name of the current game being processed
+        %1: The nth game being processed
+        %2: The total # of games being processed -->
+  <string name="BackingUpMultipleGames" type="message">(%1/%2) Sikkerhetskopierer %0...</string>
+  <!-- Archive Handler -->
+  <!-- This is displayed while MASGAU is waiting for an in-use archive to become available
+        %0 = The name of the game owning the archive -->
+  <string name="ArchiveInUseWaiting" type="message">%0 - Arkiv i bruk, venter (%1/%2)</string>
+  <!-- Errors -->
+  <string name="FileInUseTimeout" type="title">Lei av å vente!</string>
+  <!-- %0: The file name (without path) of the archive that has been inaccessible
+        %1: How many seconds the file has been inaccessible-->
+  <string name="FileInUseTimeout" type="message">Arkivet %0 har vært utilgjengelig i %1 sekunder, den vil bli hoppet over</string>
+  <string name="RevisionCopyError" type="title">Versjonskontroll er for pingler uansett</string>
+  <!-- %0: The name of the archive that was un-copyable -->
+  <string name="RevisionCopyError" type="message">Det oppstod en feil under forsøket på lage en revisjons kopi av %0</string>
+  <string name="NothingToBackup" type="title">Det føles som at det er</string>
+  <string name="NothingToBackup" type="message">Ingenting å sikkerhetskopiere</string>
+
+
+  <!-- Restore window -->
+  <string name="RestoreTitle" type="label">%MASGAU% gjenoppretter</string>
+  <string name="RestoreNoCandidatesFound" type="label">Ingen gjenopprettelses kandidater funnet</string>
+  <string name="RestoreNoLocationFound" type="label">Ingen baner funnet</string>
+  <string name="RestoreRemovableDriveChoice" type="label">Velg den flyttbare stasjonen å gjenopprette til</string>
+  <string name="RestoreRemovableDrive" type="label">Denne flyttbare stasjonen kommer til å bli brukt</string>
+  <string name="RestoreConfirmPath" type="label">Bekreft gjenopprettelses plasseringen</string>
+  <string name="RestoreLocationChoice" type="label">Velg plasseringen MASGAU skal gjenopprette til</string>
+  <string name="RestoreLocation" type="label">MASGAU vil bruke denne plasseringen å gjonopprette til</string>
+  <string name="RestoreUserChoice" type="label">Velg brukeren å gjenopprette til</string>
+  <string name="RestoreUser" type="label">Denne brukeren vil bli brukt</string>
+  <string name="RestoreSelectFiles" type="label">Velg filer som skal gjenopprettes</string>
+  <string name="RestoreComplete" type="label">Gjenopprettingen er fullført</string>
+  <string name="RestoreCompleteWithComment" type="label">Annet enn det, gjenopprettelsen er ferdig!</string>
+  <!-- Restore process -->
+  <string name="IsRestoring" type="label">%0 gjenoppretter</string>
+  <string name="DetectingGameForRestoration" type="message">Oppdager spill for gjenoppretting...</string>
+  <string name="CheckingDestination" type="message">Kontrollerer destinasjonen...</string>
+  <string name="ExtractingArchive" type="message">Pakker ut arkivet...</string>
+  <string name="CopyingFilesToDestination" type="message">Kopierer filene til destinasjonen...</string>
+  <string name="RestoringFile" type="message">Gjenoppretter %0</string>
+  <string name="RestoringFile" type="label">Gjenoppretter %0</string>
+  <string name="RestoreMultipleArchives" type="title">Praktisk?</string>
+  <string name="RestoreMultipleArchives" type="message">Du gjenoppretter mer enn ett arkiv,\n vil du at MASGAU ikke skal spørre deg for innspill med mindre absolutt nødvending?</string>
+  <!-- Errors -->
+  <string name="RestoreSomeFailed" type="label">Noen arkiver ble ikke gjenopprettet</string>
+  <string name="RestoreProgramNotFound" type="title">Folk folk folk, stå opp stå opp</string>
+  <string name="RestoreProgramNotFound" type="message">%0 ble ikke funnet.\nDu må kanskje installere MASGAU på nytt.</string>
+  <string name="NoRestorePathsDetected" type="title">Kan ikke gjenopprette det vi ikke kan finne</string>
+  <string name="NoRestorePathsDetected" type="message">Ingen gjenopprettelses baner funnet for %0</string>
+  <string name="NoUsersForEV" type="title">Bruker feil</string>
+  <string name="NoUsersForEV" type="message">Systemvariabelen %0 krever en bruker å gjenopprette til, men ingen ble oppdaget\nPrøv å lage en lagringsfil med ett spill du vet bruker mappen</string>
+  <!-- This is displayed in the Main program -->
+  <string name="RestoreNoFiles" type="title">Gjenopprette ingenting? Det er bare dumt</string>
+  <string name="RestoreNoFiles" type="message">Du har ikke valgt noen filer å gjenopprette\nTenk på det du</string>
+  <!-- This would only display only in the event of an internal error -->
+  <string name="NoRestoreFileSelected" type="title">Ingenting å gjøre</string>
+  <string name="NoRestoreFileSelected" type="message">Ingen filer var valgt til gjenoppretting</string>
+  <string name="Finished" type="label">Fullført</string>
+
+  <!-- Analyzer stuff -->
+  <string name="PleaseSubmitGame" type="title">Vær så snill?</string>
+  <string name="PleaseSubmitGame" type="message">Har du lyst til å sende inn det spillet til GameSave.Info?\nDet kommer til å kreve ett system skann som vil ta ett minutt eller to,\n men det vil la dette spille til å bli tilgjengelig i framtidige oppdateringer.\nHvis du velger nei, så kan du trykke på "Send inn" knappen hvis du forandrer mening.</string>
+  <string name="SaveReport" type="label" hotkey="L">Lagre Rapport</string>
+  <string name="EmailReport" type="label" hotkey="S">Send Rapport</string>
+  <string name="EmailReport" type="tooltip">Send rapport til submissions@gamesave.info</string>
+  <string name="SendingReport" type="label">Sender Rapport...</string>
+  <string name="CantSendReport" type="label">Klarte ikke å sende rapport</string>
+  <string name="CantSendReport" type="tooltip">Automatisk sending er ikke tilgjengelig, vennligst lagre rapport og send den til submissions@gamesave.info</string>
+  <string name="ReportSent" type="label">Rapport sendt!</string>
+  <string name="AskSubmitGame" type="title">La oss være sikker</string>
+  <string name="AskSubmitGame" type="message">Har du lyst til å sende inn %0?</string>
+
+
+  <!-- These are displayed in the browse for folder dialogs -->
+  <string name="GameSavesPrompt" type="label">Velg spillets lagrings mappe</string>
+  <string name="GameInstallPrompt" type="label">Velg spillets installasjons mappe</string>
+  <!-- Analyzer report stuff -->
+  <string name="SaveReportQuestion" type="label">Hvor har du lyst til å lagre rapporten?</string>
+  <!-- This is important, and should be translated seriously -->
+  <string name="AnalyzerDisclaimer" type="label">Rapporter blir sendt på e-post til submissions@gamesave.info og blir offentliggjort på den offentlige serveren. Ingen involvert med MASGAU eller GameSave.Info kan holdes ansvarlige for eventuelle konsekvenser fra publisering av sensitiv informasjon gjennom disse rapportene, så se nøye igjennom og rediger rapporten for informasjon du ikke vil skal bli offentliggjort. Ved å sende inn denne rapporten godtar du at det er tillat med offentlig spredning av den.\nGrunnet måten dataen blir samlet inn, kan denne rapporten inneholde mer informasjon enn forventet. Du kan redigere ut det du vil, eller du kan sende inn rapporten og jeg vil filtrere den ned til relevant informasjon før den blir offentliggjort. Dersom informasjonen for ekstra spill er tilstede, vil jeg skille dem ut og behandle dem som egne spill innleveringer.</string>
+  <!-- Analyzer progress -->
+  <string name="AnalyzingPlayStationSaves" type="message">Analyserer PlayStation Lagringsfiler</string>
+  <string name="AnalyzingScummVM" type="message">Søker etter ScummVM oppføringer</string>
+  <string name="DumpingFolder" type="message">Dumper mapper</string>
+  <string name="DumpingVirtualStore" type="message">Dumper VirtualStore</string>
+  <string name="AnalyzingRegistry" type="message">Skanner Registeret</string>
+  <string name="AnalyzingLocalMachineRegistry" type="message">Skanner Local Machine Registry</string> <!-- Need too look up on a Norwegian machine what it is called there -->
+  <string name="AnalyzingCurrentUserRegistry" type="message">Skanner Current User Registry</string> <!-- Need too look up on a Norwegian machine what it is called there -->
+  <string name="AnalyzingStartMenu" type="message">Skanner startmenyen for snarveier</string>
+
+
+  <!-- Monitor strings -->
+  <string name="Monitor" type="label">Overvåker</string>
+  <string name="MonitorNeedsBackupPath" type="message">Overvåkeren kan ikke kjøre uten en sikkerhetskopi bane</string>
+  <string name="MonitorNotRunning" type="message">Overvåkeren kjører ikke, Vennligst start på nytt</string>
+  <string name="MonitoredGameCount" type="message">Overvåker %0 spill</string>
+  <string name="BackupUpForMonitor" type="message">Oppdaterer arkivet for %0</string>
+  <string name="SettingUpMonitorFor" type="message"> Setter opp overvåker for %0 spill</string>
+
+
+  <!-- Link strings -->
+  <string name="Link" type="label">Link</string>
+  <string name="ClickToLink" type="tooltip">Klikk for å knytte dette spillet</string>
+  <string name="IsLinked" type="tooltip">Alle %0 av de oppdagede stedene for dette spillet er tilknyttet</string>
+  <string name="PartiallyLinked" type="tooltip">%0 av de %1 oppdagede stedene for dette spillet er tilknyttet</string>
+
+  <!-- Settings strings -->
+  <string name="Settings" type="label" hotkey="I">Instillinger</string>
+  <string name="LoadingSettings" type="message">Laster Instillinger...</string>
+  <string name="IgnoreDates" type="label" hotkey="I">Ignorer datoer iløpet av sikkerhetskopiering</string>
+  <string name="IgnoreDates" type="tooltip">MASGAU sikkerhetskopierer kun lagringsfiler som er nyere enn arkivets dato,\ndette gjør at MASGAU ignorerer datoer og sikkerhetskopierer uansett.</string>
+  <string name="AutoStart" type="label" hotkey="S">Start automatisk etter innlogging</string>
+  <string name="AutoStart" type="tooltip">Start automatisk etter innlogging</string>
+  <string name="Versioning" type="label">Versjonskontroll</string>
+  <string name="VersioningEnable" type="label" hotkey="V">Lag ekstra kopier</string>
+  <string name="VersioningEnable" type="tooltip">Akrtiver dette for å la MASGAU skape ekstra kopier av arkivet på et fast tidsintervall</string>
+  <string name="VersioningTiming" type="label">Hver</string>
+  <string name="VersioningMaxCopies" type="label">Maks Kopier</string>
+  <string name="Seconds" type="label">Sekunder</string>
+  <string name="Minutes" type="label">Minutter</string>
+  <string name="Hours" type="label">Timer</string>
+  <string name="Days" type="label">Dager</string>
+  <string name="Weeks" type="label">Uker</string>
+  <string name="Months" type="label">Måneder</string>
+  <string name="Years" type="label">År</string>
+  <string name="Decades" type="label">Tiår</string>
+  <string name="Centuries" type="label">Århundrer</string>
+  <string name="Millenia" type="label">Årtusener</string>
+
+  <!-- Setting/config Errors -->
+  <string name="ConfigFileError" type="source">Konfigurasjonsfil feil</string>
+  <string name="ConfigWatcherError" type="title">%ConfigFileError%</string>
+  <string name="ConfigWatcherError" type="message">Feil ved auto-oppdatering</string>
+  <string name="CouldNotDetermineConfigFilePath" type="title">%ConfigFileError%</string>
+  <string name="CouldNotDetermineConfigFilePath" type="message">Kunne ikke finne en akseptabel bane for konfigurasjonsfilen</string>
+  <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
+  <string name="CriticalSettingsFailure" type="message">Noe gikk fryktelig galt under lasting av instillingene</string>
+  <string name="AutoStartEnableError" type="message">Noe gikk galt under aktivering av Automatisk start</string>
+
+
+  <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
+  <!-- Backup Path -->
+  <string name="BackupFolder" type="label" hotkey="F">Sikkerhetskopierings mappe</string>
+  <string name="BackupFolder" type="tooltip">Åpne/Forandre sikkerhetskipi mappen</string>
+  <string name="SelectBackupPath" type="label">Velg hvor sikkerhetskopier skal bli lagret</string>
+  <string name="SelectBackupPathReadError" type="title">%ReadWriteError%</string>
+  <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% den valgte sikkerhetskopierings mappen</string>
+  <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>
+  <string name="SelectBackupPathWriteError" type="message">%WritePermissionError% den valgte sikkerhetskopierings mappen</string>
+  <!-- Steam strings -->
+  <string name="SteamNotFound" type="tooltip">Steam ble ikke funnter</string>
+  <string name="SteamFound" type="tooltip">Steam funnet på %0</string>
+  <string name="SelectSteamPath" type="label">Velg plasseringen tils team.exe</string>
+  <string name="SelectSteamPathRejected" type="title">Nei, ingenting her</string>
+  <string name="SelectSteamPathRejected" type="message">Den valgte mappen inneholder ikke Steam.exe, så mest sannsynlig er den ikke en Steam mappe</string>
+  <!-- Alt Paths -->
+  <string name="AltSavePath" type="label" hotkey="A">Alt. Lagrinsmappe</string>
+  <string name="AltSavePath" type="tooltip">Alternativ lagringsmappe blir brukt til å fortelle MASGAU ikke-standard mapper som du bruker for å lagre dine spill</string>
+  <string name="AddAltSavePath" type="label">Legg til en mappe...</string>
+  <string name="YouWillHavetoManuallyRefresh" type="source">Hvis ikke, vil du måtte manuelt oppdatere eller start MASGAU på nytt for å oppdage ordentlig.</string>
+  <string name="AskRefreshGames" type="source">Showers are refreshing too</string>
+  <string name="AskRefreshGames" type="title">%AskRefreshGames%</string>
+  <string name="AskRefreshGames" type="message">Ønsker du å oppdatere?</string>
+  <string name="RefreshForRemovedSavePath" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForRemovedSavePath" type="message">Ønsker du å oppdage oppdagede spill some kan ha vært i den fjernede lagringsbanen?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForNewSavePath" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForNewSavePath" type="message">Ønsker du å oppdatere oppdagede spill i den nylig lagte til lagringsbanen?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForNewSteamPath" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForNewSteamPath" type="message">Ønsker du å oppdatere oppdagede spill i den nylig lagte til Steam banen?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForUpdate" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForUpdate" type="message">Ønsker du å oppdatere oppdagede spill i den nye oppdaterte dataen?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForChangedBackupPath" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForChangedBackupPath" type="message">Ønsker du å oppdatere oppdagede arkiver i den nyligt lagte til sikkerhetskopibanen?\n%YouWillHavetoManuallyRefresh%</string>
+  <string name="RefreshForPurge" type="title">%AskRefreshGames%</string>
+  <string name="RefreshForPurge" type="message">Ønsker du å oppdatere for å uoppdage renskede spill?\n%YouWillHavetoManuallyRefresh%</string>
+
+
+  <!-- %0 - The full path of an alt save folder-->
+  <string name="RemoteAltSavePath" type="label">%0 (Klikk for å fjerne)</string>
+  <string name="SelectAltPath" type="label">Legg til en alternative lagrings mappe</string>
+  <string name="SelectAltPathReadError" type="title">%ReadWriteErrorTitle%</string>
+  <string name="SelectAltPathReadError" type="message">Grunnet tilganger eller noe, MASGAU kan ikke lese mappen du valgte</string>
+  <string name="SelectAltPathDuplicate" type="title">Duplikasjon</string>
+  <string name="SelectAltPathDuplicate" type="message">Den mappen du valgte har allerede blitt lagt til</string>
+
+  <!-- E-mail prompts -->
+  <string name="EmailRequest" type="label">Vennligst skriv inn din e-post adresse</string>
+  <string name="ChangeLaterInSettings" type="label">Du kan forandre dette senere under instillinger</string>
+
+  <!-- Game detection process -->
+  <!-- Initial system scanning -->
+  <string name="DetectingSystemPaths" type="message">Oppdager system baner...</string>
+  <string name="DetectingSteam" type="message">Oppdager Steam...</string>
+  <string name="DetectingPlayStation" type="message">Oppdager PlayStation baner...</string>
+  <string name="DetectingScummVM" type="message">Oppdager ScummVM baner...</string>
+  <!-- Game detection -->
+  <string name="DetectingGames" type="message">Oppdager Spill</string>
+  <string name="DetectingMonitoringGames" type="message">Oppdager Spill og setter opp Overvåker</string>
+  <string name="LoadingGamesData" type="message">Laster inn spilldata...</string>
+  <!-- Game Information Strings -->
+  <string name="NoGamesDetected" type="message">Det var ingen spill som ble oppdaget</string>
+  <string name="GameDetected" type="message">Ett enkelt spill ble oppdaged</string>
+  <!-- %0: The number of games detected -->
+  <string name="GamesDetected" type="message">Det ble oppdaged %0 spill</string>
+  <!-- Game XML loading -->
+  <string name="LoadingGameXmls" type="message">Laster inn spill XML</string>
+  <!-- Game XML Errors -->
+  <string name="GameDataCorruptedRestore" type="title">Så trist...</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataCorruptedRestore" type="message">Det ser ut som at %0 har blitt korruptert.Ønsker du å gjenopprette den?\nMERK: Dette kommer til utslette eventuelle endringer og oppdateringer til denne filen.\nDu kommer til å måtte trykke Oppdaterings knappen for å få den oppdatert til siste versjon.</string>
+  <string name="GameDataCorruptedDelete" type="title">Så trist...</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataCorruptedDelete" type="message">Det ser ut som at %0 har blitt korruptert.Ønsker du å slette den?\nMERK: Dette kommer til å slette alt i denne filen.\nHvis denne filen var lagt til igjennom en data oppdatering, bare klikk for å lage den på nytt.</string>
+
+  <string name="GameDataObsoleteDelete" type="title">Ch-ch-ch-changes</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataObsoleteDelete" type="message">Det ser ut som at %0 ble skrivet med versjon %1 av GameSave.Info formatet.\nMASGAU klarer ikke å auto-oppgradere denne versjonen, ønsker du å slette den?</string>
+  <string name="GameDataObsoleteUpgrade" type="title">Ch-ch-ch-changes</string>
+  <!-- %0: The data file that has been corrupted -->
+  <string name="GameDataObsoleteUpgrade" type="message">Det ser ut som at %0 ble skrivet med versjon %1 av GameSave.Info formatet.\nØnsker du å la MASGAU prøve å auto-oppgradere den til versjon %2?</string>
+  <!-- %0 = Schema file location -->
+  <string name="SchemaNotFound" type="message">Skjema filen ble ikke funnet på %0! Vennligst installer på nytt.</string>
+  <string name="CouldNotFindGameProfilesFolder" type="title">Skitten prat, Ja?</string>
+  <string name="CouldNotFindGameProfilesFolder" type="message">Kunne ikke finne spill profile mappen</string>
+  <string name="NoXmlFilesInDataFolder" type="title">Ka fan?</string>
+  <string name="NoXmlFilesInDataFolder" type="message">Det er ingen XML filer i Data mappen</string>
+  <string name="GameXmlError" type="source">Spill XML feil</string>
+  <string name="SpaceInGameName" type="title">%GameXmlError%</string>
+  <!-- %0: The name of the game entry that contains a space. Will contain the space. -->
+  <string name="SpaceInGameName" type="message">Det er ett mellomrom i spillnavnet %0</string>
+  <string name="ImproperPsCodeUse" type="title">%GameXmlError%</string>
+  <!-- %0: The name of the game -->
+  <string name="ImproperPsCodeUse" type="message">&lt;ps_code&gt; taggen for spillet (%0) er ikke en PlayStation-plattform</string>
+  <!-- Errors -->
+  <string name="DuplicateGame" type="title">Duplikasjon av spilldata oppføring</string>
+  <!-- %0: The name of the game 
+       %1: The name of one of the files containing the duplicate game 
+       %2: The name of the second file
+       %3: The name of the file that will be used-->
+  <string name="DuplicateGame" type="message">Det er to spill med etiketten %0.\nDen første er i %1 å den andre er i %2.\nDen i %3 vil bli brukt.</string>
+  <string name="ParentGameDoesntExist" type="title">Kaster bort min verdifulle tid</string>
+  <!-- %0: The name of the missing parent game -->
+  <string name="ParentGameDoesntExist" type="message">Det angitte overordnede spillet %0 er ikke til stede profilens xml\nDu enten stavet den feil, eller dette er en kjede effect ifra en annen feil.</string>
+
+
+  <!-- Archive-related strings-->
+  <string name="LoadingArchives" type="message">Laster Inn Arkiver</string>
+
+  <!-- Generic errors -->
+  <string name="Error" type="source">Feil</string>
+  <string name="ReadWriteError" type="source">Les og skrive %Error%</string>
+  <string name="UserLoadError" type="source">Bruker belastnings %Error%</string>
+
+  <string name="BackupPathNotSet" type="title">Kan ikke fortsette</string>
+  <string name="BackupPathNotSet" type="message">Sikkerhetkopierings banen er ikke satt, vennligst sett den. Backup path not set, please set it</string>
+
+
+  <!-- Generic exe-running errors -->
+  <string name="ExeRunError" type="title">Løping er for tapere</string>
+  <!-- %0: The filename of the exe 
+        %1: The command-line args the exe was run with -->
+  <string name="ExeRunError" type="message">En feil skjedde mens vi prøvde å kjøre %0 med argumentene:\n%1</string>
+
+  <!-- Generic file errors -->
+  <string name="FileNotFound" type="source">Filen ble ikke funnet</string>
+  <string name="FileNotFound" type="title">%FileNotFound%</string>
+  <!-- %0: The name of the file that wasn't found -->
+  <string name="FileNotFound" type="message">Filen %0 kunne ble ikke funnet</string>
+  <string name="FileNotFoundCritical" type="title">%FileNotFound%</string>
+  <!-- %0: The name of the file that wasn't found -->
+  <string name="FileNotFoundCritical" type="message">Filen %0 kunne ikke bli funnet\nDu må kanskje installere på nytt.</string>
+  <string name="FileCorruptedCritical" type="title">Ikke så mye som en politiker</string>
+  <!-- %0: The name of the file that wasn't found -->
+  <string name="FileCorruptedCritical" type="message">Filen %0 ser ut til å ha blitt korrupt\nDu må kanskje installere på nytt.</string>
+  <!-- Read errors -->
+  <string name="ReadError" type="title">%ReadWriteErrorTitle%</string>
+  <!-- %0: The name of the file (sometimes with path) that couldn't be read-->
+  <string name="ReadError" type="message">File ved lesing av %0</string>
+  <string name="FileGatherError" type="title">Uforutsett feil!</string>
+  <!-- %0: The path of the folder that wasn't traversible -->
+  <string name="FileGatherError" type="message">En feil skjedde mens vi prøvde å sample lagringsfiler fra banen %0</string>
+  <!-- Download errors -->
+  <string name="DownloadFailure" type="title">Begynner å bli gammelt</string>
+  <!-- %0: The url that failed -->
+  <string name="DownloadFailure" type="message">Klarte ikke å laste ned %0</string>
   <!-- Permission errors -->
-  <string name="ReadPermissionError">Du har ikke rettigheter til å lese fra</string>
-  <string name="WritePermissionError">Du har ikke rettigheter til å skrive til</string>
-  <string name="ProcessRestorePermissionError">Feil under førsøk til å forandre tillatelser til å lese andre brukere</string>
-  <string name="ProcessBackupPermissionError">Error while trying to change process backup permission for reading other users</string>
-  <!-- Unfortunately, every scenario I think of result in wrong translation -->
-
+  <string name="ReadPermissionError" type="source">Du har ikke tillatelse til å lese fra</string>
+  <string name="WritePermissionError" type="source">Du har ikke tillatelse å skrive til</string>
+  <string name="ProcessRestorePermissionError" type="title">%UserLoadError%</string>
+  <string name="ProcessRestorePermissionError" type="message">Feil under forsøk på å endre prosessen gjenopprette tillatelse til å lese andre brukere\nFeil kode %0</string>
+  <string name="ProcessBackupPermissionError" type="title">%UserLoadError%</string>
+  <string name="ProcessBackupPermissionError" type="message">Feil under forsøk på å endre prosessen sikkerhetskopi tillatelse til å lese andre brukere\nFeil kode %0</string>
+  <string name="PermissionChangeError" type="title">Jeg er ett program, ikke en rød skjorte</string>
+  <!-- %0: The path of the object that was not able to have its permissions changed -->
+  <string name="PermissionChangeError" type="message">En feil skjedde under forsøke på å forandre tillatelsene på %0</string>
   <!-- Write errors-->
-  <string name="WriteError">Feil under forsøk på å skrive</string>
-  <string name="WriteErrorPrompt">Velg en annen plass</string>
-  <!-- Settings errors-->
-  <string name="SettingsLoadError">Noe gikk feil under lasting av innstillinger. Jeg har ingen idé om hva</string>
+  <string name="WriteError" type="title">%ReadWriteError%</string>
+  <!-- %0: The name of the file or folder that couldn't be written to -->
+  <string name="WriteError" type="message">Feil under forsøket å skrive til %0</string>
+  <string name="WriteErrorPrompt" type="source">Velg noe annet</string>
+  <string name="WriteDenied" type="title">%ReadWriteError%</string>
+  <!-- %0: The name of the file or folder that couldn't be written to -->
+  <string name="WriteDenied" type="message">Kan ikke skrive til %0</string>
+  <string name="CreateError" type="title">%ReadWriteError%</string>
+  <!-- %0: The name of the file or folder that couldn't be created -->
+  <string name="CreateError" type="message">En feil skjedde under forsøket på opprette %0</string>
+  <!-- %0: The name of the folder that couldn't be created -->
+  <string name="UnableToCreateOutputFolder" type="source">Kan ikke opprette utdatamappe:\n%0</string>
+  <string name="UnableToCreateOutputFolder" type="title">Å sånn er det</string>
+  <string name="UnableToCreateOutputFolder" type="message">%UnableToCreateOutputFolder%</string>
+  <string name="UnableToCreateOutputFolderAdmin" type="title">Nutbunnies</string>
+  <string name="UnableToCreateOutputFolderAdmin" type="message">%UnableToCreateOutputFolder%\nMASGAU kjører allerede i administrator modus, så det betyr at din bruker spesialt har blitt nektet adgang til denne mappen. Beklager.</string>
+  <string name="UnableToCreateOutputFolderRequest" type="title">Ost og kjeks</string>
+  <string name="UnableToCreateOutputFolderRequest" type="message">%UnableToCreateOutputFolder%\nØnsker du å prøve igjen som administrator?</string>
+  <!-- Copy errors -->
+  <string name="CopyError" type="title">%ReadWriteError%</string>
+  <!-- %0: The source file to be copied 
+        %1: The destination to be copied to-->
+  <string name="CopyError" type="message">En feil skjedde under forsøke på å kopiere %0 til\n%1</string>
+  <string name="FileToCopyNotFound" type="title">Dette kan være viktig, men kanskje ikke</string>
+  <!-- %0: The file that could not be found to be copied -->
+  <string name="FileToCopyNotFound" type="message">En fil som skulle bli kopiert, nemlig %0, ble ikke funnet</string>
+  <string name="FileCopiedNotFound" type="title">Dette kan være viktig, men kanskje ikke</string>
+  <!-- %0: The source file to be copied 
+        %1: The destination to be copied to-->
+  <string name="FileCopiedNotFound" type="message">Ok så vi kopierte en fil til en annen plass og ingenting gikk galt,\nmen filen er ikke der vi kopierte den til :/\nFilen kom ifra %0\nog skulle bli kopiert til %1</string>
+  <!-- Delete errors -->
+  <string name="DeleteError" type="title">Opprydding</string>
+  <!-- %0: The file or folder that could not be deleted -->
+  <string name="DeleteError" type="message">En feil skjedde under forsøket på å slette %0</string>
+  <string name="FolderPrepError" type="title">SE OPP!</string>
+  <!-- %0: The folder that could not be prepped -->
+  <string name="FolderPrepError" type="message">En feil skjedde under forsøket på preparere %0</string>
   <!-- Registry Errors -->
-  <string name="RegistryKeyLoadError">Feil ved lasting av register nøkkel</string>
-  <string name="UserRegistryLoadError">Feil under lasting av register filen for bruker</string>
-  <!-- A user name will immediately follow this string -->
+  <string name="RegistryError" type="source">Register Feil</string>
+  <string name="RegistryKeyLoadError" type="title">%RegistryError%</string>
+  <string name="RegistryKeyLoadError" type="message">En feil skjedde under lasting av Register nøkkelen</string>
+  <string name="UserRegistryLoadError" type="title">%UserLoadError%</string>
+  <!-- %0: The user that owned the registry file
+        %1: The error code associated with the failure -->
+  <string name="UserRegistryLoadError" type="message">En feil skjedde under lasting av registerfilen for bruker %0\nFeil kode: %1</string>
 
-  <string name="NoFilesFound">Ingen filer funnet</string>
+  <!-- Generic file system watcher errors -->
 
-  <!-- Updater strings -->
-  <string name="UpdaterWindowTitle">%MASGAU% føler seg mindreverdig</string>
-  <string name="CheckingForUpdates">Ser etter oppdateringer...</string>
-  <string name="UpdatesAvailable">Det er ingen oppdateringer tilgjengelig</string>
-  <string name="Update">_Oppdater dem</string>
-  <string name="DontUpdate">_Ikke oppdater dem</string>
-  <string name="UpdateComplete">Oppdatering fullført! Klikk her for å lukke!</string>
-  <string name="UpdateComplete">Oppdatering fullført!</string>
-  <string name="Updates">Oppdateringer</string>
-  <string name="Update">Oppdater</string>
-  <string name="Current">Gjeldende</string>
-  <string name="Latest">Seneste</string>
+  <!-- Generic XML error messages -->
+  <string name="XMLError" type="source">XML Feil</string>
+  <string name="XMLFormatError" type="title">%XMLError%</string>
+  <!-- %0: The XML file that produced the error -->
+  <string name="XMLFormatError" type="message">Det var en formatterings feil under lesing av %0</string>
+  <string name="XMLErrorMissingTag" type="title">%XMLError%</string>
+  <!-- %0: The name of the missing tag
+        %1: The XML file that produced the error -->
+  <string name="XMLErrorMissingTag" type="message">Kunne ikke finne &lt;%0&gt; taggen i %1</string>
+  <string name="XMLErrorMissingAttribute" type="title">%XMLError%</string>
+  <!-- %0: The name of the missing attribute
+        %1: The name of the tag that was missing the attribute
+        %2: The XML file that produced the error -->
+  <string name="XMLErrorMissingAttribute" type="message">Attributet %0 ble ikke funnet på &lt;%1&gt; taggen i filen %2</string>
+
+  <!-- MessageBox strings-->
+  <string name="Label" type="label">Etikett</string>
+  <string name="MessageBox" type="label">Meldingsboks</string>
+  <string name="ExceptionInformation" type="label">Unntaks Informasjon</string>
+
+
+  <string name="ElevationXPWarning" type="title">Tilgang krever frihet</string>
+  <string name="ElevationXPWarning" type="message">Ett vindu kan vises etter denne med en avmerkingsboks merket:\n"Beskytt datamaskinen og data fra uautorisert program aktivitet"\nDette må være avkrysset ellers vil ikke MASGAU kunne gjennomføre den forespurte operasjonen.</string>
+
+  <string name="UnknownGame" type="title">Ukjent</string>
+  <!-- %0: The name of the missing game -->
+  <string name="UnknownGame" type="message">MASGAU har ikke informasjon for spillet %0.\nVennligst klikk "Send Rapport" så jeg kan jobbe med å fikse dette.</string>
+  <string name="ArchiveGameNotFound" type="label">Spillet i dette arkivet kunne ikke bli funnet,\nmen arkivet har en registrering av mappen den kom ifra.\nDu kan gjenopprette til denne mappen hvis du ønsker.</string>
+  
 </strings>
