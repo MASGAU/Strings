@@ -326,8 +326,11 @@
   <string name="RevisionCopyError" type="message">An error occured while trying to make a revision copy of %0</string>
   <string name="NothingToBackup" type="title">It feels like there's</string>
   <string name="NothingToBackup" type="message">Nothing at all to back up</string>
+  <!-- %0: The name of the archive that is has bad or no MASGAU data -->
+  <string name="ArchiveMissingData" type="title">Lack Of Data Is Bad</string>
+  <string name="ArchiveMissingData" type="message">The file %0 doesn't contain any MASGAU data\nThis probably means it's a corrupted archive, or not an archive at all\nPlease move it out of the backup folder or delete it</string>
 
-  
+
   <!-- Restore window -->
   <string name="RestoreTitle" type="label">%MASGAU% Is Restoring</string>
   <string name="RestoreNoCandidatesFound" type="label">No Restore Candidates Found</string>

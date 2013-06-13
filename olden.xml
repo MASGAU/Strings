@@ -113,8 +113,6 @@
   <!-- Errors-->
   <string name="FileNotArchive" type="title">File not archive</string>
   <string name="FileNotArchive" type="message">This file is not a properly formatted MASGAU archive</string>
-  <string name="ArchiveMissingData" type="title">Lack Of Data Is Bad</string>
-  <string name="ArchiveMissingData" type="message">The file %0 doesn't contain any MASGAU data\nThis probably means it's a corrupted archive, or not an archive at all\nPlease move it out of the backup folder or delete it</string>
 
   <!-- Restore tab -->
   <string name="ArchivesAreScanning">Please wait while MASGAU scans the archives in your backup folder...</string>
