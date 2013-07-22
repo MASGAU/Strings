@@ -287,7 +287,7 @@
   <string name="NothingToBackup" type="message">Ingenting å sikkerhetskopiere</string>
   <!-- %0: The name of the archive that is has bad or no MASGAU data -->
   <string name="ArchiveMissingData" type="title">Manglende data er ikke bra</string>
-  <string name="ArchiveMissingData" type="message">Filen {0} inneholder ingen MASGAU informasjon\nDette betyr muligens at det er ett korrupt arkiv, eller ikke noe arkiv i det hele tatt\nVennligst flytt den ut av sikkerhetskopi mappen eller slett den</string>
+  <string name="ArchiveMissingData" type="message">Filen %0 inneholder ingen MASGAU informasjon\nDette betyr muligens at det er ett korrupt arkiv, eller ikke noe arkiv i det hele tatt\nVennligst flytt den ut av sikkerhetskopi mappen eller slett den</string>
 
   <!-- Restore window -->
   <string name="RestoreTitle" type="label">%MASGAU% gjenoppretter</string>
