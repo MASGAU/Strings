@@ -414,7 +414,7 @@
   <!-- Backup Path -->
   <string name="BackupFolder" type="label" hotkey="F">Sikkerhetskopierings mappe</string>
   <string name="BackupFolder" type="tooltip">Åpne/Forandre sikkerhetskipi mappen</string>
-  <string name="SelectBackupPath" type="label">Velg hvor sikkerhetskopier skal bli lagret</string>
+  <string name="SelectBackupPath" type="title">Velg hvor sikkerhetskopier skal bli lagret</string>
   <string name="SelectBackupPathReadError" type="title">%ReadWriteError%</string>
   <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% den valgte sikkerhetskopierings mappen</string>
   <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>

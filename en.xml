@@ -455,7 +455,7 @@
   <!-- Backup Path -->
   <string name="BackupFolder" type="label" hotkey="F">Backup Folder</string>
   <string name="BackupFolder" type="tooltip">Open/Change the backup folder</string>
-  <string name="SelectBackupPath" type="label">Choose where the backups will be saved</string>
+  <string name="SelectBackupPath" type="title">Choose where the backups will be saved</string>
   <string name="SelectBackupPathReadError" type="title">%ReadWriteError%</string>
   <string name="SelectBackupPathReadError" type="message">%ReadPermissionError% the selected backup folder</string>
   <string name="SelectBackupPathWriteError" type="title">%ReadWriteError%</string>
