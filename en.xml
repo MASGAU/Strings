@@ -72,6 +72,9 @@
   <string name="Stopping" type="message">%Stopping%</string>
   <string name="Stopping" type="label">%Stopping%</string>
 
+  <string name="Deprecated" type="label">Deprecated</string>
+  <string name="Undetected" type="label">Undetected</string>
+
   <string name="SuppressFurtherRequests" type="label">Stop Asking Me This</string>
   <string name="SuppressFurtherMessages" type="label">Stop Telling Me This</string>
 
@@ -440,6 +443,8 @@
   <string name="Decades" type="label">Decades</string>
   <string name="Centuries" type="label">Centuries</string>
   <string name="Millenia" type="label">Millenia</string>
+  <string name="EnableDebug" type="label">Debug Mode</string>
+  <string name="ShowUndetected" type="label">Show Undetected</string>
 
   <!-- Setting/config Errors -->
   <string name="ConfigFileError" type="source">Config File Error</string>

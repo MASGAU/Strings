@@ -108,7 +108,7 @@
   <string name="JumpMainProgram" type="label">MASGAU (%SingleUserMode%)</string>
   <string name="JumpMainProgram" type="tooltip">Åpne MASGAU i %SingleUserMode%</string>
   <string name="JumpMainProgramAllUsers" type="label">MASGAU (%AllUsersMode%)</string>
-  <string name="JumpMainProgramAllUsers" type="tooltip">Åpne MASGAU i %AllUSersMode%</string>
+  <string name="JumpMainProgramAllUsers" type="tooltip">Åpne MASGAU i %AllUsersMode%</string>
 
   <!-- Medias -->
   <string name="Floppy" type="label">Diskett</string>
