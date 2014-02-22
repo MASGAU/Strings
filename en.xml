@@ -161,8 +161,17 @@
   <string name="EditGame" type="tooltip">Edit the selected custom game</string>
   <string name="DeleteGame" type="label" hotkey="D">Delete</string>
   <string name="DeleteGame" type="tooltip">Delete the selected custom game</string>
+  <!-- Submit game menu -->
   <string name="SubmitGame" type="label" hotkey="S">Submit</string>
-  <string name="SubmitGame" type="tooltip">Submit the unsubmitted custom games</string>
+  <string name="SubmitGame" type="tooltip">Submit game data</string>
+  <string name="SubmitCustomGames" type="label" hotkey="C">Submit custom games</string>
+  <string name="SubmitCustomGames" type="tooltip">Submit the unsubmitted custom games</string>
+  <string name="SubmitSelectedGames" type="label" hotkey="G">Submit selected games</string>
+  <string name="SubmitSelectedGames" type="tooltip">Submit the selected games</string>
+  <string name="SubmitOther" type="label" hotkey="O">Submit other</string>
+  <string name="SubmitOther" type="tooltip">Submit other games</string>
+
+
   <string name="CopyGame" type="label" hotkey="C">Copy</string>
   <string name="CopyGame" type="tooltip">Copy the selected game into a new custom game</string>
   <!-- Backup buttons -->
