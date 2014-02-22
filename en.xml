@@ -164,12 +164,12 @@
   <!-- Submit game menu -->
   <string name="SubmitGame" type="label" hotkey="S">Submit</string>
   <string name="SubmitGame" type="tooltip">Submit game data</string>
-  <string name="SubmitCustomGames" type="label" hotkey="C">Submit custom games</string>
-  <string name="SubmitCustomGames" type="tooltip">Submit the unsubmitted custom games</string>
-  <string name="SubmitSelectedGames" type="label" hotkey="G">Submit selected games</string>
-  <string name="SubmitSelectedGames" type="tooltip">Submit the selected games</string>
-  <string name="SubmitOther" type="label" hotkey="O">Submit other</string>
-  <string name="SubmitOther" type="tooltip">Submit other games</string>
+  <string name="SubmitCustomGames" type="label" hotkey="C">Submit Custom Game(s)</string>
+  <string name="SubmitCustomGames" type="tooltip">Submit the unsubmitted custom game(s)</string>
+  <string name="SubmitSelectedGames" type="label" hotkey="G">Submit Selected Game(s)</string>
+  <string name="SubmitSelectedGames" type="tooltip">Submit the selected game(s)</string>
+  <string name="SubmitOther" type="label" hotkey="O">Submit Other...</string>
+  <string name="SubmitOther" type="tooltip">Submit other game path(s)</string>
 
 
   <string name="CopyGame" type="label" hotkey="C">Copy</string>
