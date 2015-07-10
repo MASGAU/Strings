@@ -43,7 +43,7 @@
   <string name="AllUsersMode" type="source">Alle brukere modus</string>
   <string name="SingleUserMode" type="source">Enkeltbrukermodus</string>
   <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
-  <string name="PortableMode" type="label">%0 Portabel</string>
+  <string name="PortableMode" type="label">%0 Bærbar</string>
 
   <string name="AllUserModeButton" type="tooltip">Kjører i %AllUsersMode% (Klikk for å bytte til %SingleUserMode%)</string>
   <string name="SingleUserModeButton" type="tooltip">Kjører i %SingleUserMode% (Klikk for å bytte til %AllUsersMode%)</string>
@@ -146,7 +146,7 @@
   <string name="SubmitSelectedGames" type="source">Send inn de valgte spillene</string>
   <string name="SubmitSelectedGames" type="label">%SubmitSelectedGames%</string>
   <string name="SubmitSelectedGames" type="tooltip">%SubmitSelectedGames%</string>
-  <string name="SubmitOther" type="label">Send inn annet</string>
+  <string name="SubmitOther" type="label" hotkey="O">Send inn annet</string>
   <string name="SubmitOther" type="tooltip">Send inn andre spill</string>
 
   <string name="CopyGame" type="label" hotkey="C">Kopier</string>
