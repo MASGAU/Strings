@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="strings.xsd" lang="nb-NO">
   <!--  For some of these, there are pairs of strings that have the same name,
         but one will have  a type of "title" , and the other "message".
@@ -10,11 +11,11 @@
 
   <!-- There are some strings that are meant to have variables inserted into them.
       They look like this:
-        <string name="BackupMultipleGames">Back These %0 Up</string> 
+        <string name="BackupMultipleGames">Back These %0 Up</string>
       The first variable will be inserted at %0, the second at %1, and so on.
-      
+
       Title/message pairs, which are typically retreived together, will perform the
-      replacement procedure on each string as if it was an independent string, 
+      replacement procedure on each string as if it was an independent string,
       so a %0 in the title AND a %0 in the message will BOTH be repalced with the SAME variable.
   -->
 
@@ -34,7 +35,7 @@
   <string name="MASGAUAboutVersion" type="label">%MASGAUFull% versjon:%0</string>
   <string name="AboutClose" type="label">Takk, det var alt jeg trengte å vite</string>
 
-  <!-- %0 = The version number of the release (e.g. 0.10) 
+  <!-- %0 = The version number of the release (e.g. 0.10)
       %1 = The mode that MASGAU is running in (Single User, All Users, etc., sourced from Program Modes below)-->
   <string name="MASGAUWindowTitle" type="label">MASGAU versjon:%0 - %1</string>
 
@@ -42,7 +43,7 @@
   <string name="AllUsersMode" type="source">Alle brukere modus</string>
   <string name="SingleUserMode" type="source">Enkeltbrukermodus</string>
   <!-- %0 = The window title (MASGAU Monitor, MASGAU v.0.10) -->
-  <string name="PortableMode" type="label">%0 Portabel</string>
+  <string name="PortableMode" type="label">%0 Bærbar</string>
 
   <string name="AllUserModeButton" type="tooltip">Kjører i %AllUsersMode% (Klikk for å bytte til %SingleUserMode%)</string>
   <string name="SingleUserModeButton" type="tooltip">Kjører i %SingleUserMode% (Klikk for å bytte til %AllUsersMode%)</string>
@@ -71,6 +72,9 @@
   <string name="Stopping" type="source">Stopper...</string>
   <string name="Stopping" type="message">Stopper...</string>
   <string name="Stopping" type="label">Stopper...</string>
+
+  <string name="Deprecated" type="label">Utdatert</string>
+  <string name="Undetected" type="label">Uoppdaget</string>
 
   <string name="SuppressFurtherRequests" type="label">Stopp å spørre meg om dette</string>
   <string name="SuppressFurtherMessages" type="label">Stopp å fortelle meg om dette</string>
@@ -133,8 +137,18 @@
   <string name="EditGame" type="tooltip">Rediger det valgte egendefinerte spillet</string>
   <string name="DeleteGame" type="label" hotkey="D">Slett</string>
   <string name="DeleteGame" type="tooltip">Slett det valgte egendefinerte spillet</string>
+  <!-- Submit game menu -->
   <string name="SubmitGame" type="label" hotkey="S">Send inn</string>
-  <string name="SubmitGame" type="tooltip">Send inn de usendte egendefinerte spillene</string>
+  <string name="SubmitGame" type="tooltip">Send inn spilldata</string>
+  <string name="SubmitCustomGames" type="label">Send inn de nye spillene</string>
+  <string name="SubmitCustomGames" type="tooltip">Send inn de usendte tilpassede spillene</string>
+  <!--<string name="SubmitSelectedGames" type="label">Send inn %0{|1|det valgte spillet|*ELSE|de valgte spillene|*NULL|ingen spill?}</string>-->
+  <string name="SubmitSelectedGames" type="source">Send inn de valgte spillene</string>
+  <string name="SubmitSelectedGames" type="label">%SubmitSelectedGames%</string>
+  <string name="SubmitSelectedGames" type="tooltip">%SubmitSelectedGames%</string>
+  <string name="SubmitOther" type="label" hotkey="O">Send inn annet</string>
+  <string name="SubmitOther" type="tooltip">Send inn andre spill</string>
+
   <string name="CopyGame" type="label" hotkey="C">Kopier</string>
   <string name="CopyGame" type="tooltip">Kopier det valgte spillet til ett nytt egendefinert spill</string>
   <!-- Backup buttons -->
@@ -142,7 +156,7 @@
   <string name="BackupAllGames" type="tooltip">Sikkerhetskopier alle spillene som er funnet!</string>
   <!-- %0: The number of games currently selected -->
   <!-- This demonstrates conditional variables. The %0 specifies that we will test against the 0th variable passed by the program.
-        Inside of the brackets is a list of key-value pairs, seperated by a character. 
+        Inside of the brackets is a list of key-value pairs, seperated by a character.
         The first character will be used as the seperating character (here it's a pipe | ), so you can make it whatever character you want.
         There must always be one key and one value. If %0 matches any of the keys, the value for that key will be used.
         *ELSE is a special key, it will match anything not matched by the other keys, but only if there IS a value provided by the program.
@@ -223,7 +237,7 @@
   <!-- Platform names -->
   <string name="Platform" type="label">Plattform: %0</string>
   <string name="Multiple" type="label">Flere</string>
-  
+
   <!-- Region names -->
   <string name="Region" type="label">Område: %0</string>
   <string name="EU" type="label">Europa</string>
@@ -253,13 +267,12 @@
   <!-- %0 - the error information for the failed email send -->
   <string name="SendFailed" type="tooltip">%ManualMail%\n%0</string>
   <string name="ReportSent" type="label">Rapporten er sendt!</string>
-  
+
   <!-- Manual Archive -->
   <string name="ManualArchiveTitle" type="label">Lag et tilpasset arkiv</string>
   <string name="ManualArchiveSource" type="label">Hvor vil du hente lagringsfilene ifra?</string>
   <string name="ManualArchiveFiles" type="label">Hvilke filer skal legges i sikkerhetskopien?</string>
   <string name="WhereSaveArchive" type="label">Og hvor vil du legge denne sikkerhetskopien?</string>
-
 
   <!-- Backup process -->
   <string name="ValidatingBackupPath" type="message">Validerer sikkerhetskopi banen...</string>
@@ -342,7 +355,6 @@
   <string name="AskSubmitGame" type="title">La oss være sikker</string>
   <string name="AskSubmitGame" type="message">Har du lyst til å sende inn %0?</string>
 
-
   <!-- These are displayed in the browse for folder dialogs -->
   <string name="GameSavesPrompt" type="label">Velg spillets lagrings mappe</string>
   <string name="GameInstallPrompt" type="label">Velg spillets installasjons mappe</string>
@@ -356,10 +368,11 @@
   <string name="DumpingFolder" type="message">Dumper mapper</string>
   <string name="DumpingVirtualStore" type="message">Dumper VirtualStore</string>
   <string name="AnalyzingRegistry" type="message">Skanner Registeret</string>
-  <string name="AnalyzingLocalMachineRegistry" type="message">Skanner Local Machine Registry</string> <!-- Need too look up on a Norwegian machine what it is called there -->
-  <string name="AnalyzingCurrentUserRegistry" type="message">Skanner Current User Registry</string> <!-- Need too look up on a Norwegian machine what it is called there -->
+  <string name="AnalyzingLocalMachineRegistry" type="message">Skanner Local Machine Registry</string>
+  <!-- Need too look up on a Norwegian machine what it is called there -->
+  <string name="AnalyzingCurrentUserRegistry" type="message">Skanner Current User Registry</string>
+  <!-- Need too look up on a Norwegian machine what it is called there -->
   <string name="AnalyzingStartMenu" type="message">Skanner startmenyen for snarveier</string>
-
 
   <!-- Monitor strings -->
   <string name="Monitor" type="label">Overvåker</string>
@@ -368,7 +381,6 @@
   <string name="MonitoredGameCount" type="message">Overvåker %0 spill</string>
   <string name="BackupUpForMonitor" type="message">Oppdaterer arkivet for %0</string>
   <string name="SettingUpMonitorFor" type="message"> Setter opp overvåker for %0 spill</string>
-
 
   <!-- Link strings -->
   <string name="Link" type="label">Link</string>
@@ -398,6 +410,8 @@
   <string name="Decades" type="label">Tiår</string>
   <string name="Centuries" type="label">Århundrer</string>
   <string name="Millenia" type="label">Årtusener</string>
+  <string name="EnableDebug" type="label">Feilsøkingsmodus</string>
+  <string name="ShowUndetected" type="label">Vis Uoppdagede</string>
 
   <!-- Setting/config Errors -->
   <string name="ConfigFileError" type="source">Konfigurasjonsfil feil</string>
@@ -408,7 +422,6 @@
   <string name="CriticalSettingsFailure" type="title">Show Stopper</string>
   <string name="CriticalSettingsFailure" type="message">Noe gikk fryktelig galt under lasting av instillingene</string>
   <string name="AutoStartEnableError" type="message">Noe gikk galt under aktivering av Automatisk start</string>
-
 
   <!-- Path choosing strings (the read/write errors here use ReadWriteErrorTitle for their titles) -->
   <!-- Backup Path -->
@@ -445,7 +458,6 @@
   <string name="RefreshForChangedBackupPath" type="message">Ønsker du å oppdatere oppdagede arkiver i den nyligt lagte til sikkerhetskopibanen?\n%YouWillHavetoManuallyRefresh%</string>
   <string name="RefreshForPurge" type="title">%AskRefreshGames%</string>
   <string name="RefreshForPurge" type="message">Ønsker du å oppdatere for å uoppdage renskede spill?\n%YouWillHavetoManuallyRefresh%</string>
-
 
   <!-- %0 - The full path of an alt save folder-->
   <string name="RemoteAltSavePath" type="label">%0 (Klikk for å fjerne)</string>
@@ -505,15 +517,14 @@
   <string name="ImproperPsCodeUse" type="message">&lt;ps_code&gt; taggen for spillet (%0) er ikke en PlayStation-plattform</string>
   <!-- Errors -->
   <string name="DuplicateGame" type="title">Duplikasjon av spilldata oppføring</string>
-  <!-- %0: The name of the game 
-       %1: The name of one of the files containing the duplicate game 
+  <!-- %0: The name of the game
+       %1: The name of one of the files containing the duplicate game
        %2: The name of the second file
        %3: The name of the file that will be used-->
   <string name="DuplicateGame" type="message">Det er to spill med etiketten %0.\nDen første er i %1 å den andre er i %2.\nDen i %3 vil bli brukt.</string>
   <string name="ParentGameDoesntExist" type="title">Kaster bort min verdifulle tid</string>
   <!-- %0: The name of the missing parent game -->
   <string name="ParentGameDoesntExist" type="message">Det angitte overordnede spillet %0 er ikke til stede profilens xml\nDu enten stavet den feil, eller dette er en kjede effect ifra en annen feil.</string>
-
 
   <!-- Archive-related strings-->
   <string name="LoadingArchives" type="message">Laster Inn Arkiver</string>
@@ -526,10 +537,9 @@
   <string name="BackupPathNotSet" type="title">Kan ikke fortsette</string>
   <string name="BackupPathNotSet" type="message">Sikkerhetkopierings banen er ikke satt, vennligst sett den. Backup path not set, please set it</string>
 
-
   <!-- Generic exe-running errors -->
   <string name="ExeRunError" type="title">Løping er for tapere</string>
-  <!-- %0: The filename of the exe 
+  <!-- %0: The filename of the exe
         %1: The command-line args the exe was run with -->
   <string name="ExeRunError" type="message">En feil skjedde mens vi prøvde å kjøre %0 med argumentene:\n%1</string>
 
@@ -586,14 +596,14 @@
   <string name="UnableToCreateOutputFolderRequest" type="message">%UnableToCreateOutputFolder%\nØnsker du å prøve igjen som administrator?</string>
   <!-- Copy errors -->
   <string name="CopyError" type="title">%ReadWriteError%</string>
-  <!-- %0: The source file to be copied 
+  <!-- %0: The source file to be copied
         %1: The destination to be copied to-->
   <string name="CopyError" type="message">En feil skjedde under forsøke på å kopiere %0 til\n%1</string>
   <string name="FileToCopyNotFound" type="title">Dette kan være viktig, men kanskje ikke</string>
   <!-- %0: The file that could not be found to be copied -->
   <string name="FileToCopyNotFound" type="message">En fil som skulle bli kopiert, nemlig %0, ble ikke funnet</string>
   <string name="FileCopiedNotFound" type="title">Dette kan være viktig, men kanskje ikke</string>
-  <!-- %0: The source file to be copied 
+  <!-- %0: The source file to be copied
         %1: The destination to be copied to-->
   <string name="FileCopiedNotFound" type="message">Ok så vi kopierte en fil til en annen plass og ingenting gikk galt,\nmen filen er ikke der vi kopierte den til :/\nFilen kom ifra %0\nog skulle bli kopiert til %1</string>
   <!-- Delete errors -->
@@ -634,7 +644,6 @@
   <string name="MessageBox" type="label">Meldingsboks</string>
   <string name="ExceptionInformation" type="label">Unntaks Informasjon</string>
 
-
   <string name="ElevationXPWarning" type="title">Tilgang krever frihet</string>
   <string name="ElevationXPWarning" type="message">Ett vindu kan vises etter denne med en avmerkingsboks merket:\n"Beskytt datamaskinen og data fra uautorisert program aktivitet"\nDette må være avkrysset ellers vil ikke MASGAU kunne gjennomføre den forespurte operasjonen.</string>
 
@@ -642,5 +651,4 @@
   <!-- %0: The name of the missing game -->
   <string name="UnknownGame" type="message">MASGAU har ikke informasjon for spillet %0.\nVennligst klikk "Send Rapport" så jeg kan jobbe med å fikse dette.</string>
   <string name="ArchiveGameNotFound" type="label">Spillet i dette arkivet kunne ikke bli funnet,\nmen arkivet har en registrering av mappen den kom ifra.\nDu kan gjenopprette til denne mappen hvis du ønsker.</string>
-  
 </strings>
